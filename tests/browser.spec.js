@@ -8,11 +8,7 @@ test('open browser', async({page}) => {
 })
 
 test('browser', async({browser}) => {
-  const google = await browser.newContext({
-    recordVideo : {
-      dir : "video/"
-    }
-  });
+  const google = await browser.newContext();
   const flipkart = await google.newPage();
   await flipkart.goto("https://www.flipkart.com/");
   const amazon = await google.newPage();
