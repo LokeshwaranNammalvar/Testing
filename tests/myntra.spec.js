@@ -7,5 +7,5 @@ test('Mytra', async({browser}) => {
   await myntra.locator('//a[@data-reactid="21" and @data-group="men"]').hover();
   await myntra.locator('//a[@class="desktop-categoryLink" and @data-reactid="96"]').click();
 
-  await myntra.waitForTimeout(3000);
+  
 }) 
