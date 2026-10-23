@@ -1,0 +1,1183 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: learning.spec.js >> flipkart
+- Location: tests\learning.spec.js:31:6
+
+# Error details
+
+```
+Test timeout of 6000ms exceeded.
+```
+
+```
+Error: page.waitForTimeout: Test timeout of 6000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f1e3]:
+  - generic [ref=f1e7]:
+    - generic [ref=f1e9]:
+      - link [ref=f1e10] [cursor=pointer]:
+        - /url: /
+        - img "Flipkart" [ref=f1e11]
+      - link "Explore Plus" [ref=f1e12] [cursor=pointer]:
+        - /url: /plus
+    - generic [ref=f1e16]:
+      - textbox "Search for products, brands and more" [ref=f1e18]: iphone 17
+      - button [ref=f1e19] [cursor=pointer]
+    - link "Login" [ref=f1e28] [cursor=pointer]:
+      - /url: /login?ret=%2Fsearch%3Fq%3Diphone%252017%26otracker%3Dsearch%26otracker1%3Dsearch%26marketplace%3DFLIPKART%26as-show%3Doff%26as%3Doff
+    - link "Become a Seller" [ref=f1e30] [cursor=pointer]:
+      - /url: https://seller.flipkart.com/sell-online/?utm_source=fkwebsite&utm_medium=websitedirect
+    - generic [ref=f1e32]: More
+    - link "Cart" [ref=f1e42] [cursor=pointer]:
+      - /url: /viewcart?exploreMode=true&preference=FLIPKART
+  - generic [ref=f1e50]:
+    - generic [ref=f1e51] [cursor=pointer]: Electronics
+    - generic [ref=f1e54] [cursor=pointer]: TVs & Appliances
+    - generic [ref=f1e57] [cursor=pointer]: Men
+    - generic [ref=f1e60] [cursor=pointer]: Women
+    - generic [ref=f1e63] [cursor=pointer]: Baby & Kids
+    - generic [ref=f1e66] [cursor=pointer]: Home & Furniture
+    - generic [ref=f1e69] [cursor=pointer]: Sports, Books & More
+    - link "Flights" [ref=f1e72] [cursor=pointer]:
+      - /url: /travel/flights?otracker=nmenu_Flights
+    - link "Offer Zone" [ref=f1e73] [cursor=pointer]:
+      - /url: /offers-list/top-deals?screen=dynamic&pk=themeViews%3DDT-OMU-A2%3ADT-OMU~widgetType%3DdealCard~contentType%3Dneo&otracker=nmenu_offer-zone
+  - generic [ref=f1e74]:
+    - generic [ref=f1e75]:
+      - generic [ref=f1e77]:
+        - generic [ref=f1e79]:
+          - generic [ref=f1e80]: Filters
+          - generic [ref=f1e84]:
+            - generic [ref=f1e85]: CATEGORIES
+            - generic [ref=f1e87]:
+              - img [ref=f1e89] [cursor=pointer]
+              - link "Mobiles & Accessories" [ref=f1e91] [cursor=pointer]:
+                - /url: /mobiles-accessories/pr?sid=tyy&q=iphone+17&otracker=categorytree
+            - generic [ref=f1e93]:
+              - img [ref=f1e95] [cursor=pointer]
+              - link "Mobiles" [ref=f1e97] [cursor=pointer]:
+                - /url: /mobiles/pr?sid=tyy,4io&q=iphone+17&otracker=categorytree
+          - generic [ref=f1e98]: Network Type
+          - generic [ref=f1e103]: Internal Storage
+          - generic [ref=f1e108]:
+            - generic [ref=f1e109] [cursor=pointer]: Ram
+            - generic [ref=f1e114]:
+              - generic "1 GB and Below" [ref=f1e115] [cursor=pointer]
+              - generic "8 GB and Above" [ref=f1e120] [cursor=pointer]
+          - generic [ref=f1e125]: Processor Brand
+          - generic [ref=f1e130]:
+            - generic [ref=f1e131]: Price
+            - generic [ref=f1e137]:
+              - generic [ref=f1e138] [cursor=pointer]
+              - generic [ref=f1e145]:
+                - generic [ref=f1e146]: .
+                - generic [ref=f1e147]: .
+                - generic [ref=f1e148]: .
+                - generic [ref=f1e149]: .
+                - generic [ref=f1e150]: .
+                - generic: .
+            - generic [ref=f1e151]:
+              - combobox [ref=f1e153]:
+                - option "Min" [selected]
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+              - generic [ref=f1e154]: to
+              - combobox [ref=f1e156]:
+                - option "₹10000"
+                - option "₹15000"
+                - option "₹20000"
+                - option "₹30000"
+                - option "₹30000+" [selected]
+          - generic [ref=f1e157]: Battery Capacity
+          - generic [ref=f1e162]: Operating System
+          - generic [ref=f1e167]: Speciality
+          - generic [ref=f1e172]: Type
+          - generic [ref=f1e177]: Clock Speed
+          - generic [ref=f1e182]:
+            - generic [ref=f1e183] [cursor=pointer]
+            - generic [ref=f1e188]: "?"
+          - generic [ref=f1e190]: Sim Type
+          - generic [ref=f1e195]: Screen Size
+          - generic [ref=f1e200]: Resolution Type
+          - generic [ref=f1e205]:
+            - generic [ref=f1e206] [cursor=pointer]: Discount
+            - generic [ref=f1e211]:
+              - generic "40% or more" [ref=f1e212] [cursor=pointer]
+              - generic "30% or more" [ref=f1e217] [cursor=pointer]
+              - generic "20% or more" [ref=f1e222] [cursor=pointer]
+              - generic "10% or more" [ref=f1e227] [cursor=pointer]
+              - generic "50% or more" [ref=f1e232] [cursor=pointer]
+          - generic [ref=f1e237]: Customer Ratings
+          - generic [ref=f1e242]:
+            - generic [ref=f1e243] [cursor=pointer]: Offers
+            - generic [ref=f1e248]:
+              - generic "Buy More, Save More" [ref=f1e249] [cursor=pointer]
+              - generic "Special Price" [ref=f1e254] [cursor=pointer]
+          - generic [ref=f1e259]:
+            - generic [ref=f1e260] [cursor=pointer]: Brand
+            - generic [ref=f1e265]:
+              - generic "Apple" [ref=f1e266] [cursor=pointer]
+              - generic "Google" [ref=f1e271] [cursor=pointer]
+              - generic "Samsung" [ref=f1e276] [cursor=pointer]
+          - generic [ref=f1e281]: Primary Camera
+          - generic [ref=f1e286]: Number of Cores
+          - generic [ref=f1e291]: Country Of Origin
+          - generic [ref=f1e296]: Secondary Camera
+          - generic [ref=f1e301]: Features
+          - generic [ref=f1e306]: Availability
+          - generic [ref=f1e311]: GST Invoice Available
+        - link "Need help? Help me decide Buying Guide" [ref=f1e317] [cursor=pointer]:
+          - /url: /buying-guide/mobiles?sid=tyy,4io&otracker=bg_from_browse_lhs
+          - generic [ref=f1e318]: Need help?
+          - generic [ref=f1e319]: Help me decide
+          - img "Buying Guide" [ref=f1e322]
+      - generic [ref=f1e323]:
+        - generic [ref=f1e326]:
+          - generic [ref=f1e327]:
+            - link "Home" [ref=f1e329] [cursor=pointer]:
+              - /url: /
+            - link "Mobiles & Accessories" [ref=f1e333] [cursor=pointer]:
+              - /url: /mobiles-accessories/pr?sid=tyy&marketplace=FLIPKART
+            - link "Mobiles" [ref=f1e337] [cursor=pointer]:
+              - /url: /mobiles/pr?sid=tyy,4io&marketplace=FLIPKART
+          - generic [ref=f1e338]: Showing 1 – 24 of 429 results for "iphone 17"
+          - generic [ref=f1e339]:
+            - generic [ref=f1e340]: Sort By
+            - generic [ref=f1e341]: Relevance
+            - generic [ref=f1e342] [cursor=pointer]: Popularity
+            - generic [ref=f1e343] [cursor=pointer]: Price -- Low to High
+            - generic [ref=f1e344] [cursor=pointer]: Price -- High to Low
+            - generic [ref=f1e345] [cursor=pointer]: Newest First
+        - link "Samsung Galaxy S25 5G Snapdragon (Navy, 128 GB) Add to Compare Samsung Galaxy S25 5G Snapdragon (Navy, 128 GB) 4.6 15,677 Ratings & 1,801 Reviews • 12 GB RAM | 128 GB ROM • 15.75 cm (6.2 inch) Full HD+ Display • 50MP + 10MP + 12MP | 12MP Front Camera • 4000 mAh Battery • 8 Elite for Galaxy Processor • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories ₹58,999 ₹1,04,999 43% off Top Discount of the Sale Upto ₹43,400 Off on Exchange" [ref=f1e350] [cursor=pointer]:
+          - /url: /samsung-galaxy-s25-5g-snapdragon-navy-128-gb/p/itm957543a944c80?pid=MOBHQDMKCCDK2VT7&lid=LSTMOBHQDMKCCDK2VT7FQCGRZ&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_1&otracker=search&otracker1=search&fm=organic&iid=en_3H_VM0dex3vRJtXf05as_2FdxgCNrXbzifLJcF8OuESpOMccFDhn0mKe23w9bjYMYUhyeZtA6cs-TGhNpRaqFbfXAN_ufT6i-XTyYlC7fzfhfGGUx7hzzf4sntdT1Q9v&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e351]:
+            - img "Samsung Galaxy S25 5G Snapdragon (Navy, 128 GB)" [ref=f1e355]
+            - generic [ref=f1e356]: Add to Compare
+          - generic [ref=f1e366]:
+            - generic [ref=f1e367]:
+              - generic [ref=f1e372]: Samsung Galaxy S25 5G Snapdragon (Navy, 128 GB)
+              - generic [ref=f1e373]:
+                - generic [ref=f1e374]: "4.6"
+                - generic [ref=f1e377]: 15,677 Ratings & 1,801 Reviews
+              - list [ref=f1e380]:
+                - listitem [ref=f1e381]: • 12 GB RAM | 128 GB ROM
+                - listitem [ref=f1e382]: • 15.75 cm (6.2 inch) Full HD+ Display
+                - listitem [ref=f1e383]: • 50MP + 10MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e384]: • 4000 mAh Battery
+                - listitem [ref=f1e385]: • 8 Elite for Galaxy Processor
+                - listitem [ref=f1e386]: • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories
+            - generic [ref=f1e387]:
+              - generic [ref=f1e389]:
+                - generic [ref=f1e390]: ₹58,999
+                - generic [ref=f1e391]: ₹1,04,999
+                - generic [ref=f1e392]: 43% off
+              - generic [ref=f1e395]: Top Discount of the Sale
+              - generic [ref=f1e399]:
+                - generic [ref=f1e400]: Upto
+                - generic [ref=f1e401]: ₹43,400
+                - generic [ref=f1e402]: Off on Exchange
+        - link "Google Pixel 11 (Frost, 256 GB) Add to Compare Google Pixel 11 (Frost, 256 GB) 4.5 2,623 Ratings & 284 Reviews • 12 GB RAM | 256 GB ROM • 16.0 cm (6.3 inch) Actua Display • 48MP + 13MP + 10.8MP | 10.5MP Front Camera • 4985 mAh Lithium Battery • Tensor G6 Processor • 1 year domestic warranty ₹89,999 Upto ₹65,050 Off on Exchange Bank Offer" [ref=f1e407] [cursor=pointer]:
+          - /url: /google-pixel-11-frost-256-gb/p/itmc51935a8001b1?pid=MOBHPHNVEC2P4WV3&lid=LSTMOBHPHNVEC2P4WV3UCPNQ6&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_2&otracker=search&otracker1=search&fm=organic&iid=en_3H_VM0dex3vRJtXf05as_2FdxgCNrXbzifLJcF8OuEQYfMnIfpcUxwcCvTzgBX3-0zl_cHsC-0IA9eHHao5nppe5cPsE21ieNFmwRedArsKM_FNJwc8th2XAFxjOdBix&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e408]:
+            - img "Google Pixel 11 (Frost, 256 GB)" [ref=f1e412]
+            - generic [ref=f1e413]: Add to Compare
+          - generic [ref=f1e423]:
+            - generic [ref=f1e424]:
+              - generic [ref=f1e429]: Google Pixel 11 (Frost, 256 GB)
+              - generic [ref=f1e430]:
+                - generic [ref=f1e431]: "4.5"
+                - generic [ref=f1e434]: 2,623 Ratings & 284 Reviews
+              - list [ref=f1e437]:
+                - listitem [ref=f1e438]: • 12 GB RAM | 256 GB ROM
+                - listitem [ref=f1e439]: • 16.0 cm (6.3 inch) Actua Display
+                - listitem [ref=f1e440]: • 48MP + 13MP + 10.8MP | 10.5MP Front Camera
+                - listitem [ref=f1e441]: • 4985 mAh Lithium Battery
+                - listitem [ref=f1e442]: • Tensor G6 Processor
+                - listitem [ref=f1e443]: • 1 year domestic warranty
+            - generic [ref=f1e444]:
+              - generic [ref=f1e445]: ₹89,999
+              - generic [ref=f1e451]:
+                - generic [ref=f1e452]: Upto
+                - generic [ref=f1e453]: ₹65,050
+                - generic [ref=f1e454]: Off on Exchange
+              - generic [ref=f1e455]: Bank Offer
+        - link "Bestseller Apple iPhone 17 (Black, 256 GB) Add to Compare Apple iPhone 17 (Black, 256 GB) 4.6 42,935 Ratings & 2,884 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹88,999 ₹99,900 10% off Upto ₹61,050 Off on Exchange Bank Offer" [ref=f1e462] [cursor=pointer]:
+          - /url: /apple-iphone-17-black-256-gb/p/itmc61b40459dd98?pid=MOBHQV9YCUG4ZQZK&lid=LSTMOBHQV9YCUG4ZQZKUTWGGY&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_3&otracker=search&otracker1=search&fm=Search&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YCUG4ZQZK.SEARCH&ppt=sp&ppn=sp&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic: Bestseller
+          - generic [ref=f1e464]:
+            - img "Apple iPhone 17 (Black, 256 GB)" [ref=f1e468]
+            - generic [ref=f1e469]: Add to Compare
+          - generic [ref=f1e479]:
+            - generic [ref=f1e480]:
+              - generic [ref=f1e481]: Apple iPhone 17 (Black, 256 GB)
+              - generic [ref=f1e482]:
+                - generic [ref=f1e483]: "4.6"
+                - generic [ref=f1e486]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e489]:
+                - listitem [ref=f1e490]: • 256 GB ROM
+                - listitem [ref=f1e491]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e492]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e493]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e494]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e495]:
+              - generic [ref=f1e497]:
+                - generic [ref=f1e498]: ₹88,999
+                - generic [ref=f1e499]: ₹99,900
+                - generic [ref=f1e500]: 10% off
+              - generic [ref=f1e504]:
+                - generic [ref=f1e505]: Upto
+                - generic [ref=f1e506]: ₹61,050
+                - generic [ref=f1e507]: Off on Exchange
+              - generic [ref=f1e508]: Bank Offer
+        - link "Bestseller Apple iPhone 17 (White, 256 GB) Add to Compare Apple iPhone 17 (White, 256 GB) 4.6 42,935 Ratings & 2,884 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹88,999 ₹99,900 10% off Upto ₹61,050 Off on Exchange Bank Offer" [active] [ref=f1e515] [cursor=pointer]:
+          - /url: /apple-iphone-17-white-256-gb/p/itm68ad8410784c7?pid=MOBHQV9YAZYYWY8A&lid=LSTMOBHQV9YAZYYWY8A6D2THC&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_4&otracker=search&otracker1=search&fm=Search&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YAZYYWY8A.SEARCH&ppt=sp&ppn=sp&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic: Bestseller
+          - generic [ref=f1e517]:
+            - img "Apple iPhone 17 (White, 256 GB)" [ref=f1e521]
+            - generic [ref=f1e522]: Add to Compare
+          - generic [ref=f1e532]:
+            - generic [ref=f1e533]:
+              - generic [ref=f1e534]: Apple iPhone 17 (White, 256 GB)
+              - generic [ref=f1e535]:
+                - generic [ref=f1e536]: "4.6"
+                - generic [ref=f1e539]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e542]:
+                - listitem [ref=f1e543]: • 256 GB ROM
+                - listitem [ref=f1e544]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e545]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e546]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e547]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e548]:
+              - generic [ref=f1e550]:
+                - generic [ref=f1e551]: ₹88,999
+                - generic [ref=f1e552]: ₹99,900
+                - generic [ref=f1e553]: 10% off
+              - generic [ref=f1e557]:
+                - generic [ref=f1e558]: Upto
+                - generic [ref=f1e559]: ₹61,050
+                - generic [ref=f1e560]: Off on Exchange
+              - generic [ref=f1e561]: Bank Offer
+        - link "Samsung Galaxy S25 5G Snapdragon (Icyblue, 128 GB) Add to Compare Samsung Galaxy S25 5G Snapdragon (Icyblue, 128 GB) 4.6 15,677 Ratings & 1,801 Reviews • 12 GB RAM | 128 GB ROM • 15.75 cm (6.2 inch) Full HD+ Display • 50MP + 10MP + 12MP | 12MP Front Camera • 4000 mAh Battery • 8 Elite for Galaxy Processor • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories ₹58,999 ₹1,04,999 43% off Top Discount of the Sale Upto ₹43,400 Off on Exchange" [ref=f1e568] [cursor=pointer]:
+          - /url: /samsung-galaxy-s25-5g-snapdragon-icyblue-128-gb/p/itm95bd766346a05?pid=MOBHQDMKATG28X27&lid=LSTMOBHQDMKATG28X27GTDQYF&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_5&otracker=search&otracker1=search&fm=organic&iid=en_3H_VM0dex3vRJtXf05as_2FdxgCNrXbzifLJcF8OuEQhOz5WfD5xSKSeZrYeqCZOuKX0dHp0vF_PusfcZQbvsm43xs8AdoFQekI771Ygf2g4GwTImwuRusuzglw4s74e&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e569]:
+            - img "Samsung Galaxy S25 5G Snapdragon (Icyblue, 128 GB)" [ref=f1e573]
+            - generic [ref=f1e574]: Add to Compare
+          - generic [ref=f1e584]:
+            - generic [ref=f1e585]:
+              - generic [ref=f1e590]: Samsung Galaxy S25 5G Snapdragon (Icyblue, 128 GB)
+              - generic [ref=f1e591]:
+                - generic [ref=f1e592]: "4.6"
+                - generic [ref=f1e595]: 15,677 Ratings & 1,801 Reviews
+              - list [ref=f1e598]:
+                - listitem [ref=f1e599]: • 12 GB RAM | 128 GB ROM
+                - listitem [ref=f1e600]: • 15.75 cm (6.2 inch) Full HD+ Display
+                - listitem [ref=f1e601]: • 50MP + 10MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e602]: • 4000 mAh Battery
+                - listitem [ref=f1e603]: • 8 Elite for Galaxy Processor
+                - listitem [ref=f1e604]: • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories
+            - generic [ref=f1e605]:
+              - generic [ref=f1e607]:
+                - generic [ref=f1e608]: ₹58,999
+                - generic [ref=f1e609]: ₹1,04,999
+                - generic [ref=f1e610]: 43% off
+              - generic [ref=f1e613]: Top Discount of the Sale
+              - generic [ref=f1e617]:
+                - generic [ref=f1e618]: Upto
+                - generic [ref=f1e619]: ₹43,400
+                - generic [ref=f1e620]: Off on Exchange
+        - link "Samsung Galaxy S25 5G Snapdragon (Mint, 128 GB) Add to Compare Samsung Galaxy S25 5G Snapdragon (Mint, 128 GB) 4.6 15,677 Ratings & 1,801 Reviews • 12 GB RAM | 128 GB ROM • 15.75 cm (6.2 inch) Full HD+ Display • 50MP + 10MP + 12MP | 12MP Front Camera • 4000 mAh Battery • 8 Elite for Galaxy Processor • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories ₹58,999 ₹1,04,999 43% off Top Discount of the Sale Upto ₹43,400 Off on Exchange" [ref=f1e625] [cursor=pointer]:
+          - /url: /samsung-galaxy-s25-5g-snapdragon-mint-128-gb/p/itmce254cb90f8d4?pid=MOBHQDMKZEFNNVW2&lid=LSTMOBHQDMKZEFNNVW2DJOWYO&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_6&otracker=search&otracker1=search&fm=organic&iid=en_3H_VM0dex3vRJtXf05as_2FdxgCNrXbzifLJcF8OuETeXgX78T_NXZuOKYllXT4FKkP18NCxG08P4zJ-vBRhCsNlWEKjw5og8IIR4f_e5Qk4GwTImwuRusuzglw4s74e&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e626]:
+            - img "Samsung Galaxy S25 5G Snapdragon (Mint, 128 GB)" [ref=f1e630]
+            - generic [ref=f1e631]: Add to Compare
+          - generic [ref=f1e641]:
+            - generic [ref=f1e642]:
+              - generic [ref=f1e647]: Samsung Galaxy S25 5G Snapdragon (Mint, 128 GB)
+              - generic [ref=f1e648]:
+                - generic [ref=f1e649]: "4.6"
+                - generic [ref=f1e652]: 15,677 Ratings & 1,801 Reviews
+              - list [ref=f1e655]:
+                - listitem [ref=f1e656]: • 12 GB RAM | 128 GB ROM
+                - listitem [ref=f1e657]: • 15.75 cm (6.2 inch) Full HD+ Display
+                - listitem [ref=f1e658]: • 50MP + 10MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e659]: • 4000 mAh Battery
+                - listitem [ref=f1e660]: • 8 Elite for Galaxy Processor
+                - listitem [ref=f1e661]: • 1 Year Manufacturer Warranty for Device and 6 Months for In-Box Accessories
+            - generic [ref=f1e662]:
+              - generic [ref=f1e664]:
+                - generic [ref=f1e665]: ₹58,999
+                - generic [ref=f1e666]: ₹1,04,999
+                - generic [ref=f1e667]: 43% off
+              - generic [ref=f1e670]: Top Discount of the Sale
+              - generic [ref=f1e674]:
+                - generic [ref=f1e675]: Upto
+                - generic [ref=f1e676]: ₹43,400
+                - generic [ref=f1e677]: Off on Exchange
+        - link "Apple iPhone 17 (Lavender, 256 GB) Add to Compare Apple iPhone 17 (Lavender, 256 GB) 4.6 42,935 Ratings & 2,884 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹88,999 ₹99,900 10% off Upto ₹61,050 Off on Exchange Bank Offer" [ref=f1e682] [cursor=pointer]:
+          - /url: /apple-iphone-17-lavender-256-gb/p/itm5c650337c09ee?pid=MOBHQV9YDG7CGRAM&lid=LSTMOBHQV9YDG7CGRAMOQWOKL&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&spotlightTagId=default_BestsellerId_tyy%2F4io&srno=s_1_7&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YDG7CGRAM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e683]:
+            - img "Apple iPhone 17 (Lavender, 256 GB)" [ref=f1e687]
+            - generic [ref=f1e688]: Add to Compare
+          - generic [ref=f1e698]:
+            - generic [ref=f1e699]:
+              - generic [ref=f1e700]: Apple iPhone 17 (Lavender, 256 GB)
+              - generic [ref=f1e701]:
+                - generic [ref=f1e702]: "4.6"
+                - generic [ref=f1e705]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e708]:
+                - listitem [ref=f1e709]: • 256 GB ROM
+                - listitem [ref=f1e710]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e711]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e712]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e713]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e714]:
+              - generic [ref=f1e716]:
+                - generic [ref=f1e717]: ₹88,999
+                - generic [ref=f1e718]: ₹99,900
+                - generic [ref=f1e719]: 10% off
+              - generic [ref=f1e723]:
+                - generic [ref=f1e724]: Upto
+                - generic [ref=f1e725]: ₹61,050
+                - generic [ref=f1e726]: Off on Exchange
+              - generic [ref=f1e727]: Bank Offer
+        - link "Apple iPhone 17 (Sage, 256 GB) Add to Compare Apple iPhone 17 (Sage, 256 GB) 4.6 42,935 Ratings & 2,884 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹88,999 ₹99,900 10% off Upto ₹61,050 Off on Exchange Bank Offer" [ref=f1e734] [cursor=pointer]:
+          - /url: /apple-iphone-17-sage-256-gb/p/itm410e85a5f1745?pid=MOBHQV9YZPQXFFGM&lid=LSTMOBHQV9YZPQXFFGMNN24WH&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_8&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YZPQXFFGM.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e735]:
+            - img "Apple iPhone 17 (Sage, 256 GB)" [ref=f1e739]
+            - generic [ref=f1e740]: Add to Compare
+          - generic [ref=f1e750]:
+            - generic [ref=f1e751]:
+              - generic [ref=f1e752]: Apple iPhone 17 (Sage, 256 GB)
+              - generic [ref=f1e753]:
+                - generic [ref=f1e754]: "4.6"
+                - generic [ref=f1e757]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e760]:
+                - listitem [ref=f1e761]: • 256 GB ROM
+                - listitem [ref=f1e762]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e763]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e764]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e765]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e766]:
+              - generic [ref=f1e768]:
+                - generic [ref=f1e769]: ₹88,999
+                - generic [ref=f1e770]: ₹99,900
+                - generic [ref=f1e771]: 10% off
+              - generic [ref=f1e775]:
+                - generic [ref=f1e776]: Upto
+                - generic [ref=f1e777]: ₹61,050
+                - generic [ref=f1e778]: Off on Exchange
+              - generic [ref=f1e779]: Bank Offer
+        - link "Apple iPhone 17 (Mist Blue, 256 GB) Add to Compare Apple iPhone 17 (Mist Blue, 256 GB) 4.6 42,935 Ratings & 2,884 Reviews • 256 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹88,999 ₹99,900 10% off Upto ₹61,050 Off on Exchange Bank Offer" [ref=f1e786] [cursor=pointer]:
+          - /url: /apple-iphone-17-mist-blue-256-gb/p/itmfd8c16e287599?pid=MOBHQV9YNVS7PXHH&lid=LSTMOBHQV9YNVS7PXHHYQWZJ4&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_9&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YNVS7PXHH.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e787]:
+            - img "Apple iPhone 17 (Mist Blue, 256 GB)" [ref=f1e791]
+            - generic [ref=f1e792]: Add to Compare
+          - generic [ref=f1e802]:
+            - generic [ref=f1e803]:
+              - generic [ref=f1e804]: Apple iPhone 17 (Mist Blue, 256 GB)
+              - generic [ref=f1e805]:
+                - generic [ref=f1e806]: "4.6"
+                - generic [ref=f1e809]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e812]:
+                - listitem [ref=f1e813]: • 256 GB ROM
+                - listitem [ref=f1e814]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e815]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e816]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e817]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e818]:
+              - generic [ref=f1e820]:
+                - generic [ref=f1e821]: ₹88,999
+                - generic [ref=f1e822]: ₹99,900
+                - generic [ref=f1e823]: 10% off
+              - generic [ref=f1e827]:
+                - generic [ref=f1e828]: Upto
+                - generic [ref=f1e829]: ₹61,050
+                - generic [ref=f1e830]: Off on Exchange
+              - generic [ref=f1e831]: Bank Offer
+        - link "Apple iPhone 17 (Lavender, 512 GB) Add to Compare Apple iPhone 17 (Lavender, 512 GB) 4.6 42,935 Ratings & 2,884 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹1,13,999 ₹1,24,900 8% off Upto ₹67,550 Off on Exchange Bank Offer" [ref=f1e838] [cursor=pointer]:
+          - /url: /apple-iphone-17-lavender-512-gb/p/itm4129c66363e5b?pid=MOBHQV9YGGQJRZ39&lid=LSTMOBHQV9YGGQJRZ391YHPLM&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_10&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YGGQJRZ39.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e839]:
+            - img "Apple iPhone 17 (Lavender, 512 GB)" [ref=f1e843]
+            - generic [ref=f1e844]: Add to Compare
+          - generic [ref=f1e854]:
+            - generic [ref=f1e855]:
+              - generic [ref=f1e856]: Apple iPhone 17 (Lavender, 512 GB)
+              - generic [ref=f1e857]:
+                - generic [ref=f1e858]: "4.6"
+                - generic [ref=f1e861]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e864]:
+                - listitem [ref=f1e865]: • 512 GB ROM
+                - listitem [ref=f1e866]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e867]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e868]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e869]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e870]:
+              - generic [ref=f1e872]:
+                - generic [ref=f1e873]: ₹1,13,999
+                - generic [ref=f1e874]: ₹1,24,900
+                - generic [ref=f1e875]: 8% off
+              - generic [ref=f1e879]:
+                - generic [ref=f1e880]: Upto
+                - generic [ref=f1e881]: ₹67,550
+                - generic [ref=f1e882]: Off on Exchange
+              - generic [ref=f1e883]: Bank Offer
+        - link "Google Pixel 11 (Pistachio, 256 GB) Add to Compare Google Pixel 11 (Pistachio, 256 GB) 4.5 2,623 Ratings & 284 Reviews • 12 GB RAM | 256 GB ROM • 16.0 cm (6.3 inch) Actua Display • 48MP + 13MP + 10.8MP | 10.5MP Front Camera • 4985 mAh Lithium Battery • Tensor G6 Processor • 1 year domestic warranty ₹89,999 Upto ₹65,050 Off on Exchange Bank Offer" [ref=f1e890] [cursor=pointer]:
+          - /url: /google-pixel-11-pistachio-256-gb/p/itmbe84c3bbcd190?pid=MOBHPHNVKY9PHBXD&lid=LSTMOBHPHNVKY9PHBXD7J5Y4X&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_11&otracker=search&otracker1=search&fm=organic&iid=en_3H_VM0dex3vRJtXf05as_2FdxgCNrXbzifLJcF8OuERFPieJkNGV2NvmzZ3D5_C1Ne9zz9UGEsot_4eHoHmfv18dX6xz8CHSGEkup8enNA84GwTImwuRusuzglw4s74e&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e891]:
+            - img "Google Pixel 11 (Pistachio, 256 GB)" [ref=f1e895]
+            - generic [ref=f1e896]: Add to Compare
+          - generic [ref=f1e906]:
+            - generic [ref=f1e907]:
+              - generic [ref=f1e912]: Google Pixel 11 (Pistachio, 256 GB)
+              - generic [ref=f1e913]:
+                - generic [ref=f1e914]: "4.5"
+                - generic [ref=f1e917]: 2,623 Ratings & 284 Reviews
+              - list [ref=f1e920]:
+                - listitem [ref=f1e921]: • 12 GB RAM | 256 GB ROM
+                - listitem [ref=f1e922]: • 16.0 cm (6.3 inch) Actua Display
+                - listitem [ref=f1e923]: • 48MP + 13MP + 10.8MP | 10.5MP Front Camera
+                - listitem [ref=f1e924]: • 4985 mAh Lithium Battery
+                - listitem [ref=f1e925]: • Tensor G6 Processor
+                - listitem [ref=f1e926]: • 1 year domestic warranty
+            - generic [ref=f1e927]:
+              - generic [ref=f1e928]: ₹89,999
+              - generic [ref=f1e934]:
+                - generic [ref=f1e935]: Upto
+                - generic [ref=f1e936]: ₹65,050
+                - generic [ref=f1e937]: Off on Exchange
+              - generic [ref=f1e938]: Bank Offer
+        - link "Google Pixel 11 (Obsidian, 256 GB) Add to Compare Google Pixel 11 (Obsidian, 256 GB) 4.5 2,623 Ratings & 284 Reviews • 12 GB RAM | 256 GB ROM • 16.0 cm (6.3 inch) Actua Display • 48MP + 13MP + 10.8MP | 10.5MP Front Camera • 4985 mAh Lithium Battery • Tensor G6 Processor • 1 year domestic warranty ₹89,999 Upto ₹65,050 Off on Exchange Bank Offer" [ref=f1e945] [cursor=pointer]:
+          - /url: /google-pixel-11-obsidian-256-gb/p/itma0200211f30ae?pid=MOBHPHNV4FA6ZKGF&lid=LSTMOBHPHNV4FA6ZKGFNVP4HH&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_12&otracker=search&otracker1=search&fm=organic&iid=en_3H_VM0dex3vRJtXf05as_2FdxgCNrXbzifLJcF8OuESY2X43CLbSg1TMSL0z7x10XGOMIsmnaSrK2Pk7yK4T0J-uS-Si_IP-_9izAFCdbYE4GwTImwuRusuzglw4s74e&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e946]:
+            - img "Google Pixel 11 (Obsidian, 256 GB)" [ref=f1e950]
+            - generic [ref=f1e951]: Add to Compare
+          - generic [ref=f1e961]:
+            - generic [ref=f1e962]:
+              - generic [ref=f1e967]: Google Pixel 11 (Obsidian, 256 GB)
+              - generic [ref=f1e968]:
+                - generic [ref=f1e969]: "4.5"
+                - generic [ref=f1e972]: 2,623 Ratings & 284 Reviews
+              - list [ref=f1e975]:
+                - listitem [ref=f1e976]: • 12 GB RAM | 256 GB ROM
+                - listitem [ref=f1e977]: • 16.0 cm (6.3 inch) Actua Display
+                - listitem [ref=f1e978]: • 48MP + 13MP + 10.8MP | 10.5MP Front Camera
+                - listitem [ref=f1e979]: • 4985 mAh Lithium Battery
+                - listitem [ref=f1e980]: • Tensor G6 Processor
+                - listitem [ref=f1e981]: • 1 year domestic warranty
+            - generic [ref=f1e982]:
+              - generic [ref=f1e983]: ₹89,999
+              - generic [ref=f1e989]:
+                - generic [ref=f1e990]: Upto
+                - generic [ref=f1e991]: ₹65,050
+                - generic [ref=f1e992]: Off on Exchange
+              - generic [ref=f1e993]: Bank Offer
+        - link "Apple iPhone 17 (Sage, 512 GB) Add to Compare Apple iPhone 17 (Sage, 512 GB) 4.6 42,935 Ratings & 2,884 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹1,13,999 ₹1,24,900 8% off Upto ₹67,550 Off on Exchange Bank Offer" [ref=f1e1000] [cursor=pointer]:
+          - /url: /apple-iphone-17-sage-512-gb/p/itmf72cc8eb900bb?pid=MOBHQV9YZAS89GFU&lid=LSTMOBHQV9YZAS89GFUMGWLWB&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_13&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YZAS89GFU.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1001]:
+            - img "Apple iPhone 17 (Sage, 512 GB)" [ref=f1e1005]
+            - generic [ref=f1e1006]: Add to Compare
+          - generic [ref=f1e1016]:
+            - generic [ref=f1e1017]:
+              - generic [ref=f1e1018]: Apple iPhone 17 (Sage, 512 GB)
+              - generic [ref=f1e1019]:
+                - generic [ref=f1e1020]: "4.6"
+                - generic [ref=f1e1023]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e1026]:
+                - listitem [ref=f1e1027]: • 512 GB ROM
+                - listitem [ref=f1e1028]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e1029]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e1030]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1031]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e1032]:
+              - generic [ref=f1e1034]:
+                - generic [ref=f1e1035]: ₹1,13,999
+                - generic [ref=f1e1036]: ₹1,24,900
+                - generic [ref=f1e1037]: 8% off
+              - generic [ref=f1e1041]:
+                - generic [ref=f1e1042]: Upto
+                - generic [ref=f1e1043]: ₹67,550
+                - generic [ref=f1e1044]: Off on Exchange
+              - generic [ref=f1e1045]: Bank Offer
+        - link "Apple iPhone 17 (Black, 512 GB) Add to Compare Apple iPhone 17 (Black, 512 GB) 4.6 42,935 Ratings & 2,884 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹1,13,999 ₹1,24,900 8% off Upto ₹67,550 Off on Exchange Bank Offer" [ref=f1e1052] [cursor=pointer]:
+          - /url: /apple-iphone-17-black-512-gb/p/itm6cfb794057ae7?pid=MOBHQV9YHPHJH6AG&lid=LSTMOBHQV9YHPHJH6AG9CLHXK&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_14&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YHPHJH6AG.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1053]:
+            - img "Apple iPhone 17 (Black, 512 GB)" [ref=f1e1057]
+            - generic [ref=f1e1058]: Add to Compare
+          - generic [ref=f1e1068]:
+            - generic [ref=f1e1069]:
+              - generic [ref=f1e1070]: Apple iPhone 17 (Black, 512 GB)
+              - generic [ref=f1e1071]:
+                - generic [ref=f1e1072]: "4.6"
+                - generic [ref=f1e1075]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e1078]:
+                - listitem [ref=f1e1079]: • 512 GB ROM
+                - listitem [ref=f1e1080]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e1081]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e1082]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1083]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e1084]:
+              - generic [ref=f1e1086]:
+                - generic [ref=f1e1087]: ₹1,13,999
+                - generic [ref=f1e1088]: ₹1,24,900
+                - generic [ref=f1e1089]: 8% off
+              - generic [ref=f1e1093]:
+                - generic [ref=f1e1094]: Upto
+                - generic [ref=f1e1095]: ₹67,550
+                - generic [ref=f1e1096]: Off on Exchange
+              - generic [ref=f1e1097]: Bank Offer
+        - link "Apple iPhone 17 (Mist Blue, 512 GB) Add to Compare Apple iPhone 17 (Mist Blue, 512 GB) 4.6 42,935 Ratings & 2,884 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹1,13,999 ₹1,24,900 8% off Upto ₹67,550 Off on Exchange Bank Offer" [ref=f1e1104] [cursor=pointer]:
+          - /url: /apple-iphone-17-mist-blue-512-gb/p/itm4eaa82f5f27dd?pid=MOBHQV9YJQFBTGUK&lid=LSTMOBHQV9YJQFBTGUK4H3PSO&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_15&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YJQFBTGUK.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1105]:
+            - img "Apple iPhone 17 (Mist Blue, 512 GB)" [ref=f1e1109]
+            - generic [ref=f1e1110]: Add to Compare
+          - generic [ref=f1e1120]:
+            - generic [ref=f1e1121]:
+              - generic [ref=f1e1122]: Apple iPhone 17 (Mist Blue, 512 GB)
+              - generic [ref=f1e1123]:
+                - generic [ref=f1e1124]: "4.6"
+                - generic [ref=f1e1127]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e1130]:
+                - listitem [ref=f1e1131]: • 512 GB ROM
+                - listitem [ref=f1e1132]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e1133]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e1134]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1135]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e1136]:
+              - generic [ref=f1e1138]:
+                - generic [ref=f1e1139]: ₹1,13,999
+                - generic [ref=f1e1140]: ₹1,24,900
+                - generic [ref=f1e1141]: 8% off
+              - generic [ref=f1e1145]:
+                - generic [ref=f1e1146]: Upto
+                - generic [ref=f1e1147]: ₹67,550
+                - generic [ref=f1e1148]: Off on Exchange
+              - generic [ref=f1e1149]: Bank Offer
+        - link "Apple iPhone 17 (White, 512 GB) Add to Compare Apple iPhone 17 (White, 512 GB) 4.6 42,935 Ratings & 2,884 Reviews • 512 GB ROM • 16.0 cm (6.3 inch) Super Retina XDR Display • 48MP + 48MP | 18MP Front Camera • A19 Chip, 6 Core Processor Processor • Apple One (1) Year Limited Warranty ₹1,13,999 ₹1,24,900 8% off Upto ₹67,550 Off on Exchange Bank Offer" [ref=f1e1156] [cursor=pointer]:
+          - /url: /apple-iphone-17-white-512-gb/p/itm096e857df9d13?pid=MOBHQV9YZWZXBZFU&lid=LSTMOBHQV9YZWZXBZFUUHBSOR&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_16&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YZWZXBZFU.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1157]:
+            - img "Apple iPhone 17 (White, 512 GB)" [ref=f1e1161]
+            - generic [ref=f1e1162]: Add to Compare
+          - generic [ref=f1e1172]:
+            - generic [ref=f1e1173]:
+              - generic [ref=f1e1174]: Apple iPhone 17 (White, 512 GB)
+              - generic [ref=f1e1175]:
+                - generic [ref=f1e1176]: "4.6"
+                - generic [ref=f1e1179]: 42,935 Ratings & 2,884 Reviews
+              - list [ref=f1e1182]:
+                - listitem [ref=f1e1183]: • 512 GB ROM
+                - listitem [ref=f1e1184]: • 16.0 cm (6.3 inch) Super Retina XDR Display
+                - listitem [ref=f1e1185]: • 48MP + 48MP | 18MP Front Camera
+                - listitem [ref=f1e1186]: • A19 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1187]: • Apple One (1) Year Limited Warranty
+            - generic [ref=f1e1188]:
+              - generic [ref=f1e1190]:
+                - generic [ref=f1e1191]: ₹1,13,999
+                - generic [ref=f1e1192]: ₹1,24,900
+                - generic [ref=f1e1193]: 8% off
+              - generic [ref=f1e1197]:
+                - generic [ref=f1e1198]: Upto
+                - generic [ref=f1e1199]: ₹67,550
+                - generic [ref=f1e1200]: Off on Exchange
+              - generic [ref=f1e1201]: Bank Offer
+        - link "Google Pixel 11 (Hibiscus, 256 GB) Add to Compare Google Pixel 11 (Hibiscus, 256 GB) 4.5 2,623 Ratings & 284 Reviews • 12 GB RAM | 256 GB ROM • 16.0 cm (6.3 inch) Actua Display • 48MP + 13MP + 10.8MP | 10.5MP Front Camera • 4985 mAh Lithium Battery • Tensor G6 Processor • 1 year domestic warranty ₹89,999 Upto ₹65,050 Off on Exchange Bank Offer" [ref=f1e1208] [cursor=pointer]:
+          - /url: /google-pixel-11-hibiscus-256-gb/p/itm9779ebb35cc5b?pid=MOBHPHNVKVFNMHM3&lid=LSTMOBHPHNVKVFNMHM3LS9IZU&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_17&otracker=search&otracker1=search&fm=organic&iid=en_3H_VM0dex3vRJtXf05as_2FdxgCNrXbzifLJcF8OuEQfsKZ_kUzsR-bMr6EBbbEkV6y3YUoPM1tAZXwG8x4gnzIW-cwvmpkmJ8s4TYbIq2c4GwTImwuRusuzglw4s74e&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1209]:
+            - img "Google Pixel 11 (Hibiscus, 256 GB)" [ref=f1e1213]
+            - generic [ref=f1e1214]: Add to Compare
+          - generic [ref=f1e1224]:
+            - generic [ref=f1e1225]:
+              - generic [ref=f1e1230]: Google Pixel 11 (Hibiscus, 256 GB)
+              - generic [ref=f1e1231]:
+                - generic [ref=f1e1232]: "4.5"
+                - generic [ref=f1e1235]: 2,623 Ratings & 284 Reviews
+              - list [ref=f1e1238]:
+                - listitem [ref=f1e1239]: • 12 GB RAM | 256 GB ROM
+                - listitem [ref=f1e1240]: • 16.0 cm (6.3 inch) Actua Display
+                - listitem [ref=f1e1241]: • 48MP + 13MP + 10.8MP | 10.5MP Front Camera
+                - listitem [ref=f1e1242]: • 4985 mAh Lithium Battery
+                - listitem [ref=f1e1243]: • Tensor G6 Processor
+                - listitem [ref=f1e1244]: • 1 year domestic warranty
+            - generic [ref=f1e1245]:
+              - generic [ref=f1e1246]: ₹89,999
+              - generic [ref=f1e1252]:
+                - generic [ref=f1e1253]: Upto
+                - generic [ref=f1e1254]: ₹65,050
+                - generic [ref=f1e1255]: Off on Exchange
+              - generic [ref=f1e1256]: Bank Offer
+        - link "Apple iPhone 15 (Black, 128 GB) Add to Compare Apple iPhone 15 (Black, 128 GB) 4.6 2,49,865 Ratings & 9,885 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹67,999 ₹74,900 9% off Upto ₹49,750 Off on Exchange Bank Offer" [ref=f1e1263] [cursor=pointer]:
+          - /url: /apple-iphone-15-black-128-gb/p/itm3234701b0863a?pid=MOBHQV9YR4CBTD9D&lid=LSTMOBHQV9YR4CBTD9DPLROKI&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_18&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YR4CBTD9D.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1264]:
+            - img "Apple iPhone 15 (Black, 128 GB)" [ref=f1e1268]
+            - generic [ref=f1e1269]: Add to Compare
+          - generic [ref=f1e1279]:
+            - generic [ref=f1e1280]:
+              - generic [ref=f1e1281]: Apple iPhone 15 (Black, 128 GB)
+              - generic [ref=f1e1282]:
+                - generic [ref=f1e1283]: "4.6"
+                - generic [ref=f1e1286]: 2,49,865 Ratings & 9,885 Reviews
+              - list [ref=f1e1289]:
+                - listitem [ref=f1e1290]: • 128 GB ROM
+                - listitem [ref=f1e1291]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=f1e1292]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e1293]: • A16 Bionic Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1294]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=f1e1295]:
+              - generic [ref=f1e1297]:
+                - generic [ref=f1e1298]: ₹67,999
+                - generic [ref=f1e1299]: ₹74,900
+                - generic [ref=f1e1300]: 9% off
+              - generic [ref=f1e1304]:
+                - generic [ref=f1e1305]: Upto
+                - generic [ref=f1e1306]: ₹49,750
+                - generic [ref=f1e1307]: Off on Exchange
+              - generic [ref=f1e1308]: Bank Offer
+        - link "Apple iPhone 16 Plus (Black, 128 GB) Add to Compare Apple iPhone 16 Plus (Black, 128 GB) 4.6 4,385 Ratings & 295 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹79,900 Only 2 left Upto ₹53,750 Off on Exchange" [ref=f1e1315] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-black-128-gb/p/itm1abbae671f9ef?pid=MOBH4DQFSAXNVHME&lid=LSTMOBH4DQFSAXNVHMETHBWPZ&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_19&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBH4DQFSAXNVHME.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1316]:
+            - img "Apple iPhone 16 Plus (Black, 128 GB)" [ref=f1e1320]
+            - generic [ref=f1e1321]: Add to Compare
+          - generic [ref=f1e1331]:
+            - generic [ref=f1e1332]:
+              - generic [ref=f1e1333]: Apple iPhone 16 Plus (Black, 128 GB)
+              - generic [ref=f1e1334]:
+                - generic [ref=f1e1335]: "4.6"
+                - generic [ref=f1e1338]: 4,385 Ratings & 295 Reviews
+              - list [ref=f1e1341]:
+                - listitem [ref=f1e1342]: • 128 GB ROM
+                - listitem [ref=f1e1343]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=f1e1344]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e1345]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1346]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=f1e1347]:
+              - generic [ref=f1e1348]: ₹79,900
+              - generic [ref=f1e1353]: Only 2 left
+              - generic [ref=f1e1357]:
+                - generic [ref=f1e1358]: Upto
+                - generic [ref=f1e1359]: ₹53,750
+                - generic [ref=f1e1360]: Off on Exchange
+        - link "Apple iPhone 16 Plus (White, 256 GB) Add to Compare Apple iPhone 16 Plus (White, 256 GB) 4.6 4,385 Ratings & 295 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Upto ₹56,050 Off on Exchange Bank Offer" [ref=f1e1365] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-white-256-gb/p/itmc63bd0635f400?pid=MOBH4DQFJBVD9HXR&lid=LSTMOBH4DQFJBVD9HXRID41K3&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_20&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBH4DQFJBVD9HXR.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1366]:
+            - img "Apple iPhone 16 Plus (White, 256 GB)" [ref=f1e1370]
+            - generic [ref=f1e1371]: Add to Compare
+          - generic [ref=f1e1381]:
+            - generic [ref=f1e1382]:
+              - generic [ref=f1e1383]: Apple iPhone 16 Plus (White, 256 GB)
+              - generic [ref=f1e1384]:
+                - generic [ref=f1e1385]: "4.6"
+                - generic [ref=f1e1388]: 4,385 Ratings & 295 Reviews
+              - list [ref=f1e1391]:
+                - listitem [ref=f1e1392]: • 256 GB ROM
+                - listitem [ref=f1e1393]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=f1e1394]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e1395]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1396]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=f1e1397]:
+              - generic [ref=f1e1398]: ₹89,900
+              - generic [ref=f1e1404]:
+                - generic [ref=f1e1405]: Upto
+                - generic [ref=f1e1406]: ₹56,050
+                - generic [ref=f1e1407]: Off on Exchange
+              - generic [ref=f1e1408]: Bank Offer
+        - link "Apple iPhone 16 Plus (Black, 256 GB) Add to Compare Apple iPhone 16 Plus (Black, 256 GB) 4.6 4,385 Ratings & 295 Reviews • 256 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹89,900 Only few left Upto ₹56,050 Off on Exchange" [ref=f1e1415] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-black-256-gb/p/itma302a45837ec4?pid=MOBH4DQF7JGHH7QZ&lid=LSTMOBH4DQF7JGHH7QZXSCWPV&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_21&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBH4DQF7JGHH7QZ.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1416]:
+            - img "Apple iPhone 16 Plus (Black, 256 GB)" [ref=f1e1420]
+            - generic [ref=f1e1421]: Add to Compare
+          - generic [ref=f1e1431]:
+            - generic [ref=f1e1432]:
+              - generic [ref=f1e1433]: Apple iPhone 16 Plus (Black, 256 GB)
+              - generic [ref=f1e1434]:
+                - generic [ref=f1e1435]: "4.6"
+                - generic [ref=f1e1438]: 4,385 Ratings & 295 Reviews
+              - list [ref=f1e1441]:
+                - listitem [ref=f1e1442]: • 256 GB ROM
+                - listitem [ref=f1e1443]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=f1e1444]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e1445]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1446]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=f1e1447]:
+              - generic [ref=f1e1448]: ₹89,900
+              - generic [ref=f1e1453]: Only few left
+              - generic [ref=f1e1457]:
+                - generic [ref=f1e1458]: Upto
+                - generic [ref=f1e1459]: ₹56,050
+                - generic [ref=f1e1460]: Off on Exchange
+        - link "Apple iPhone 16 Plus (White, 128 GB) Add to Compare Apple iPhone 16 Plus (White, 128 GB) 4.6 4,385 Ratings & 295 Reviews • 128 GB ROM • 17.02 cm (6.7 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A18 Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹79,900 Upto ₹53,750 Off on Exchange Bank Offer" [ref=f1e1465] [cursor=pointer]:
+          - /url: /apple-iphone-16-plus-white-128-gb/p/itm0635ebbf8c665?pid=MOBH4DQF3AJNKARR&lid=LSTMOBH4DQF3AJNKARRT235WT&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_22&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBH4DQF3AJNKARR.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1466]:
+            - img "Apple iPhone 16 Plus (White, 128 GB)" [ref=f1e1470]
+            - generic [ref=f1e1471]: Add to Compare
+          - generic [ref=f1e1481]:
+            - generic [ref=f1e1482]:
+              - generic [ref=f1e1483]: Apple iPhone 16 Plus (White, 128 GB)
+              - generic [ref=f1e1484]:
+                - generic [ref=f1e1485]: "4.6"
+                - generic [ref=f1e1488]: 4,385 Ratings & 295 Reviews
+              - list [ref=f1e1491]:
+                - listitem [ref=f1e1492]: • 128 GB ROM
+                - listitem [ref=f1e1493]: • 17.02 cm (6.7 inch) Super Retina XDR Display
+                - listitem [ref=f1e1494]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e1495]: • A18 Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1496]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=f1e1497]:
+              - generic [ref=f1e1498]: ₹79,900
+              - generic [ref=f1e1504]:
+                - generic [ref=f1e1505]: Upto
+                - generic [ref=f1e1506]: ₹53,750
+                - generic [ref=f1e1507]: Off on Exchange
+              - generic [ref=f1e1508]: Bank Offer
+        - link "Apple iPhone 16e (White, 128 GB) Add to Compare Apple iPhone 16e (White, 128 GB) 4.5 1,453 Ratings & 110 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP Rear Camera | 12MP Front Camera • A18 Chip, 6 Core Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹59,900 Upto ₹45,450 Off on Exchange Bank Offer" [ref=f1e1515] [cursor=pointer]:
+          - /url: /apple-iphone-16e-white-128-gb/p/itm7971f594b0906?pid=MOBH9JVHFHJJEFFX&lid=LSTMOBH9JVHFHJJEFFXTPSVBJ&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_23&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBH9JVHFHJJEFFX.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1516]:
+            - img "Apple iPhone 16e (White, 128 GB)" [ref=f1e1520]
+            - generic [ref=f1e1521]: Add to Compare
+          - generic [ref=f1e1531]:
+            - generic [ref=f1e1532]:
+              - generic [ref=f1e1533]: Apple iPhone 16e (White, 128 GB)
+              - generic [ref=f1e1534]:
+                - generic [ref=f1e1535]: "4.5"
+                - generic [ref=f1e1538]: 1,453 Ratings & 110 Reviews
+              - list [ref=f1e1541]:
+                - listitem [ref=f1e1542]: • 128 GB ROM
+                - listitem [ref=f1e1543]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=f1e1544]: • 48MP Rear Camera | 12MP Front Camera
+                - listitem [ref=f1e1545]: • A18 Chip, 6 Core Processor
+                - listitem [ref=f1e1546]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=f1e1547]:
+              - generic [ref=f1e1548]: ₹59,900
+              - generic [ref=f1e1554]:
+                - generic [ref=f1e1555]: Upto
+                - generic [ref=f1e1556]: ₹45,450
+                - generic [ref=f1e1557]: Off on Exchange
+              - generic [ref=f1e1558]: Bank Offer
+        - link "Apple iPhone 15 (Blue, 128 GB) Add to Compare Apple iPhone 15 (Blue, 128 GB) 4.6 2,49,865 Ratings & 9,885 Reviews • 128 GB ROM • 15.49 cm (6.1 inch) Super Retina XDR Display • 48MP + 12MP | 12MP Front Camera • A16 Bionic Chip, 6 Core Processor Processor • 1 year warranty for phone and 1 year warranty for in Box Accessories. ₹67,999 ₹74,900 9% off Upto ₹49,750 Off on Exchange Bank Offer" [ref=f1e1565] [cursor=pointer]:
+          - /url: /apple-iphone-15-blue-128-gb/p/itm387c20f1f5347?pid=MOBHQV9YZGYG64U7&lid=LSTMOBHQV9YZGYG64U7WLKZD8&marketplace=FLIPKART&q=iphone+17&store=tyy%2F4io&srno=s_1_24&otracker=search&otracker1=search&fm=organic&iid=345b44b7-5ea1-46c3-9dbc-c86d059ceb67.MOBHQV9YZGYG64U7.SEARCH&ppt=dynamic&ppn=Login%3ACategory_List&ssid=xpgmpyxtsw0000001792666685933&qH=c9eeb2d6cc488f0b&ov_redirect=true
+          - generic [ref=f1e1566]:
+            - img "Apple iPhone 15 (Blue, 128 GB)" [ref=f1e1570]
+            - generic [ref=f1e1571]: Add to Compare
+          - generic [ref=f1e1581]:
+            - generic [ref=f1e1582]:
+              - generic [ref=f1e1583]: Apple iPhone 15 (Blue, 128 GB)
+              - generic [ref=f1e1584]:
+                - generic [ref=f1e1585]: "4.6"
+                - generic [ref=f1e1588]: 2,49,865 Ratings & 9,885 Reviews
+              - list [ref=f1e1591]:
+                - listitem [ref=f1e1592]: • 128 GB ROM
+                - listitem [ref=f1e1593]: • 15.49 cm (6.1 inch) Super Retina XDR Display
+                - listitem [ref=f1e1594]: • 48MP + 12MP | 12MP Front Camera
+                - listitem [ref=f1e1595]: • A16 Bionic Chip, 6 Core Processor Processor
+                - listitem [ref=f1e1596]: • 1 year warranty for phone and 1 year warranty for in Box Accessories.
+            - generic [ref=f1e1597]:
+              - generic [ref=f1e1599]:
+                - generic [ref=f1e1600]: ₹67,999
+                - generic [ref=f1e1601]: ₹74,900
+                - generic [ref=f1e1602]: 9% off
+              - generic [ref=f1e1606]:
+                - generic [ref=f1e1607]: Upto
+                - generic [ref=f1e1608]: ₹49,750
+                - generic [ref=f1e1609]: Off on Exchange
+              - generic [ref=f1e1610]: Bank Offer
+        - generic [ref=f1e1615]:
+          - generic [ref=f1e1616]: Page 1 of 18
+          - navigation [ref=f1e1617]:
+            - link "1" [ref=f1e1618] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=1
+            - link "2" [ref=f1e1619] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+            - link "3" [ref=f1e1620] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=3
+            - link "4" [ref=f1e1621] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=4
+            - link "5" [ref=f1e1622] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=5
+            - link "6" [ref=f1e1623] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=6
+            - link "7" [ref=f1e1624] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=7
+            - link "8" [ref=f1e1625] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=8
+            - link "9" [ref=f1e1626] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=9
+            - link "10" [ref=f1e1627] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=10
+            - link "Next" [ref=f1e1628] [cursor=pointer]:
+              - /url: /search?q=iphone+17&otracker=search&otracker1=search&marketplace=FLIPKART&as-show=off&as=off&page=2
+        - generic [ref=f1e1630]:
+          - text: Did you find what you were looking for?
+          - generic [ref=f1e1631]:
+            - generic [ref=f1e1632] [cursor=pointer]: "Yes"
+            - generic [ref=f1e1633] [cursor=pointer]: "No"
+    - generic [ref=f1e1635]:
+      - generic [ref=f1e1636]: Reviews for Popular Mobiles
+      - generic [ref=f1e1637]:
+        - generic [ref=f1e1638]:
+          - generic [ref=f1e1640]:
+            - img "Apple iPhone 15 (Blue, 128 GB)"
+          - generic [ref=f1e1641]:
+            - link "1. Apple iPhone 15 (Blue, 128 ... 4.6 2,49,865 Ratings&9,885 Reviews ₹67,999 9% off" [ref=f1e1642] [cursor=pointer]:
+              - /url: /apple-iphone-15-blue-128-gb/p/itm387c20f1f5347?pid=MOBHQV9YZGYG64U7&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=f1e1643]: 1. Apple iPhone 15 (Blue, 128 ...
+              - generic [ref=f1e1645]:
+                - generic [ref=f1e1646]: "4.6"
+                - generic [ref=f1e1648]:
+                  - text: 2,49,865 Ratings
+                  - generic [ref=f1e1649]: "&9,885 Reviews"
+              - generic [ref=f1e1651]:
+                - generic [ref=f1e1652]: ₹67,999
+                - generic [ref=f1e1653]: 9% off
+            - list [ref=f1e1654]:
+              - listitem [ref=f1e1655]: 128 GB ROM
+              - listitem [ref=f1e1656]: 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=f1e1657]: 48MP + 12MP | 12MP Front Camera
+        - generic [ref=f1e1658]:
+          - generic [ref=f1e1659]: Most Helpful Review
+          - generic [ref=f1e1661]:
+            - generic [ref=f1e1662]:
+              - generic [ref=f1e1663]: "5"
+              - paragraph [ref=f1e1665]: Awesome
+            - generic [ref=f1e1666]: Switch from OnePlus to iPhone I am stunned with camera performance. Everything is perfect on iPhone 15.
+            - generic [ref=f1e1671]:
+              - paragraph [ref=f1e1672]: Nikhil Kumar
+              - paragraph [ref=f1e1677]: Certified Buyer
+              - paragraph [ref=f1e1678]: Jan, 2024
+        - generic [ref=f1e1679]:
+          - generic [ref=f1e1680]: Recent Review
+          - generic [ref=f1e1682]:
+            - generic [ref=f1e1683]:
+              - generic [ref=f1e1684]: "1"
+              - paragraph [ref=f1e1686]: Waste of money!
+            - generic [ref=f1e1687]: Photo quality is lower than an android phone
+            - generic [ref=f1e1692]:
+              - paragraph [ref=f1e1693]: Raktimraj Gogoi
+              - paragraph [ref=f1e1698]: Certified Buyer
+              - paragraph [ref=f1e1699]: 1 day ago
+      - generic [ref=f1e1700]:
+        - generic [ref=f1e1701]:
+          - generic [ref=f1e1703]:
+            - img "Apple iPhone 16 Plus (White, 128 GB)"
+          - generic [ref=f1e1704]:
+            - link "2. Apple iPhone 16 Plus (White... 4.6 4,385 Ratings&295 Reviews ₹79,900" [ref=f1e1705] [cursor=pointer]:
+              - /url: /apple-iphone-16-plus-white-128-gb/p/itm0635ebbf8c665?pid=MOBH4DQF3AJNKARR&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=f1e1706]: 2. Apple iPhone 16 Plus (White...
+              - generic [ref=f1e1708]:
+                - generic [ref=f1e1709]: "4.6"
+                - generic [ref=f1e1711]:
+                  - text: 4,385 Ratings
+                  - generic [ref=f1e1712]: "&295 Reviews"
+              - generic [ref=f1e1713]: ₹79,900
+            - list [ref=f1e1716]:
+              - listitem [ref=f1e1717]: 128 GB ROM
+              - listitem [ref=f1e1718]: 17.02 cm (6.7 inch) Super Retina XDR Display
+              - listitem [ref=f1e1719]: 48MP + 12MP | 12MP Front Camera
+        - generic [ref=f1e1720]:
+          - generic [ref=f1e1721]: Most Helpful Review
+          - generic [ref=f1e1723]:
+            - generic [ref=f1e1724]:
+              - generic [ref=f1e1725]: "5"
+              - paragraph [ref=f1e1727]: Best in the market!
+            - generic [ref=f1e1728]: Excellent, awesome thanks Flipkart.
+            - generic [ref=f1e1733]:
+              - paragraph [ref=f1e1734]: Jitendra Singh
+              - paragraph [ref=f1e1739]: Certified Buyer
+              - paragraph [ref=f1e1740]: Oct, 2024
+        - generic [ref=f1e1741]:
+          - generic [ref=f1e1742]: Recent Review
+          - generic [ref=f1e1744]:
+            - generic [ref=f1e1745]:
+              - generic [ref=f1e1746]: "5"
+              - paragraph [ref=f1e1748]: Wonderful
+            - generic [ref=f1e1749]: Last plus model to have from iPhone
+            - generic [ref=f1e1754]:
+              - paragraph [ref=f1e1755]: Flipkart Customer
+              - paragraph [ref=f1e1760]: Certified Buyer
+              - paragraph [ref=f1e1761]: 19 days ago
+      - generic [ref=f1e1762]:
+        - generic [ref=f1e1763]:
+          - generic [ref=f1e1765]:
+            - img "Apple iPhone 16e (White, 128 GB)"
+          - generic [ref=f1e1766]:
+            - link "3. Apple iPhone 16e (White, 12... 4.5 1,453 Ratings&110 Reviews ₹59,900" [ref=f1e1767] [cursor=pointer]:
+              - /url: /apple-iphone-16e-white-128-gb/p/itm7971f594b0906?pid=MOBH9JVHFHJJEFFX&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=f1e1768]: 3. Apple iPhone 16e (White, 12...
+              - generic [ref=f1e1770]:
+                - generic [ref=f1e1771]: "4.5"
+                - generic [ref=f1e1773]:
+                  - text: 1,453 Ratings
+                  - generic [ref=f1e1774]: "&110 Reviews"
+              - generic [ref=f1e1775]: ₹59,900
+            - list [ref=f1e1778]:
+              - listitem [ref=f1e1779]: 128 GB ROM
+              - listitem [ref=f1e1780]: 15.49 cm (6.1 inch) Super Retina XDR Display
+              - listitem [ref=f1e1781]: 48MP Rear Camera | 12MP Front Camera
+        - generic [ref=f1e1782]:
+          - generic [ref=f1e1783]: Most Helpful Review
+          - generic [ref=f1e1785]:
+            - generic [ref=f1e1786]:
+              - generic [ref=f1e1787]: "5"
+              - paragraph [ref=f1e1789]: Perfect product!
+            - generic [ref=f1e1792]:
+              - generic [ref=f1e1793]: All is well, perform 10/10, ￼ camera 10/10, battery back up 10/10, display10/9 , audio quality10/10 , doable ,￼ compact 👍 in budget, hundred percent command...
+              - generic [ref=f1e1794] [cursor=pointer]: Read full review
+            - generic [ref=f1e1796]:
+              - paragraph [ref=f1e1797]: prafull shahane
+              - paragraph [ref=f1e1802]: Certified Buyer
+              - paragraph [ref=f1e1803]: Jun, 2025
+        - generic [ref=f1e1804]:
+          - generic [ref=f1e1805]: Recent Review
+          - generic [ref=f1e1807]:
+            - generic [ref=f1e1808]:
+              - generic [ref=f1e1809]: "5"
+              - paragraph [ref=f1e1811]: Terrific
+            - generic [ref=f1e1814]:
+              - generic [ref=f1e1815]: This phone is ultimate battery beastt at this price...gets the work done as a daily driver with no too much fancy features . Simple looks, old school single ...
+              - generic [ref=f1e1816] [cursor=pointer]: Read full review
+            - generic [ref=f1e1818]:
+              - paragraph [ref=f1e1819]: Nachiket
+              - paragraph [ref=f1e1824]: Certified Buyer
+              - paragraph [ref=f1e1825]: 11 days ago
+      - generic [ref=f1e1826]:
+        - generic [ref=f1e1827]:
+          - generic [ref=f1e1829]:
+            - img "Samsung Galaxy S25 5G Snapdragon (Mint, 128 GB)"
+          - generic [ref=f1e1830]:
+            - link "4. Samsung Galaxy S25 5G Snapd... 4.6 15,677 Ratings&1,801 Reviews ₹58,999 43% off" [ref=f1e1831] [cursor=pointer]:
+              - /url: /samsung-galaxy-s25-5g-snapdragon-mint-128-gb/p/itmce254cb90f8d4?pid=MOBHQDMKZEFNNVW2&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=f1e1832]: 4. Samsung Galaxy S25 5G Snapd...
+              - generic [ref=f1e1834]:
+                - generic [ref=f1e1835]: "4.6"
+                - generic [ref=f1e1837]:
+                  - text: 15,677 Ratings
+                  - generic [ref=f1e1838]: "&1,801 Reviews"
+              - generic [ref=f1e1840]:
+                - generic [ref=f1e1841]: ₹58,999
+                - generic [ref=f1e1842]: 43% off
+            - list [ref=f1e1843]:
+              - listitem [ref=f1e1844]: 12 GB RAM | 128 GB ROM
+              - listitem [ref=f1e1845]: 15.75 cm (6.2 inch) Full HD+ Display
+              - listitem [ref=f1e1846]: 50MP + 10MP + 12MP | 12MP Front Camera
+        - generic [ref=f1e1847]:
+          - generic [ref=f1e1848]: Most Helpful Review
+          - generic [ref=f1e1850]:
+            - generic [ref=f1e1851]:
+              - generic [ref=f1e1852]: "5"
+              - paragraph [ref=f1e1854]: Classy product
+            - generic [ref=f1e1855]: Samsung Galaxy S25 is Powerful Phone 📱 I'm Very Happy 😊 Camera is so Better.Proformance is great 👍 .
+            - generic [ref=f1e1860]:
+              - paragraph [ref=f1e1861]: Flipkart Customer
+              - paragraph [ref=f1e1866]: Certified Buyer
+              - paragraph [ref=f1e1867]: Feb, 2025
+        - generic [ref=f1e1868]:
+          - generic [ref=f1e1869]: Recent Review
+          - generic [ref=f1e1871]:
+            - generic [ref=f1e1872]:
+              - generic [ref=f1e1873]: "5"
+              - paragraph [ref=f1e1875]: Best in the market!
+            - generic [ref=f1e1876]: Fabulous phone....Thank you flipkart
+            - generic [ref=f1e1881]:
+              - paragraph [ref=f1e1882]: Ambadas Girhe
+              - paragraph [ref=f1e1887]: Certified Buyer
+              - paragraph [ref=f1e1888]: 1 day ago
+      - generic [ref=f1e1889]:
+        - generic [ref=f1e1890]:
+          - generic [ref=f1e1892]:
+            - img "Google Pixel 11 (Hibiscus, 256 GB)"
+          - generic [ref=f1e1893]:
+            - link "5. Google Pixel 11 (Hibiscus, ... 4.5 2,623 Ratings&284 Reviews ₹89,999" [ref=f1e1894] [cursor=pointer]:
+              - /url: /google-pixel-11-hibiscus-256-gb/p/itm9779ebb35cc5b?pid=MOBHPHNVKVFNMHM3&marketplace=FLIPKART&ov_redirect=true
+              - generic [ref=f1e1895]: 5. Google Pixel 11 (Hibiscus, ...
+              - generic [ref=f1e1897]:
+                - generic [ref=f1e1898]: "4.5"
+                - generic [ref=f1e1900]:
+                  - text: 2,623 Ratings
+                  - generic [ref=f1e1901]: "&284 Reviews"
+              - generic [ref=f1e1902]: ₹89,999
+            - list [ref=f1e1905]:
+              - listitem [ref=f1e1906]: 12 GB RAM | 256 GB ROM
+              - listitem [ref=f1e1907]: 16.0 cm (6.3 inch) Actua Display
+              - listitem [ref=f1e1908]: 48MP + 13MP + 10.8MP | 10.5MP Front Camera
+        - generic [ref=f1e1909]:
+          - generic [ref=f1e1910]: Most Helpful Review
+          - generic [ref=f1e1912]:
+            - generic [ref=f1e1913]:
+              - generic [ref=f1e1914]: "5"
+              - paragraph [ref=f1e1916]: Mind-blowing purchase
+            - generic [ref=f1e1919]:
+              - generic [ref=f1e1920]: This phone is a total game-changer. The camera performance is sharper than ever, and the new AI features actually feel useful in day-to-day tasks. Battery li...
+              - generic [ref=f1e1921] [cursor=pointer]: Read full review
+            - generic [ref=f1e1923]:
+              - paragraph [ref=f1e1924]: Vishal Desai
+              - paragraph [ref=f1e1929]: Certified Buyer
+              - paragraph [ref=f1e1930]: 1 month ago
+        - generic [ref=f1e1931]:
+          - generic [ref=f1e1932]: Recent Review
+          - generic [ref=f1e1934]:
+            - generic [ref=f1e1935]:
+              - generic [ref=f1e1936]: "5"
+              - paragraph [ref=f1e1938]: Terrific purchase
+            - generic [ref=f1e1939]: Great product with amazing performance.
+            - generic [ref=f1e1944]:
+              - paragraph [ref=f1e1945]: Ankur Batra
+              - paragraph [ref=f1e1950]: Certified Buyer
+              - paragraph [ref=f1e1951]: 1 day ago
+  - contentinfo [ref=f1e1952]:
+    - generic [ref=f1e1954]:
+      - generic [ref=f1e1955]:
+        - generic [ref=f1e1956]:
+          - generic [ref=f1e1957]: ABOUT
+          - link "Contact Us" [ref=f1e1958] [cursor=pointer]:
+            - /url: /helpcentre?otracker=footer_navlinks
+          - link "About Us" [ref=f1e1959] [cursor=pointer]:
+            - /url: https://corporate.flipkart.net/corporate-home
+          - link "Careers" [ref=f1e1960] [cursor=pointer]:
+            - /url: https://www.flipkartcareers.com/?otracker=footer_navlinks
+          - link "Flipkart Stories" [ref=f1e1961] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/?otracker=footer_navlinks
+          - link "Press" [ref=f1e1962] [cursor=pointer]:
+            - /url: http://stories.flipkart.com/category/top-stories/news/
+          - link "Corporate Information" [ref=f1e1963] [cursor=pointer]:
+            - /url: /corporate-information
+        - generic [ref=f1e1964]:
+          - generic [ref=f1e1965]: GROUP COMPANIES
+          - link "Myntra" [ref=f1e1966] [cursor=pointer]:
+            - /url: https://www.myntra.com/
+          - link "Cleartrip" [ref=f1e1967] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Shopsy" [ref=f1e1968] [cursor=pointer]:
+            - /url: https://www.shopsy.in/
+        - generic [ref=f1e1969]:
+          - generic [ref=f1e1970]: HELP
+          - link "Payments" [ref=f1e1971] [cursor=pointer]:
+            - /url: /pages/payments
+          - link "Shipping" [ref=f1e1972] [cursor=pointer]:
+            - /url: /pages/shipping
+          - link "Cancellation & Returns" [ref=f1e1973] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c6edb000002e002c1701&view=CATALOG
+          - link "FAQ" [ref=f1e1974] [cursor=pointer]:
+            - /url: /helpcentre?catalog=55c9c8e2b0000023002c1702&view=CATALOG
+        - generic [ref=f1e1975]:
+          - generic [ref=f1e1976]: CONSUMER POLICY
+          - link "Cancellation & Returns" [ref=f1e1977] [cursor=pointer]:
+            - /url: /pages/returnpolicy?otracker=footer_navlinks
+          - link "Terms Of Use" [ref=f1e1978] [cursor=pointer]:
+            - /url: /pages/terms?otracker=footer_navlinks
+          - link "Security" [ref=f1e1979] [cursor=pointer]:
+            - /url: /pages/paymentsecurity?otracker=footer_navlinks
+          - link "Privacy" [ref=f1e1980] [cursor=pointer]:
+            - /url: /pages/privacypolicy?otracker=footer_navlinks
+          - link "Sitemap" [ref=f1e1981] [cursor=pointer]:
+            - /url: /sitemap?otracker=footer_navlinks
+          - link "Grievance Redressal" [ref=f1e1982] [cursor=pointer]:
+            - /url: /pages/grievance-redressal-mechanism?otracker=footer_navlinks
+          - link "EPR Compliance" [ref=f1e1983] [cursor=pointer]:
+            - /url: /pages/ewaste-compliance-tnc?otracker=footer_navlinks
+          - link "FSSAI Food Safety Connect App" [ref=f1e1984] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=f1e1986]:
+          - generic [ref=f1e1987]: "Mail Us:"
+          - generic [ref=f1e1990]:
+            - paragraph [ref=f1e1991]: Flipkart Internet Private Limited,
+            - paragraph [ref=f1e1992]: Buildings Alyssa, Begonia &
+            - paragraph [ref=f1e1993]: Clove Embassy Tech Village,
+            - paragraph [ref=f1e1994]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=f1e1995]: Bengaluru, 560103,
+            - paragraph [ref=f1e1996]: Karnataka, India
+          - generic [ref=f1e1997]: Social
+          - generic [ref=f1e1998]:
+            - link [ref=f1e2000] [cursor=pointer]:
+              - /url: https://www.facebook.com/flipkart
+            - link [ref=f1e2003] [cursor=pointer]:
+              - /url: https://www.twitter.com/flipkart
+            - link [ref=f1e2006] [cursor=pointer]:
+              - /url: https://www.youtube.com/flipkart
+            - link [ref=f1e2009] [cursor=pointer]:
+              - /url: https://www.instagram.com/flipkart
+        - generic [ref=f1e2012]:
+          - generic [ref=f1e2013]: "Registered Office Address:"
+          - generic [ref=f1e2016]:
+            - paragraph [ref=f1e2017]: Flipkart Internet Private Limited,
+            - paragraph [ref=f1e2018]: Buildings Alyssa, Begonia &
+            - paragraph [ref=f1e2019]: Clove Embassy Tech Village,
+            - paragraph [ref=f1e2020]: Outer Ring Road, Devarabeesanahalli Village,
+            - paragraph [ref=f1e2021]: Bengaluru, 560103,
+            - paragraph [ref=f1e2022]: Karnataka, India
+            - paragraph [ref=f1e2023]: "CIN : U51109KA2012PTC066107"
+            - paragraph [ref=f1e2024]:
+              - text: "Telephone:"
+              - link "044-45614700" [ref=f1e2025] [cursor=pointer]:
+                - /url: tel:044-45614700
+              - text: /
+              - link "044-67415800" [ref=f1e2026] [cursor=pointer]:
+                - /url: tel:044-67415800
+      - generic [ref=f1e2028]:
+        - link "Become a Seller" [ref=f1e2031] [cursor=pointer]:
+          - /url: https://seller.flipkart.com/?utm_source=fkwebsite&utm_medium=websitedirect
+        - generic [ref=f1e2032]: Advertise
+        - link "Gift Cards" [ref=f1e2036] [cursor=pointer]:
+          - /url: /the-gift-card-store?otracker=footer_navlinks
+        - link "Help Center" [ref=f1e2039] [cursor=pointer]:
+          - /url: /helpcentre?otracker=footer_navlinks
+        - generic [ref=f1e2040]: © 2007-2026 Flipkart.com
+```
+
+# Test source
+
+```ts
+  1  | import {test} from '@playwright/test';
+  2  | 
+  3  | test('open website' , async({page})=>{
+  4  |   await page.goto('https://www.makemytrip.com/');
+  5  |   await page.goto('https://www.flipkart.com/');
+  6  |   await page.goto('https://www.redbus.in/');
+  7  |   await page.goBack();
+  8  |   await page.goForward();
+  9  |   await page.reload();
+  10 |   let url = await page.url();
+  11 |   console.log(url);
+  12 |   let title = await page.title();
+  13 |   console.log(title);
+  14 |   console.log(await page.title());
+  15 |   await page.screenshot({path : "sreenshot1.png"});
+  16 |   await page.goto('https://www.irctc.co.in/nget/train-search')
+  17 |   await page.waitForTimeout(3000);
+  18 |   await page.screenshot({path : "screenshot2.png"});
+  19 | })
+  20 | 
+  21 | 
+  22 | test('learning', async({page})=>{
+  23 |   await page.goto("https://www.myntra.com/");
+  24 |   await page.locator("//input[@class='desktop-searchBar']").fill('Dress For Men');
+  25 |   await page.locator("//a[@data-reactid='1040']").click();
+  26 |   await page.locator('img[title="VASTRAMAY Bandhani Printed Mandarin Collar Straight Kurta"]').click();
+  27 |   await page.locator("//p[@class='size-buttons-unified-size' and text()='S']").click();
+  28 |   await page.waitForTimeout(3000);
+  29 | })
+  30 | 
+  31 | test.only('flipkart', async({page}) => {
+  32 |   await page.goto("https://www.flipkart.com/");
+  33 |   try{
+  34 |     await page.locator("//span[@class='b3wTlE']").click();
+  35 |   }
+  36 |   catch{
+  37 |     console.log("Popup is displayed");
+  38 |   }
+  39 |   await page.getByPlaceholder("Search for Products, Brands and More").first().fill("iphone 17");
+  40 |   await page.getByRole('button', {name: 'Search for Products, Brands and More'}).click();
+  41 |   await page.locator('//div[@data-id="MOBHQV9YAZYYWY8A"]').click();
+  42 |   // await page.getByTestId("MOBHQV9YAZYYWY8A").click();
+> 43 |   await page.waitForTimeout(3000);
+     |              ^ Error: page.waitForTimeout: Test timeout of 6000ms exceeded.
+  44 | })
+```

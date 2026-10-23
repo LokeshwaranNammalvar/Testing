@@ -1,0 +1,418 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: myntra.spec.js >> Mytra
+- Location: tests\myntra.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.click: Error: strict mode violation: getByText('ADIDAS') resolved to 3 elements:
+    1) <a data-reactid="164" href="/adidas-men-sports-shoes">…</a> aka getByRole('link', { name: 'Adidas Men Sports Shoes |' })
+    2) <a data-reactid="204" href="/adidas-sports-shoes-women">…</a> aka getByRole('link', { name: 'Adidas Women Sports Shoes |' })
+    3) <a data-reactid="256" href="/adidas-sports-shoes">…</a> aka getByRole('link', { name: 'Adidas Sports Shoes |' })
+
+Call log:
+  - waiting for getByText('ADIDAS')
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [ref=f7e1]:
+  - banner [ref=f7e2]:
+    - generic:
+      - link [ref=f7e4] [cursor=pointer]:
+        - /url: /
+      - navigation [ref=f7e5]:
+        - generic [ref=f7e6]:
+          - link "Men" [ref=f7e9] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=f7e12] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=f7e15] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=f7e18] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=f7e21] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=f7e24] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - generic [ref=f7e26]:
+            - link "Studio" [ref=f7e27] [cursor=pointer]:
+              - /url: /studio/home
+            - superscript [ref=f7e29]: new
+      - generic [ref=f7e30]:
+        - generic [ref=f7e31]: Profile
+        - link "Wishlist":
+          - /url: /wishlist
+          - generic [ref=f7e35] [cursor=pointer]
+        - link "Bag":
+          - /url: /checkout/cart
+          - generic [ref=f7e37] [cursor=pointer]
+      - textbox "Search for products, brands and more" [ref=f7e40]
+  - contentinfo [ref=f7e49]:
+    - generic [ref=f7e50]:
+      - generic [ref=f7e51]:
+        - generic [ref=f7e52]:
+          - heading "mens sport shoes price list" [level=2] [ref=f7e53]
+          - table [ref=f7e54]:
+            - rowgroup [ref=f7e55]:
+              - row [ref=f7e56]:
+                - columnheader "mens sport shoes" [ref=f7e57]
+                - columnheader "PRICE (RS)" [ref=f7e58]
+            - rowgroup
+          - generic [ref=f7e59]: Data last updated on 06/10/2026
+        - heading "buy mens sport shoes" [level=2] [ref=f7e60]
+        - generic [ref=f7e61]:
+          - heading "Step into Comfort with Sports Shoes for Men on Myntra" [level=2] [ref=f7e62]
+          - paragraph [ref=f7e63]: The trend clock is ticking away with men sports shoes dominating the fashion scene in a big way. The footwear is worn and loved by men of all ages and can never go out of fashion as they are durable and save you the pain of a bad back after a long day. Besides, mens sports shoes are incredibly versatile and can easily elevate an outfit.
+          - paragraph [ref=f7e64]: The e-commerce website Myntra tops the list for the best sports shoes for men online. The platform has an impeccable collection of footwear including running, sport and casual shoes offering high-comfort and functionality.
+          - heading "Mens Sports Shoes Trends to Shop on Myntra" [level=2] [ref=f7e65]
+          - paragraph [ref=f7e66]: "Myntra allows you to explore a plethora of mens sports shoes with varying cushioning, sustainability and technology. Here are the various categories you can explore through:"
+          - list [ref=f7e67]:
+            - listitem [ref=f7e68]:
+              - strong [ref=f7e69]: "Badminton:"
+              - text: Badminton shoes feature a synthetic exterior, cushioned footbed, a textured and patterned outsole.
+            - listitem [ref=f7e70]:
+              - strong [ref=f7e71]: "Basketball:"
+              - text: These shoes are designed specifically for playing the sport and feature foam padding along with a heel for added comfort. Basketball shoes are often designed to keep the feet safe during the impact of jumping.
+            - listitem [ref=f7e72]:
+              - strong [ref=f7e73]: "Cricket:"
+              - text: These shoes are specially designed to withstand long hours on the pitch offering supreme comfort and a rigid internal support structure.
+            - listitem [ref=f7e74]:
+              - strong [ref=f7e75]: "Football:"
+              - text: Alternatively referred to as Soccer shoes, this footwear is meticulously engineered to offer maximum control, agility and comfort on the pitch. Each shoe has a flexible lace closure.
+            - listitem [ref=f7e76]:
+              - strong [ref=f7e77]: "Running:"
+              - text: Running shoes for men make for the perfect companion during agile physical activities such as brisk walking, running on the treadmill etc.
+            - listitem [ref=f7e78]:
+              - strong [ref=f7e79]: "Tennis:"
+              - text: This category of sports shoes feature a synthetic outer body offering a natural fit to professionals and amateurs alike.
+            - listitem [ref=f7e80]:
+              - strong [ref=f7e81]: "Trekking:"
+              - text: Trekking shoes offer anti-slip outer soles, natural fit and snug feel around the ankles to offer maximum protection to prevent twisting.
+            - listitem [ref=f7e82]:
+              - strong [ref=f7e83]: Walking
+              - text: ": These shoes feature lace-up details, a comfortable footbed and a fabric exterior that is easy to maintain."
+          - heading "Guide to Style the Best Sports Shoes for Men" [level=2] [ref=f7e84]
+          - paragraph [ref=f7e85]: "Here are a few ideas on how to pair mens sports shoes with your outfits to best effect:"
+          - listitem [ref=f7e86]:
+            - text: Opt for a striped Polo shirt with
+            - link "black jeans" [ref=f7e87] [cursor=pointer]:
+              - /url: /black-jeans
+            - text: and a pair of black sports shoes for men to enhance your overall casual look.
+          - listitem [ref=f7e88]:
+            - text: When teaming up your designer outfits with mens sports shoes, you need to invest in a luxury brand. Try teaming up a patterned
+            - link "T-shirt" [ref=f7e89] [cursor=pointer]:
+              - /url: /tshirts
+            - text: with a leather jacket and branded luxury
+            - link "backpack" [ref=f7e90] [cursor=pointer]:
+              - /url: /backpacks
+            - text: .
+          - listitem [ref=f7e91]:
+            - text: Try teaming up a pair of brightly coloured trainers with a
+            - link "v-neck sweater" [ref=f7e92] [cursor=pointer]:
+              - /url: /v-neck-sweaters
+            - text: and
+            - link "jeans" [ref=f7e93] [cursor=pointer]:
+              - /url: /jeans
+            - text: to dress up your overall look. Also, try wearing sneakers with a leather jacket and a colourful T-shirt to look uber stylish and cosy during winters.
+          - heading "Shop Sports Shoes for Men on Myntra" [level=2] [ref=f7e94]
+          - paragraph [ref=f7e95]: With a myriad of styles and designs in mens sports shoes available at Myntra, we are your one-stop destination to buy the best-branded shoes for men under the sun. Whether you are looking for white sports shoes or multi-coloured shoes for men, we have it all.
+          - paragraph [ref=f7e96]:
+            - text: Even if you are looking for options beyond
+            - link "sportswear" [ref=f7e97] [cursor=pointer]:
+              - /url: /sports-wear
+            - text: ", we have lightning deals for you, offering the best range in every size and design. So those with a keen interest in fashion and a love for looking great every time, log in to Myntra the one-stop-shop for mens sports shoes and all your fashion needs."
+          - paragraph [ref=f7e98]:
+            - strong [ref=f7e99]: "SHOP BY TYPES OF MEN'S FOOTWEAR:"
+          - paragraph [ref=f7e100]:
+            - link "Casual Shoes For Men" [ref=f7e101] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-casual-shoes
+            - text: "|"
+            - link "Flats For Men" [ref=f7e102] [cursor=pointer]:
+              - /url: https://www.myntra.com/flats-for-men
+            - text: "|"
+            - link "Formal Shoes For Men" [ref=f7e103] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-formal-shoes
+            - text: "|"
+            - link "Flip Flops For Men" [ref=f7e104] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-flip-flops
+            - text: "|"
+            - link "Sandals For Men" [ref=f7e105] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-sandals
+            - text: "|"
+            - link "Sneakers For Men" [ref=f7e106] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-sneakers
+            - text: "|"
+            - link "Slippers For Men" [ref=f7e107] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-slippers
+            - text: "|"
+            - link "Boots For Men" [ref=f7e108] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-boots
+            - text: "|"
+            - link "Loafers For Men" [ref=f7e109] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-loafers
+            - text: "|"
+            - link "Clogs For Men" [ref=f7e110] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-clogs
+            - text: "|"
+            - link "Juti For Men" [ref=f7e111] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-jutti
+            - text: "|"
+            - link "Trekking Shoes For Men" [ref=f7e112] [cursor=pointer]:
+              - /url: https://www.myntra.com/trekking-shoes-for-men
+            - text: "|"
+            - link "Slip On Shoes For Men" [ref=f7e113] [cursor=pointer]:
+              - /url: https://www.myntra.com/slipons-for-men
+            - text: "|"
+            - link "Mojari For Men" [ref=f7e114] [cursor=pointer]:
+              - /url: https://www.myntra.com/mojari-men
+            - text: "|"
+            - link "Sports Sandals For Men" [ref=f7e115] [cursor=pointer]:
+              - /url: https://www.myntra.com/men-sports-sandals
+          - paragraph [ref=f7e116]:
+            - strong [ref=f7e117]: "EXPLORE SHOES BY ACTIVITY:"
+          - paragraph [ref=f7e118]:
+            - link "Hiking Shoes" [ref=f7e119] [cursor=pointer]:
+              - /url: https://www.myntra.com/trekking-shoes
+            - text: "|"
+            - link "Running Shoes" [ref=f7e120] [cursor=pointer]:
+              - /url: https://www.myntra.com/running-shoes
+            - text: "|"
+            - link "Football Shoes" [ref=f7e121] [cursor=pointer]:
+              - /url: https://www.myntra.com/football-shoes
+            - text: "|"
+            - link "Basketball Shoes" [ref=f7e122] [cursor=pointer]:
+              - /url: https://www.myntra.com/basketball-shoes
+            - text: "|"
+            - link "Cricket Shoes" [ref=f7e123] [cursor=pointer]:
+              - /url: https://www.myntra.com/cricket-shoes
+            - text: "|"
+            - link "Badminton Shoes" [ref=f7e124] [cursor=pointer]:
+              - /url: https://www.myntra.com/badminton-shoes
+            - text: "|"
+            - link "Gym Shoes" [ref=f7e125] [cursor=pointer]:
+              - /url: https://www.myntra.com/gym-shoes
+            - text: "|"
+            - link "Walking Shoes" [ref=f7e126] [cursor=pointer]:
+              - /url: https://www.myntra.com/walking-shoes
+            - text: "|"
+            - link "Tennis Shoes" [ref=f7e127] [cursor=pointer]:
+              - /url: https://www.myntra.com/tennis-shoes
+            - text: "|"
+            - link "Ballerina Shoes" [ref=f7e128] [cursor=pointer]:
+              - /url: https://www.myntra.com/ballerina-shoes
+            - text: "|"
+            - link "Volleyball Shoes" [ref=f7e129] [cursor=pointer]:
+              - /url: https://www.myntra.com/volleyball-shoes
+            - text: "|"
+            - link "Training Shoes" [ref=f7e130] [cursor=pointer]:
+              - /url: https://www.myntra.com/training-shoes
+          - generic [ref=f7e131]:
+            - 'heading "VIDEO: Myntra''s is showing 4 different ways to lace up the Sneakers" [level=3] [ref=f7e132]'
+            - iframe [ref=f7e134]
+            - paragraph [ref=f7e136]: When it comes to casual footwear, one option that continues to popular among both men and women is the sneaker. Sneakers practically can go with any outfit when styled well. But one hassle that many face when it comes to sneakers for men and women both is tying them right. Due to which, embarrassing tumbles and discomfort tend to trouble people a lot. There is also the issue of missed opportunities when it comes to styling sneakers in new ways.
+      - generic [ref=f7e137]:
+        - generic [ref=f7e138]:
+          - paragraph [ref=f7e139]:
+            - link "ONLINE SHOPPING" [ref=f7e140] [cursor=pointer]:
+              - /url: /?src=onlineShopping
+          - link "Men" [ref=f7e141] [cursor=pointer]:
+            - /url: /shop/men
+          - link "Women" [ref=f7e142] [cursor=pointer]:
+            - /url: /shop/women
+          - link "Kids" [ref=f7e143] [cursor=pointer]:
+            - /url: /shop/kids
+          - link "Home" [ref=f7e144] [cursor=pointer]:
+            - /url: /shop/home-living
+          - link "Beauty" [ref=f7e145] [cursor=pointer]:
+            - /url: /personal-care
+          - link "Genz" [ref=f7e146] [cursor=pointer]:
+            - /url: /shop/fwd-women
+          - link "Gift Cards" [ref=f7e147] [cursor=pointer]:
+            - /url: /giftcard
+          - link "Myntra Insider" [ref=f7e148] [cursor=pointer]:
+            - /url: /myntrainsider?cache=false
+          - paragraph [ref=f7e149]: USEFUL LINKS
+          - link "Blog" [ref=f7e150] [cursor=pointer]:
+            - /url: http://blog.myntra.com/
+          - link "Careers" [ref=f7e151] [cursor=pointer]:
+            - /url: https://careers.myntra.com
+          - link "Site Map" [ref=f7e152] [cursor=pointer]:
+            - /url: /sitemap
+          - link "Corporate Information" [ref=f7e153] [cursor=pointer]:
+            - /url: /corp-info
+          - link "Whitehat" [ref=f7e154] [cursor=pointer]:
+            - /url: /security/whitehat
+          - link "Cleartrip" [ref=f7e155] [cursor=pointer]:
+            - /url: https://www.cleartrip.com/
+          - link "Myntra Global" [ref=f7e156] [cursor=pointer]:
+            - /url: https://www.myntraglobal.com/
+        - generic [ref=f7e157]:
+          - paragraph [ref=f7e158]: CUSTOMER POLICIES
+          - link "Contact Us" [ref=f7e159] [cursor=pointer]:
+            - /url: /contactus
+          - link "FAQ" [ref=f7e160] [cursor=pointer]:
+            - /url: /faqs
+          - link "T&C" [ref=f7e161] [cursor=pointer]:
+            - /url: /tac
+          - link "Terms Of Use" [ref=f7e162] [cursor=pointer]:
+            - /url: /termsofuse
+          - link "Track Orders" [ref=f7e163] [cursor=pointer]:
+            - /url: /my/orders
+          - link "Shipping" [ref=f7e164] [cursor=pointer]:
+            - /url: /faqs#shipping
+          - link "Cancellation" [ref=f7e165] [cursor=pointer]:
+            - /url: /faqs#cancel
+          - link "Returns" [ref=f7e166] [cursor=pointer]:
+            - /url: /faqs#returns
+          - link "Privacy policy" [ref=f7e167] [cursor=pointer]:
+            - /url: /privacypolicy
+          - link "Grievance Redressal" [ref=f7e168] [cursor=pointer]:
+            - /url: /grievanceredressal
+          - link "FSSAI Food Safety Connect app" [ref=f7e169] [cursor=pointer]:
+            - /url: https://fssai.gov.in/cms/food-safety-connect.php
+        - generic [ref=f7e170]:
+          - paragraph [ref=f7e171]: EXPERIENCE MYNTRA APP ON MOBILE
+          - generic:
+            - link:
+              - /url: https://play.google.com/store/apps/details?id=com.myntra.android
+            - link:
+              - /url: https://itunes.apple.com/in/app/myntra-indias-fashion-store/id907394059
+          - generic [ref=f7e172]: KEEP IN TOUCH
+          - link [ref=f7e173] [cursor=pointer]:
+            - /url: https://www.facebook.com/myntra
+          - link:
+            - /url: https://twitter.com/myntra
+          - link:
+            - /url: https://www.youtube.com/user/myntradotcom
+          - link:
+            - /url: https://www.instagram.com/myntra
+        - generic [ref=f7e175]:
+          - generic [ref=f7e179]:
+            - strong [ref=f7e180]: 100% ORIGINAL
+            - text: guarantee for all products at myntra.com
+          - generic [ref=f7e184]:
+            - strong [ref=f7e185]: Return within 14days
+            - text: of receiving your order
+      - generic [ref=f7e187]:
+        - separator [ref=f7e188]
+        - generic [ref=f7e189]: POPULAR SEARCHES
+        - generic [ref=f7e190]:
+          - link "Adidas Men Sports Shoes |" [ref=f7e191] [cursor=pointer]:
+            - /url: /adidas-men-sports-shoes
+          - link "Campus Men Sports Shoes |" [ref=f7e192] [cursor=pointer]:
+            - /url: /campus-men-sports-shoes
+          - link "Fila Men Sports Shoes |" [ref=f7e193] [cursor=pointer]:
+            - /url: /men-fila-sports-shoes
+          - link "Nike Men Sports Shoes |" [ref=f7e194] [cursor=pointer]:
+            - /url: /men-nike-sports-shoes
+          - link "Puma Men Sports Shoes |" [ref=f7e195] [cursor=pointer]:
+            - /url: /men-puma-sports-shoes
+          - link "Reebok Men Sports Shoes |" [ref=f7e196] [cursor=pointer]:
+            - /url: /men-reebok-sports-shoes
+          - link "Skechers Men Sports Shoes |" [ref=f7e197] [cursor=pointer]:
+            - /url: /skechers-mens-sports-shoes
+          - link "Sparx Men Sports Shoes |" [ref=f7e198] [cursor=pointer]:
+            - /url: /men-sparx-sports-shoes
+          - link "White Men Sports Shoes |" [ref=f7e199] [cursor=pointer]:
+            - /url: /men-white-sports-shoes
+          - link "Women Sports Shoes |" [ref=f7e200] [cursor=pointer]:
+            - /url: /women-sports-shoes
+          - link "Adidas Women Sports Shoes |" [ref=f7e201] [cursor=pointer]:
+            - /url: /adidas-sports-shoes-women
+          - link "Nike Women Sports Shoes |" [ref=f7e202] [cursor=pointer]:
+            - /url: /women-nike-sports-shoes
+          - link "Puma Women Sports Shoes |" [ref=f7e203] [cursor=pointer]:
+            - /url: /puma-women-sport-shoes
+          - link "Reebok Women Sports Shoes |" [ref=f7e204] [cursor=pointer]:
+            - /url: /women-reebok-sports-shoes
+          - link "Skechers Women Sports Shoes |" [ref=f7e205] [cursor=pointer]:
+            - /url: /skechers-women-sports-shoes
+          - link "Sparx Women Sports Shoes |" [ref=f7e206] [cursor=pointer]:
+            - /url: /women-sparx-sports-shoes
+          - link "Nike Sports Shoes |" [ref=f7e207] [cursor=pointer]:
+            - /url: /nike-sports-shoes
+          - link "Black Women Sports Shoes |" [ref=f7e208] [cursor=pointer]:
+            - /url: /black-women-sports-shoes
+          - link "White Women Sports Shoes |" [ref=f7e209] [cursor=pointer]:
+            - /url: /white-women-sports-shoes
+          - link "Boys Sports Shoes |" [ref=f7e210] [cursor=pointer]:
+            - /url: /boys-sports-shoes
+          - link "Nike Boys Sports Shoes |" [ref=f7e211] [cursor=pointer]:
+            - /url: /nike-sports-shoes
+          - link "Girls Sports Shoes |" [ref=f7e212] [cursor=pointer]:
+            - /url: /girls-sports-shoes
+          - link "Nike Girls Sports Shoes |" [ref=f7e213] [cursor=pointer]:
+            - /url: /nike-girls-sports-shoes
+          - link "Adidas Sports Shoes |" [ref=f7e214] [cursor=pointer]:
+            - /url: /adidas-sports-shoes
+          - link "Asics Sports Shoes |" [ref=f7e215] [cursor=pointer]:
+            - /url: /asics-sports-shoes
+          - link "Allen Cooper Sports Shoes |" [ref=f7e216] [cursor=pointer]:
+            - /url: /allen-cooper-sports-shoes
+          - link "Asian Sports Shoes |" [ref=f7e217] [cursor=pointer]:
+            - /url: /asia-sports-shoes
+          - link "Campus Sports Shoes |" [ref=f7e218] [cursor=pointer]:
+            - /url: /campus-sports-shoes
+          - link "Columbus Sports Shoes |" [ref=f7e219] [cursor=pointer]:
+            - /url: /columbus-sports-shoes
+          - link "Duke Sports Shoes |" [ref=f7e220] [cursor=pointer]:
+            - /url: /duke-sports-shoes
+          - link "Fila Sports Shoes |" [ref=f7e221] [cursor=pointer]:
+            - /url: /fila-sports-shoes
+          - link "Lotto Sports Shoes |" [ref=f7e222] [cursor=pointer]:
+            - /url: /lotto-sports-shoes
+          - link "Lee Cooper Sports Shoes |" [ref=f7e223] [cursor=pointer]:
+            - /url: /lee-cooper-sports-shoes
+          - link "Running Sports Shoes |" [ref=f7e224] [cursor=pointer]:
+            - /url: /running-sports-shoes
+          - link "New Balance Sports Shoes |" [ref=f7e225] [cursor=pointer]:
+            - /url: /new-balance-sports-shoes
+          - link "Puma Sports Shoes |" [ref=f7e226] [cursor=pointer]:
+            - /url: /puma-sports-shoes
+          - link "Power Sports Shoes |" [ref=f7e227] [cursor=pointer]:
+            - /url: /power-sports-shoes
+          - link "Reebok Sports Shoes |" [ref=f7e228] [cursor=pointer]:
+            - /url: /reebok-sports-shoes
+          - link "Red Tape Sports Shoes |" [ref=f7e229] [cursor=pointer]:
+            - /url: /red-tape-sports-shoes
+          - link "Skechers Sports Shoes |" [ref=f7e230] [cursor=pointer]:
+            - /url: /skechers-sports-shoes
+          - link "Sparx Sports Shoes |" [ref=f7e231] [cursor=pointer]:
+            - /url: /sparx-sports-shoes
+          - link "Under Armour Sports Shoes |" [ref=f7e232] [cursor=pointer]:
+            - /url: /under-armour-sports-shoes
+          - link "Sports Shoes |" [ref=f7e233] [cursor=pointer]:
+            - /url: /sports-shoes
+          - link "Woodland Sports Shoes |" [ref=f7e234] [cursor=pointer]:
+            - /url: /woodland-sports-shoes
+          - link "Black Sports Shoes |" [ref=f7e235] [cursor=pointer]:
+            - /url: /black-sports-shoes
+          - link "White Sports Shoes |" [ref=f7e236] [cursor=pointer]:
+            - /url: /white-sports-shoes
+          - link "Red Sports Shoes |" [ref=f7e237] [cursor=pointer]:
+            - /url: /red-sports-shoes
+          - link "Slip On Sports Shoes |" [ref=f7e238] [cursor=pointer]:
+            - /url: /slip-on-sports-shoes
+          - link "Canvas Sports Shoes |" [ref=f7e239] [cursor=pointer]:
+            - /url: /canvas-sports-shoes
+          - link "Leather Sports Shoes" [ref=f7e240] [cursor=pointer]:
+            - /url: /leather-sports-shoes
+      - generic [ref=f7e241]:
+        - generic [ref=f7e242]:
+          - text: In case of any concern,
+          - link "Contact Us" [ref=f7e243] [cursor=pointer]:
+            - /url: /contactus
+        - generic [ref=f7e244]: © 2026 www.myntra.com. All rights reserved.
+        - link "A Flipkart company" [ref=f7e246] [cursor=pointer]:
+          - /url: https://www.flipkart.com/
+```

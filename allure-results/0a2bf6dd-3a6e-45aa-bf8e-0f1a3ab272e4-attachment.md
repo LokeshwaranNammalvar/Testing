@@ -1,0 +1,2014 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: makeMyTrip.spec.js >> make my trip
+- Location: tests\makeMyTrip.spec.js:3:5
+
+# Error details
+
+```
+Error: locator.fill: Error: Element is not an <input>, <textarea>, <select> or [contenteditable] and does not have a role allowing [aria-readonly]
+Call log:
+  - waiting for locator('//div[@class="sc-c38834c4-0 hUMuSe sc-a883fcd7-12 jzCycv"]')
+    - locator resolved to <div class="sc-c38834c4-0 hUMuSe sc-a883fcd7-12 jzCycv">…</div>
+    - fill("Australian Dollar")
+  - attempting fill action
+    - waiting for element to be visible, enabled and editable
+
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - img "Make My Trip" [ref=e8] [cursor=pointer]
+      - list [ref=e9]:
+        - listitem [ref=e10] [cursor=pointer]:
+          - generic [ref=e13]:
+            - paragraph [ref=e14]: List Your Property
+            - paragraph [ref=e15]: Grow your business!
+        - listitem [ref=e16] [cursor=pointer]:
+          - img "myBizLogo" [ref=e18]
+          - generic [ref=e19]:
+            - paragraph [ref=e20]: Introducing myBiz
+            - paragraph [ref=e21]: Business Travel Solution
+        - listitem [ref=e22] [cursor=pointer]:
+          - generic [ref=e25]:
+            - paragraph [ref=e26]: My Trips
+            - paragraph [ref=e27]: Manage your bookings
+        - listitem [ref=e28] [cursor=pointer]:
+          - generic "Wishlist" [ref=e30]
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: Wishlist
+            - paragraph [ref=e33]: Save favourites
+        - listitem [ref=e34] [cursor=pointer]:
+          - paragraph [ref=e39]: Login or Create Account
+        - listitem [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]:
+            - generic [ref=e43]: INR
+            - text: "|"
+            - generic [ref=e44]: English
+    - navigation [ref=e48]:
+      - list [ref=e49]:
+        - listitem [ref=e50]:
+          - link "Flights" [ref=e52] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/
+        - listitem [ref=e56]:
+          - link "Hotels" [ref=e58] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/
+        - listitem [ref=e62]:
+          - link "Villas & Homestays" [ref=e64] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/homestays/
+        - listitem [ref=e68]:
+          - link "Holiday Packages" [ref=e70] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/
+        - listitem [ref=e74]:
+          - link "Trains" [ref=e76] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/
+        - listitem [ref=e80]:
+          - link "Buses" [ref=e82] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/bus-tickets/
+        - listitem [ref=e86]:
+          - link "Cabs" [ref=e88] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/cabs/
+        - listitem [ref=e92]:
+          - link "Tours & Attractions" [ref=e94] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/activities/
+        - listitem [ref=e98]:
+          - link "Visa" [ref=e100] [cursor=pointer]:
+            - /url: https://visa.makemytrip.com/
+        - listitem [ref=e104]:
+          - link "Forex Card & Currency" [ref=e106] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/forex/
+        - listitem [ref=e110]:
+          - link "Travel Insurance" [ref=e112] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/
+  - generic [ref=e119]:
+    - generic [ref=e121]:
+      - generic [ref=e122]:
+        - generic [ref=e123]:
+          - generic [ref=e124]:
+            - generic [ref=e125]: ₹
+            - generic [ref=e126]: Lowest Rate Guarantee
+          - generic [ref=e127]:
+            - generic [ref=e129]:
+              - generic [ref=e132]:
+                - paragraph [ref=e133]: USD
+                - generic [ref=e134]: "@"
+                - paragraph [ref=e135]: ₹93.54
+              - generic [ref=e138]:
+                - paragraph [ref=e139]: EUR
+                - generic [ref=e140]: "@"
+                - paragraph [ref=e141]: ₹105.17
+              - generic [ref=e144]:
+                - paragraph [ref=e145]: AED
+                - generic [ref=e146]: "@"
+                - paragraph [ref=e147]: ₹25.52
+              - generic [ref=e150]:
+                - paragraph [ref=e151]: SGD
+                - generic [ref=e152]: "@"
+                - paragraph [ref=e153]: ₹73.19
+              - generic [ref=e156]:
+                - paragraph [ref=e157]: THB
+                - generic [ref=e158]: "@"
+                - paragraph [ref=e159]: ₹2.84
+              - generic [ref=e162]:
+                - paragraph [ref=e163]: USD
+                - generic [ref=e164]: "@"
+                - paragraph [ref=e165]: ₹93.54
+              - generic [ref=e168]:
+                - paragraph [ref=e169]: EUR
+                - generic [ref=e170]: "@"
+                - paragraph [ref=e171]: ₹105.17
+              - generic [ref=e174]:
+                - paragraph [ref=e175]: AED
+                - generic [ref=e176]: "@"
+                - paragraph [ref=e177]: ₹25.52
+              - generic [ref=e180]:
+                - paragraph [ref=e181]: SGD
+                - generic [ref=e182]: "@"
+                - paragraph [ref=e183]: ₹73.19
+              - generic [ref=e186]:
+                - paragraph [ref=e187]: THB
+                - generic [ref=e188]: "@"
+                - paragraph [ref=e189]: ₹2.84
+            - button [ref=e190] [cursor=pointer]:
+              - img "arrow" [ref=e191]
+        - generic [ref=e193] [cursor=pointer]
+      - generic [ref=e194]:
+        - generic [ref=e195] [cursor=pointer]:
+          - paragraph [ref=e196]: DELIVER AT
+          - paragraph [ref=e197]: Chennai
+          - paragraph [ref=e198]: "600003"
+        - generic [ref=e199] [cursor=pointer]:
+          - paragraph [ref=e200]: CURRENCY
+          - paragraph [ref=e201]: US Dollar
+          - paragraph [ref=e203]: US Dollar
+          - paragraph [ref=e204]: USD
+          - generic [ref=e207]:
+            - generic [ref=e208]:
+              - img "image-tag" [ref=e209]
+              - textbox "Enter Currency name" [active] [ref=e210]
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - paragraph [ref=e213]: POPULAR CURRENCIES
+                - paragraph [ref=e214]: Country
+              - list [ref=e215]:
+                - listitem [ref=e216]:
+                  - generic [ref=e217]:
+                    - generic [ref=e218]:
+                      - paragraph [ref=e221]: US Dollar
+                      - paragraph
+                    - paragraph [ref=e224]: USA, Maldives + 170 countries
+                - listitem [ref=e225]:
+                  - generic [ref=e226]:
+                    - generic [ref=e227]:
+                      - paragraph [ref=e230]: UAE Dirham
+                      - paragraph
+                    - paragraph [ref=e233]: United Arab Emirates
+                - listitem [ref=e234]:
+                  - generic [ref=e235]:
+                    - generic [ref=e236]:
+                      - paragraph [ref=e239]: Thai Baht
+                      - paragraph
+                    - paragraph [ref=e242]: Thailand
+                - listitem [ref=e243]:
+                  - generic [ref=e244]:
+                    - generic [ref=e245]:
+                      - paragraph [ref=e248]: Euro
+                      - paragraph
+                    - paragraph [ref=e251]: France, Germany + 45 countries
+                - listitem [ref=e252]:
+                  - generic [ref=e253]:
+                    - generic [ref=e254]:
+                      - paragraph [ref=e257]: Singapore Dollar
+                      - paragraph
+                    - paragraph [ref=e260]: Singapore
+              - generic [ref=e261]:
+                - paragraph [ref=e262]: All Currencies
+                - paragraph [ref=e263]: Country
+              - list [ref=e264]:
+                - listitem [ref=e265]:
+                  - generic [ref=e266]:
+                    - generic [ref=e267]:
+                      - paragraph [ref=e270]: British Pound
+                      - paragraph
+                    - paragraph [ref=e273]: United Kingdom (UK)
+                - listitem [ref=e274]:
+                  - generic [ref=e275]:
+                    - generic [ref=e276]:
+                      - paragraph [ref=e279]: Hong Kong Dollar
+                      - paragraph
+                    - paragraph [ref=e282]: Hong Kong
+                - listitem [ref=e283]:
+                  - generic [ref=e284]:
+                    - generic [ref=e285]:
+                      - paragraph [ref=e288]: Swiss Franc
+                      - paragraph
+                    - paragraph [ref=e291]: Switzerland
+                - listitem [ref=e292]:
+                  - generic [ref=e293]:
+                    - generic [ref=e294]:
+                      - paragraph [ref=e297]: Saudi Riyal
+                      - paragraph
+                    - paragraph [ref=e300]: Saudi Arabia
+                - listitem [ref=e301]:
+                  - generic [ref=e302]:
+                    - generic [ref=e303]:
+                      - paragraph [ref=e306]: Canadian Dollar
+                      - paragraph
+                    - paragraph [ref=e309]: Canada
+                - listitem [ref=e310]:
+                  - generic [ref=e311]:
+                    - generic [ref=e312]:
+                      - paragraph [ref=e315]: South African Rand
+                      - paragraph
+                    - paragraph [ref=e318]: South Africa
+                - listitem [ref=e319]:
+                  - generic [ref=e320]:
+                    - generic [ref=e321]:
+                      - paragraph [ref=e324]: Australian Dollar
+                      - paragraph
+                    - paragraph [ref=e327]: Australia
+                - listitem [ref=e328]:
+                  - generic [ref=e329]:
+                    - generic [ref=e330]:
+                      - paragraph [ref=e333]: Japanese Yen
+                      - paragraph
+                    - paragraph [ref=e336]: Japan
+                - listitem [ref=e337]:
+                  - generic [ref=e338]:
+                    - generic [ref=e339]:
+                      - paragraph [ref=e342]: Swedish Krona
+                      - paragraph
+                    - paragraph [ref=e345]: Sweden
+                - listitem [ref=e346]:
+                  - generic [ref=e347]:
+                    - generic [ref=e348]:
+                      - paragraph [ref=e351]: New Zealand Dollar
+                      - paragraph
+                    - paragraph [ref=e354]: New Zealand
+                - listitem [ref=e355]:
+                  - generic [ref=e356]:
+                    - generic [ref=e357]:
+                      - paragraph [ref=e360]: Malaysian Ringgit
+                      - paragraph
+                    - paragraph [ref=e363]: Malaysia
+                - listitem [ref=e364]:
+                  - generic [ref=e365]:
+                    - generic [ref=e366]:
+                      - paragraph [ref=e369]: Chinese Yuan
+                      - paragraph
+                    - paragraph [ref=e372]: China
+                - listitem [ref=e373]:
+                  - generic [ref=e374]:
+                    - generic [ref=e375]:
+                      - paragraph [ref=e378]: Omani Rial
+                      - paragraph
+                    - paragraph [ref=e381]: Oman
+                - listitem [ref=e382]:
+                  - generic [ref=e383]:
+                    - generic [ref=e384]:
+                      - paragraph [ref=e387]: Qatari Rial
+                      - paragraph
+                    - paragraph [ref=e390]: Qatar
+                - listitem [ref=e391]:
+                  - generic [ref=e392]:
+                    - generic [ref=e393]:
+                      - paragraph [ref=e396]: Bahraini Dinar
+                      - paragraph
+                    - paragraph [ref=e399]: Bahrain
+                - listitem [ref=e400]:
+                  - generic [ref=e401]:
+                    - generic [ref=e402]:
+                      - paragraph [ref=e405]: Kuwaiti Dinar
+                      - paragraph
+                    - paragraph [ref=e408]: Kuwait
+                - listitem [ref=e409]:
+                  - generic [ref=e410]:
+                    - generic [ref=e411]:
+                      - paragraph [ref=e414]: Norwegian Krone
+                      - paragraph
+                    - paragraph [ref=e417]: Norway
+                - listitem [ref=e418]:
+                  - generic [ref=e419]:
+                    - generic [ref=e420]:
+                      - paragraph [ref=e423]: Danish Krone
+                      - paragraph
+                    - paragraph [ref=e426]: Denmark
+                - listitem [ref=e427]:
+                  - generic [ref=e428]:
+                    - generic [ref=e429]:
+                      - paragraph [ref=e432]: Indonesian Rupiah
+                      - paragraph
+                    - paragraph [ref=e435]: Indonesia
+                - listitem [ref=e436]:
+                  - generic [ref=e437]:
+                    - generic [ref=e438]:
+                      - paragraph [ref=e441]: Sri Lankan Rupee
+                      - paragraph
+                    - paragraph [ref=e444]: Sri Lanka
+                - listitem [ref=e445]:
+                  - generic [ref=e446]:
+                    - generic [ref=e447]:
+                      - paragraph [ref=e450]: Korean Won
+                      - paragraph
+                    - paragraph [ref=e453]: South Korea
+                - listitem [ref=e454]:
+                  - generic [ref=e455]:
+                    - generic [ref=e456]:
+                      - paragraph [ref=e459]: Russian Ruble
+                      - paragraph
+                    - paragraph [ref=e462]: Russia
+                - listitem [ref=e463]:
+                  - generic [ref=e464]:
+                    - generic [ref=e465]:
+                      - paragraph [ref=e468]: Maldivian Rufiyaa
+                      - paragraph
+                    - paragraph [ref=e471]: Maldives
+                - listitem [ref=e472]:
+                  - generic [ref=e473]:
+                    - generic [ref=e474]:
+                      - paragraph [ref=e477]: Philippine Peso
+                      - paragraph
+                    - paragraph [ref=e480]: Philippines
+                - listitem [ref=e481]:
+                  - generic [ref=e482]:
+                    - generic [ref=e483]:
+                      - paragraph [ref=e486]: Vietnam Dong
+                      - paragraph
+                    - paragraph [ref=e489]: Vietnam
+                - listitem [ref=e490]:
+                  - generic [ref=e491]:
+                    - generic [ref=e492]:
+                      - paragraph [ref=e495]: Mauritius Rupee
+                      - paragraph
+                    - paragraph [ref=e498]: Mauritius
+                - listitem [ref=e499]:
+                  - generic [ref=e500]:
+                    - generic [ref=e501]:
+                      - paragraph [ref=e504]: Bangladesh Taka
+                      - paragraph
+                    - paragraph [ref=e507]: Bangladesh
+                - listitem [ref=e508]:
+                  - generic [ref=e509]:
+                    - generic [ref=e510]:
+                      - paragraph [ref=e513]: Turkish Lira
+                      - paragraph
+                    - paragraph [ref=e516]: Turkey
+                - listitem [ref=e517]:
+                  - generic [ref=e518]:
+                    - generic [ref=e519]:
+                      - paragraph [ref=e522]: Brazilian Real
+                      - paragraph
+                    - paragraph [ref=e525]: Brazil
+                - listitem [ref=e526]:
+                  - generic [ref=e527]:
+                    - generic [ref=e528]:
+                      - paragraph [ref=e531]: Kenyan Shilling
+                      - paragraph
+                    - paragraph [ref=e534]: Kenya
+                - listitem [ref=e535]:
+                  - generic [ref=e536]:
+                    - generic [ref=e537]:
+                      - paragraph [ref=e540]: Egyptian Pound
+                      - paragraph
+                    - paragraph [ref=e543]: Egypt
+                - listitem [ref=e544]:
+                  - generic [ref=e545]:
+                    - generic [ref=e546]:
+                      - paragraph [ref=e549]: Israeli Shekel
+                      - paragraph
+                    - paragraph [ref=e552]: Israel
+                - listitem [ref=e553]:
+                  - generic [ref=e554]:
+                    - generic [ref=e555]:
+                      - paragraph [ref=e558]: Polish Zloty
+                      - paragraph
+                    - paragraph [ref=e561]: Poland
+                - listitem [ref=e562]:
+                  - generic [ref=e563]:
+                    - generic [ref=e564]:
+                      - paragraph [ref=e567]: Macau Pataca
+                      - paragraph
+                    - paragraph [ref=e570]: Macau
+                - listitem [ref=e571]:
+                  - generic [ref=e572]:
+                    - generic [ref=e573]:
+                      - paragraph [ref=e576]: Czech Koruna
+                      - paragraph
+                    - paragraph [ref=e579]: Czech Republic
+                - listitem [ref=e580]:
+                  - generic [ref=e581]:
+                    - generic [ref=e582]:
+                      - paragraph [ref=e585]: Georgian Lari
+                      - paragraph
+                    - paragraph [ref=e588]: Georgia
+                - listitem [ref=e589]:
+                  - generic [ref=e590]:
+                    - generic [ref=e591]:
+                      - paragraph [ref=e594]: Icelandic Krona
+                      - paragraph
+                    - paragraph [ref=e597]: Iceland
+                - listitem [ref=e598]:
+                  - generic [ref=e599]:
+                    - generic [ref=e600]:
+                      - paragraph [ref=e603]: Azerbaijani Manat
+                      - paragraph
+                    - paragraph [ref=e606]: Azerbaijan
+                - listitem [ref=e607]:
+                  - generic [ref=e608]:
+                    - generic [ref=e609]:
+                      - paragraph [ref=e612]: Hungarian Forint
+                      - paragraph
+                    - paragraph [ref=e615]: Hungary
+                - listitem [ref=e616]:
+                  - generic [ref=e617]:
+                    - generic [ref=e618]:
+                      - paragraph [ref=e621]: Kazakhstani tenge
+                      - paragraph
+                    - paragraph [ref=e624]: Kazakhstan
+                - listitem [ref=e625]:
+                  - generic [ref=e626]:
+                    - generic [ref=e627]:
+                      - paragraph [ref=e630]: New Taiwan Dollar
+                      - paragraph
+                    - paragraph [ref=e633]: Taiwan
+                - listitem [ref=e634]:
+                  - generic [ref=e635]:
+                    - generic [ref=e636]:
+                      - paragraph [ref=e639]: Mexican peso
+                      - paragraph
+                    - paragraph [ref=e642]: Mexico
+                - listitem [ref=e643]:
+                  - generic [ref=e644]:
+                    - generic [ref=e645]:
+                      - paragraph [ref=e648]: Serbian dinar
+                      - paragraph
+                    - paragraph [ref=e651]: Serbia
+                - listitem [ref=e652]:
+                  - generic [ref=e653]:
+                    - generic [ref=e654]:
+                      - paragraph [ref=e657]: Ethiopian birr
+                      - paragraph
+                    - paragraph [ref=e660]: Ethiopia
+                - listitem [ref=e661]:
+                  - generic [ref=e662]:
+                    - generic [ref=e663]:
+                      - paragraph [ref=e666]: Colombian peso
+                      - paragraph
+                    - paragraph [ref=e669]: Colombia
+                - listitem [ref=e670]:
+                  - generic [ref=e671]:
+                    - generic [ref=e672]:
+                      - paragraph [ref=e675]: Romanian leu
+                      - paragraph
+                    - paragraph [ref=e678]: Romania
+                - listitem [ref=e679]:
+                  - generic [ref=e680]:
+                    - generic [ref=e681]:
+                      - paragraph [ref=e684]: Lao kip
+                      - paragraph
+                    - paragraph [ref=e687]: Laos
+                - listitem [ref=e688]:
+                  - generic [ref=e689]:
+                    - generic [ref=e690]:
+                      - paragraph [ref=e693]: Zambian kwacha
+                      - paragraph
+                    - paragraph [ref=e696]: Zambia
+                - listitem [ref=e697]:
+                  - generic [ref=e698]:
+                    - generic [ref=e699]:
+                      - paragraph [ref=e702]: Armenian dram
+                      - paragraph
+                    - paragraph [ref=e705]: Armenia
+                - listitem [ref=e706]:
+                  - generic [ref=e707]:
+                    - generic [ref=e708]:
+                      - paragraph [ref=e711]: Ghanaian cedi
+                      - paragraph
+                    - paragraph [ref=e714]: Ghana
+        - generic [ref=e715] [cursor=pointer]:
+          - generic [ref=e716]:
+            - paragraph [ref=e717]: BUY
+            - img "image-tag" [ref=e718]
+          - generic [ref=e719]:
+            - img "image-tag" [ref=e720]
+            - img "image-tag" [ref=e721]
+            - paragraph [ref=e723]: Card/Currency Notes
+          - paragraph [ref=e724]: SELECT
+        - generic [ref=e725]:
+          - paragraph [ref=e726]: FOREX AMOUNT
+          - textbox "Enter Amount" [ref=e728]
+          - paragraph [ref=e729]: USD
+          - img "image-tag"
+        - generic [ref=e730]:
+          - paragraph [ref=e731]: INR AMOUNT
+          - textbox "Enter Amount" [ref=e732]
+          - paragraph [ref=e733]: INR
+      - generic [ref=e734]:
+        - paragraph [ref=e738]:
+          - generic: Doorstep Delivery by
+          - generic: Tomorrow, 9:00 PM
+          - generic: at
+          - generic: 600003, Chennai.
+        - generic [ref=e743]:
+          - img "image-tag" [ref=e744]
+          - paragraph [ref=e746]: Upto ₹7500 Cashback, for new forex customers
+          - img "image-tag" [ref=e748] [cursor=pointer]
+      - button "BUY NOW" [ref=e750] [cursor=pointer]
+    - generic [ref=e753]:
+      - button
+    - generic [ref=e754]:
+      - paragraph [ref=e755]: Our offerings
+      - generic [ref=e756]:
+        - generic [ref=e757]:
+          - img "image-tag" [ref=e758]
+          - generic [ref=e759]:
+            - paragraph [ref=e760]: Multi Currency Card
+            - list [ref=e761]:
+              - listitem [ref=e762]:
+                - paragraph [ref=e763]: Zero forex markup. Get actual interbank rates
+              - listitem [ref=e764]:
+                - paragraph [ref=e765]: No hidden charges. Zero reload, unload & annual fee
+              - listitem [ref=e766]:
+                - paragraph [ref=e767]: Save upto 5% over your Credit/Debit cards
+            - generic [ref=e768] [cursor=pointer]: KNOW MORE
+        - generic [ref=e769]:
+          - img "image-tag" [ref=e770]
+          - generic [ref=e771]:
+            - paragraph [ref=e772]: Foreign Currency Notes
+            - list [ref=e773]:
+              - listitem [ref=e774]:
+                - paragraph [ref=e775]: 40+ currencies available. RBI approved currency notes
+              - listitem [ref=e776]:
+                - paragraph [ref=e777]: Best exchange rates. Lowest rates in the market
+              - listitem [ref=e778]:
+                - paragraph [ref=e779]: 100+ RBI-licensed money changers across 50+ cities
+            - generic [ref=e780] [cursor=pointer]: KNOW MORE
+    - generic [ref=e781]:
+      - img "icon" [ref=e783]
+      - paragraph [ref=e784]: "BookMyForex Pvt. Ltd. is a MakeMyTrip group company, is a currency exchange service provider authorised by the Reserve Bank of India (RBI). License number : FE.DEL.FFMC/ U070/2013"
+    - generic [ref=e786]:
+      - generic [ref=e788]:
+        - link [ref=e792] [cursor=pointer]:
+          - /url: https://promos.makemytrip.com/lowest-exchange-rate-tncs-170924.html
+        - link [ref=e797] [cursor=pointer]:
+          - /url: https://www.makemytrip.com/promos/forex-card-offer-010626.html
+          - img "banner" [ref=e798]
+        - link [ref=e802] [cursor=pointer]:
+          - /url: https://promos.makemytrip.com/lowest-exchange-rate-tncs-170924.html
+        - link [ref=e807] [cursor=pointer]:
+          - /url: https://www.makemytrip.com/promos/forex-card-offer-010626.html
+        - link [ref=e812] [cursor=pointer]:
+          - /url: https://promos.makemytrip.com/lowest-exchange-rate-tncs-170924.html
+      - list [ref=e814]:
+        - listitem [ref=e815] [cursor=pointer]:
+          - button "1" [ref=e816]
+        - listitem [ref=e817] [cursor=pointer]:
+          - button "2" [ref=e818]
+    - generic [ref=e819]:
+      - paragraph [ref=e820]: Frequently Asked Questions
+      - list [ref=e821]:
+        - listitem [ref=e822] [cursor=pointer]: Multi Currency Card
+        - listitem [ref=e823] [cursor=pointer]: Foreign Currency Notes
+      - generic [ref=e824]:
+        - paragraph [ref=e826] [cursor=pointer]: What is a Multi Currency Card?
+        - paragraph [ref=e828] [cursor=pointer]: Who should use Multi Currency Card?
+        - paragraph [ref=e830] [cursor=pointer]: Is there any documentation or KYC required?
+        - paragraph [ref=e832] [cursor=pointer]: Why should I not use a Debit/Credit card instead?
+        - paragraph [ref=e834] [cursor=pointer]: Does this card give reward points?
+        - paragraph [ref=e836] [cursor=pointer]: How do I get this card?
+        - paragraph [ref=e838] [cursor=pointer]: How can I load money into my card?
+        - paragraph [ref=e840] [cursor=pointer]: What if I don’t want to use the card later?
+  - contentinfo [ref=e841]:
+    - generic [ref=e843]:
+      - paragraph [ref=e844]: Currency
+      - list [ref=e845]:
+        - listitem [ref=e846]:
+          - link "US Dollar" [ref=e847] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/us-dollar
+          - text: ","
+        - listitem [ref=e848]:
+          - link "Canadian Dollar" [ref=e849] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/canadian-dollar
+          - text: ","
+        - listitem [ref=e850]:
+          - link "Australian Dollar" [ref=e851] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/australian-dollar
+          - text: ","
+        - listitem [ref=e852]:
+          - link "Kuwaiti Dinar" [ref=e853] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/kuwaiti-dinar
+          - text: ","
+        - listitem [ref=e854]:
+          - link "Euro" [ref=e855] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/euro
+          - text: ","
+        - listitem [ref=e856]:
+          - link "Pound" [ref=e857] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/pound
+          - text: ","
+        - listitem [ref=e858]:
+          - link "Singapore Dollar" [ref=e859] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/singapore-dollar
+          - text: ","
+        - listitem [ref=e860]:
+          - link "Russian Ruble" [ref=e861] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/russian-ruble
+          - text: ","
+        - listitem [ref=e862]:
+          - link "New Zealand Dollar" [ref=e863] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/new-zealand-dollar
+          - text: ","
+        - listitem [ref=e864]:
+          - link "Omani Rial" [ref=e865] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/omani-rial
+          - text: ","
+        - listitem [ref=e866]:
+          - link "Bahraini Dinar" [ref=e867] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/bahraini-dinar
+          - text: ","
+        - listitem [ref=e868]:
+          - link "Saudi Riyal" [ref=e869] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/saudi-arabian-riyal
+          - text: ","
+        - listitem [ref=e870]:
+          - link "UAE Dirham" [ref=e871] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/uae-dirham
+          - text: ","
+        - listitem [ref=e872]:
+          - link "Indonesian Rupiah" [ref=e873] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/indonesian-rupiah
+          - text: ","
+        - listitem [ref=e874]:
+          - link "Thai Baht" [ref=e875] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/thai-baht
+          - text: ","
+        - listitem [ref=e876]:
+          - link "Japanese Yen" [ref=e877] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/japanese-yen
+          - text: ","
+        - listitem [ref=e878]:
+          - link "Sri Lankan Rupee" [ref=e879] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/sri-lankan-rupee
+          - text: ","
+        - listitem [ref=e880]:
+          - link "British Pound" [ref=e881] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/pound-sterling
+          - text: ","
+        - listitem [ref=e882]:
+          - link "Swiss Franc" [ref=e883] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/swiss-franc
+          - text: ","
+        - listitem [ref=e884]:
+          - link "Bangladeshi Taka" [ref=e885] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/bangladeshi-taka
+          - text: ","
+        - listitem [ref=e886]:
+          - link "Malaysian Ringgit" [ref=e887] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/malaysian-ringgit
+          - text: ","
+        - listitem [ref=e888]:
+          - link "Hong Kong Dollar" [ref=e889] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/hong-kong-dollar
+          - text: ","
+        - listitem [ref=e890]:
+          - link "South African Rand" [ref=e891] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/south-african-rand
+          - text: ","
+        - listitem [ref=e892]:
+          - link "Philippine Peso" [ref=e893] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/philippine-peso
+          - text: ","
+        - listitem [ref=e894]:
+          - link "Korean Won" [ref=e895] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/south-korean-won
+          - text: ","
+        - listitem [ref=e896]:
+          - link "Swedish Krona" [ref=e897] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/swedish-krona
+          - text: ","
+        - listitem [ref=e898]:
+          - link "Maldivian Rufiyaa" [ref=e899] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/maldivian-rufiyaa
+          - text: ","
+        - listitem [ref=e900]:
+          - link "Danish Krone" [ref=e901] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/danish-krone
+          - text: ","
+        - listitem [ref=e902]:
+          - link "Mauritian Rupee" [ref=e903] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/mauritian-rupee
+          - text: ","
+        - listitem [ref=e904]:
+          - link "Vietnamese Dong" [ref=e905] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/vietnamese-dong
+          - text: ","
+        - listitem [ref=e906]:
+          - link "Norwegian Krone" [ref=e907] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/norwegian-krone
+          - text: ","
+        - listitem [ref=e908]:
+          - link "Macanese Pataca" [ref=e909] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/macanese-pataca
+          - text: ","
+        - listitem [ref=e910]:
+          - link "Polish Zloty" [ref=e911] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency/polish-zloty
+      - paragraph [ref=e912]: MakeMyTrip
+      - list [ref=e913]:
+        - listitem [ref=e914]:
+          - link "About Us" [ref=e915] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/about-us/company_profile.php
+          - text: ","
+        - listitem [ref=e916]:
+          - link "Investor Relations" [ref=e917] [cursor=pointer]:
+            - /url: https://investors.makemytrip.com
+          - text: ","
+        - listitem [ref=e918]:
+          - link "Careers" [ref=e919] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/about-us/jobs.php
+          - text: ","
+        - listitem [ref=e920]:
+          - link "Sustainability" [ref=e921] [cursor=pointer]:
+            - /url: https://sustainability.makemytrip.com
+          - text: ","
+        - listitem [ref=e922]:
+          - link "MMT Foundation" [ref=e923] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/csr/mmt_foundation.html
+          - text: ","
+        - listitem [ref=e924]:
+          - link "Legal Notices" [ref=e925] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/notice_privacy_policy.html
+          - text: ","
+        - listitem [ref=e926]:
+          - link "CSR Policy & Committee" [ref=e927] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/csr/csr_policy.html
+          - text: ","
+        - listitem [ref=e928]:
+          - link "myPartner - Travel Agent Portal" [ref=e929] [cursor=pointer]:
+            - /url: https://mypartner.makemytrip.com
+          - text: ","
+        - listitem [ref=e930]:
+          - link "List your hotel" [ref=e931] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/hotelier-register.htm
+          - text: ","
+        - listitem [ref=e932]:
+          - link "Partners- Redbus" [ref=e933] [cursor=pointer]:
+            - /url: https://www.redbus.in/
+          - text: ","
+        - listitem [ref=e934]:
+          - link "Partners- Goibibo" [ref=e935] [cursor=pointer]:
+            - /url: https://www.goibibo.com/
+          - text: ","
+        - listitem [ref=e936]:
+          - link "Advertise with Us" [ref=e937] [cursor=pointer]:
+            - /url: https://advertising.makemytrip.com/ad/solutions/
+          - text: ","
+        - listitem [ref=e938]:
+          - link "Holiday-Franchise" [ref=e939] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/franchise
+          - text: ","
+        - listitem [ref=e940]:
+          - link "Partners- BookMyForex" [ref=e941] [cursor=pointer]:
+            - /url: https://www.bookmyforex.com/
+          - text: ","
+        - listitem [ref=e942]:
+          - link "RedBus Ferry Malaysia" [ref=e943] [cursor=pointer]:
+            - /url: https://www.redbus.my/ferry
+          - text: ","
+        - listitem [ref=e944]:
+          - link "RedBus Ferry Singapore" [ref=e945] [cursor=pointer]:
+            - /url: https://www.redbus.sg/ferry
+          - text: ","
+        - listitem [ref=e946]:
+          - link "redBus Vietnam" [ref=e947] [cursor=pointer]:
+            - /url: https://www.redbus.vn/
+          - text: ","
+        - listitem [ref=e948]:
+          - link "redBus Cambodia" [ref=e949] [cursor=pointer]:
+            - /url: https://www.redbus.com.kh/
+          - text: ","
+        - listitem [ref=e950]:
+          - link "Things to Do in Malaysia" [ref=e951] [cursor=pointer]:
+            - /url: https://www.redbus.my/things-to-do/
+          - text: ","
+        - listitem [ref=e952]:
+          - link "Things to Do in Singapore" [ref=e953] [cursor=pointer]:
+            - /url: https://www.redbus.sg/things-to-do/
+      - paragraph [ref=e954]: Quick Links
+      - list [ref=e955]:
+        - listitem [ref=e956]:
+          - link "Delhi Chennai Flights" [ref=e957] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/new_delhi-chennai-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e958]:
+          - link "Delhi Mumbai Flights" [ref=e959] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/new_delhi-mumbai-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e960]:
+          - link "Delhi Goa Flights" [ref=e961] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/new_delhi-goa-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e962]:
+          - link "Chennai Mumbai flights" [ref=e963] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/chennai-mumbai-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e964]:
+          - link "Mumbai Hyderabad flights" [ref=e965] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/mumbai-hyderabad-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e966]:
+          - link "Kolkata to Rupsi Flights" [ref=e967] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/kolkata-rupsi-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e968]:
+          - link "Rupsi to Guwahati Flights" [ref=e969] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/rupsi-guwahati-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e970]:
+          - link "Pasighat to Guwahati Flights" [ref=e971] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/pasighat-guwahati-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e972]:
+          - link "Delhi to Khajuraho Flights" [ref=e973] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/new_delhi-khajuraho-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e974]:
+          - link "Cochin to Agatti Island Flights" [ref=e975] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/kochi-agatti_island-cheap-airtickets.html
+          - text: ","
+        - listitem [ref=e976]:
+          - link "Hotels in Delhi" [ref=e977] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/delhi-hotels.html
+          - text: ","
+        - listitem [ref=e978]:
+          - link "Hotels in Mumbai" [ref=e979] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/mumbai-hotels.html
+          - text: ","
+        - listitem [ref=e980]:
+          - link "Hotels In Goa" [ref=e981] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/goa-hotels.html
+          - text: ","
+        - listitem [ref=e982]:
+          - link "Hotels In Jaipur" [ref=e983] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/jaipur-hotels.html
+          - text: ","
+        - listitem [ref=e984]:
+          - link "Hotels In Ooty" [ref=e985] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/ooty-hotels.html
+          - text: ","
+        - listitem [ref=e986]:
+          - link "Hotels In Udaipur" [ref=e987] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/udaipur-hotels.html
+          - text: ","
+        - listitem [ref=e988]:
+          - link "Hotels in Puri" [ref=e989] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/puri-hotels.html
+          - text: ","
+        - listitem [ref=e990]:
+          - link "Hotels In North Goa" [ref=e991] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/hotels-in-north_goa-goa.html
+          - text: ","
+        - listitem [ref=e992]:
+          - link "Hotels In Rishikesh" [ref=e993] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/rishikesh-hotels.html
+          - text: ","
+        - listitem [ref=e994]:
+          - link "Honeymoon Packages" [ref=e995] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e996]:
+          - link "Kerala Packages" [ref=e997] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/kerala-travel-packages.html
+          - text: ","
+        - listitem [ref=e998]:
+          - link "Kashmir Packages" [ref=e999] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/kashmir-travel-packages.html
+          - text: ","
+        - listitem [ref=e1000]:
+          - link "Ladakh Packages" [ref=e1001] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html
+          - text: ","
+        - listitem [ref=e1002]:
+          - link "Goa Packages" [ref=e1003] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/goa-travel-packages.html
+          - text: ","
+        - listitem [ref=e1004]:
+          - link "Thailand Packages" [ref=e1005] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/thailand-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1006]:
+          - link "Sri Lanka Visa" [ref=e1007] [cursor=pointer]:
+            - /url: https://visa.makemytrip.com/sri_lanka-visa.html
+          - text: ","
+        - listitem [ref=e1008]:
+          - link "Thailand Visa" [ref=e1009] [cursor=pointer]:
+            - /url: https://visa.makemytrip.com/thailand-visa.html
+          - text: ","
+        - listitem [ref=e1010]:
+          - link "Explore Goa" [ref=e1011] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/places/Goa
+          - text: ","
+        - listitem [ref=e1012]:
+          - link "Explore Manali" [ref=e1013] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/places/Manali
+          - text: ","
+        - listitem [ref=e1014]:
+          - link "Explore Shimla" [ref=e1015] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/places/Shimla
+          - text: ","
+        - listitem [ref=e1016]:
+          - link "Explore Jaipur" [ref=e1017] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/places/Jaipur
+          - text: ","
+        - listitem [ref=e1018]:
+          - link "Explore Srinagar" [ref=e1019] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/places/Srinagar
+      - paragraph [ref=e1020]: About the Site
+      - list [ref=e1021]:
+        - listitem [ref=e1022]:
+          - link "Customer Support" [ref=e1023] [cursor=pointer]:
+            - /url: https://supportz.makemytrip.com/Mima/CustomerHelpAndSupport/
+          - text: ","
+        - listitem [ref=e1024]:
+          - link "Payment Security" [ref=e1025] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/payment_security.html
+          - text: ","
+        - listitem [ref=e1026]:
+          - link "Privacy Policy" [ref=e1027] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/privacy_policy.html
+          - text: ","
+        - listitem [ref=e1028]:
+          - link "Cookie Policy" [ref=e1029] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/cookie_disclosure_policy.html
+          - text: ","
+        - listitem [ref=e1030]:
+          - link "User Agreement" [ref=e1031] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/user_agreement.html
+          - text: ","
+        - listitem [ref=e1032]:
+          - link "Terms of Service" [ref=e1033] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/user_agreement.html#tos
+          - text: ","
+        - listitem [ref=e1034]:
+          - link "Franchise Offices" [ref=e1035] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/franchise/branchoffices
+          - text: ","
+        - listitem [ref=e1036]:
+          - link "Make A Payment" [ref=e1037] [cursor=pointer]:
+            - /url: https://payments.makemytrip.com/easypay/
+          - text: ","
+        - listitem [ref=e1038]:
+          - link "Work From Home" [ref=e1039] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/about-us/work-from-home.php
+          - text: ","
+        - listitem [ref=e1040]:
+          - link "Escalation Channel" [ref=e1041] [cursor=pointer]:
+            - /url: https://supportz.makemytrip.com/Mima/Escalate/
+          - text: ","
+        - listitem [ref=e1042]:
+          - link "Report Security Issues" [ref=e1043] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/pwa/hlp/v3/bugbounty/
+      - paragraph [ref=e1044]: Important Links
+      - list [ref=e1045]:
+        - listitem [ref=e1046]:
+          - link "Cheap Flights" [ref=e1047] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/cheap.html
+          - text: ","
+        - listitem [ref=e1048]:
+          - link "Flight Status" [ref=e1049] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/flight-status.html
+          - text: ","
+        - listitem [ref=e1050]:
+          - link "Kumbh Mela" [ref=e1051] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/kumbh-mela-special-trains.html
+          - text: ","
+        - listitem [ref=e1052]:
+          - link "Domestic Airlines" [ref=e1053] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/airlines.html
+          - text: ","
+        - listitem [ref=e1054]:
+          - link "International Airlines" [ref=e1055] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/international-flights/airlines.html
+          - text: ","
+        - listitem [ref=e1056]:
+          - link "Indigo" [ref=e1057] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/indigo-airlines.html
+          - text: ","
+        - listitem [ref=e1058]:
+          - link "Spicejet" [ref=e1059] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/spicejet.html
+          - text: ","
+        - listitem [ref=e1060]:
+          - link "GoAir" [ref=e1061] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/goair-airlines.html
+          - text: ","
+        - listitem [ref=e1062]:
+          - link "Air Asia" [ref=e1063] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/air-asia.html
+          - text: ","
+        - listitem [ref=e1064]:
+          - link "Air India" [ref=e1065] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/airline-air_india.html
+          - text: ","
+        - listitem [ref=e1066]:
+          - link "Indian Railways" [ref=e1067] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/indian-railways.html
+          - text: ","
+        - listitem [ref=e1068]:
+          - link "Trip Ideas" [ref=e1069] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas
+          - text: ","
+        - listitem [ref=e1070]:
+          - link "Beaches" [ref=e1071] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/beach-destinations
+          - text: ","
+        - listitem [ref=e1072]:
+          - link "Honeymoon Destinations" [ref=e1073] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/honeymoon-destinations
+          - text: ","
+        - listitem [ref=e1074]:
+          - link "Romantic Destinations" [ref=e1075] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/romantic-destinations
+          - text: ","
+        - listitem [ref=e1076]:
+          - link "Popular Destinations" [ref=e1077] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/places
+          - text: ","
+        - listitem [ref=e1078]:
+          - link "Resorts In Udaipur" [ref=e1079] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/p-resorts-in-udaipur.html
+          - text: ","
+        - listitem [ref=e1080]:
+          - link "Resorts In Munnar" [ref=e1081] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/p-resorts-in-munnar.html
+          - text: ","
+        - listitem [ref=e1082]:
+          - link "Villas In Lonavala" [ref=e1083] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/p-villas-in-lonavala.html
+          - text: ","
+        - listitem [ref=e1084]:
+          - link "Hotels in Thailand" [ref=e1085] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/hotels-in-thailand.html
+          - text: ","
+        - listitem [ref=e1086]:
+          - link "Villas In Goa" [ref=e1087] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/p-villas-in-goa.html
+          - text: ","
+        - listitem [ref=e1088]:
+          - link "Domestic Flight Offers" [ref=e1089] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/domestic-flight-offer.html
+          - text: ","
+        - listitem [ref=e1090]:
+          - link "International Flight Offers" [ref=e1091] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/international-flights/international-flight-offer.html
+          - text: ","
+        - listitem [ref=e1092]:
+          - link "UAE Flight Offers" [ref=e1093] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/international-flights/united_arab_emirates/flight-offers.html
+          - text: ","
+        - listitem [ref=e1094]:
+          - link "USA" [ref=e1095] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/en-us/
+          - text: ","
+        - listitem [ref=e1096]:
+          - link "UAE" [ref=e1097] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/en-ae/
+          - text: ","
+        - listitem [ref=e1098]:
+          - link "Saudi Arabia" [ref=e1099] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/en-sa/
+          - text: ","
+        - listitem [ref=e1100]:
+          - link "UK" [ref=e1101] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/en-gb/
+          - text: ","
+        - listitem [ref=e1102]:
+          - link "Oman" [ref=e1103] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/en-om/
+      - paragraph [ref=e1104]: Corporate Travel
+      - list [ref=e1105]:
+        - listitem [ref=e1106]:
+          - link "Business Travel" [ref=e1107] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/business-travel.html
+          - text: ","
+        - listitem [ref=e1108]:
+          - link "Corporate Travel" [ref=e1109] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/corporate-travel-basics.html
+          - text: ","
+        - listitem [ref=e1110]:
+          - link "Corporate Travel Management" [ref=e1111] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/corporate-travel-management.html
+          - text: ","
+        - listitem [ref=e1112]:
+          - link "Corporate Travel Solution" [ref=e1113] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/business-travel-solutions.html
+          - text: ","
+        - listitem [ref=e1114]:
+          - link "Corporate Hotel Booking" [ref=e1115] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/corporate-hotel-booking.html
+          - text: ","
+        - listitem [ref=e1116]:
+          - link "Corporate Flight Booking" [ref=e1117] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/corporate-flight-booking.html
+          - text: ","
+        - listitem [ref=e1118]:
+          - link "Expense Management" [ref=e1119] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate-expense-management
+          - text: ","
+        - listitem [ref=e1120]:
+          - link "Corporate Expense Management" [ref=e1121] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/expense-management.html
+          - text: ","
+        - listitem [ref=e1122]:
+          - link "GST on Hotel Rooms" [ref=e1123] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/hotels-gst-invoice.html
+          - text: ","
+        - listitem [ref=e1124]:
+          - link "GST on Flight Tickets" [ref=e1125] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/gst-invoice-flights.html
+          - text: ","
+        - listitem [ref=e1126]:
+          - link "Business Travel for SME" [ref=e1127] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/business-travel-with-udyam-ngo.html
+          - text: ","
+        - listitem [ref=e1128]:
+          - link "GST Invoice for International flights" [ref=e1129] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/gst-invoice-international-flights.html
+          - text: ","
+        - listitem [ref=e1130]:
+          - link "GST Invoice for Bus" [ref=e1131] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/gst-for-bus-travel.html
+          - text: ","
+        - listitem [ref=e1132]:
+          - link "GST on Train Tickets" [ref=e1133] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/gst-on-train-tickets.html
+          - text: ","
+        - listitem [ref=e1134]:
+          - link "T&E (Travel & Expense)" [ref=e1135] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/t-and-e-meaning.html
+          - text: ","
+        - listitem [ref=e1136]:
+          - link "myBiz - Best Business Travel Platform" [ref=e1137] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/best-business-travel-platform.html
+          - text: ","
+        - listitem [ref=e1138]:
+          - link "GST Invoice for Corporate Travel" [ref=e1139] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/gst-bill.html
+          - text: ","
+        - listitem [ref=e1140]:
+          - link "myBiz for Small Business" [ref=e1141] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/travel-for-small-business.html
+          - text: ","
+        - listitem [ref=e1142]:
+          - link "Free cancellation on International Flights" [ref=e1143] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/corporate/corporate-flights-free-cancellation-international.html
+      - paragraph [ref=e1144]: Product Offering
+      - list [ref=e1145]:
+        - listitem [ref=e1146]:
+          - link "Flights" [ref=e1147] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/
+          - text: ","
+        - listitem [ref=e1148]:
+          - link "International Flights" [ref=e1149] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/international-flights/
+          - text: ","
+        - listitem [ref=e1150]:
+          - link "Charter Flights" [ref=e1151] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/charter-flights/
+          - text: ","
+        - listitem [ref=e1152]:
+          - link "Hotels" [ref=e1153] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/
+          - text: ","
+        - listitem [ref=e1154]:
+          - link "International Hotels" [ref=e1155] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/
+          - text: ","
+        - listitem [ref=e1156]:
+          - link "Homestays and Villas" [ref=e1157] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/homestays/
+          - text: ","
+        - listitem [ref=e1158]:
+          - link "Activities" [ref=e1159] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/activities/
+          - text: ","
+        - listitem [ref=e1160]:
+          - link "Holidays In India" [ref=e1161] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india
+          - text: ","
+        - listitem [ref=e1162]:
+          - link "International Holidays" [ref=e1163] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international
+          - text: ","
+        - listitem [ref=e1164]:
+          - link "Book Hotels From UAE" [ref=e1165] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/?ccde=ae
+          - text: ","
+        - listitem [ref=e1166]:
+          - link "myBiz for Corporate Travel" [ref=e1167] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/?intid=mmtfooter_productoffering
+          - text: ","
+        - listitem [ref=e1168]:
+          - link "Book Online Cabs" [ref=e1169] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/cabs
+          - text: ","
+        - listitem [ref=e1170]:
+          - link "Book Bus Tickets" [ref=e1171] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/bus-tickets/
+          - text: ","
+        - listitem [ref=e1172]:
+          - link "Book Train Tickets" [ref=e1173] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/
+          - text: ","
+        - listitem [ref=e1174]:
+          - link "Cheap Tickets to India" [ref=e1175] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/?ccde=us
+          - text: ","
+        - listitem [ref=e1176]:
+          - link "Book Flights From US" [ref=e1177] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/?ccde=us
+          - text: ","
+        - listitem [ref=e1178]:
+          - link "Book Flights From UAE" [ref=e1179] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/?ccde=us
+          - text: ","
+        - listitem [ref=e1180]:
+          - link "Trip Planner" [ref=e1181] [cursor=pointer]:
+            - /url: https://planner.makemytrip.com/?&intid=Homepage_Tab_Inspirock
+          - text: ","
+        - listitem [ref=e1182]:
+          - link "Forex Card" [ref=e1183] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/forex/
+          - text: ","
+        - listitem [ref=e1184]:
+          - link "Buy Foreign Currency" [ref=e1185] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency
+          - text: ","
+        - listitem [ref=e1186]:
+          - link "Travel Insurance" [ref=e1187] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/
+          - text: ","
+        - listitem [ref=e1188]:
+          - link "Travel Insurance Thailand" [ref=e1189] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/thailand/
+          - text: ","
+        - listitem [ref=e1190]:
+          - link "Travel Insurance For UAE" [ref=e1191] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/dubai/
+          - text: ","
+        - listitem [ref=e1192]:
+          - link "Travel Insurance For Indonesia" [ref=e1193] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/indonesia/
+          - text: ","
+        - listitem [ref=e1194]:
+          - link "Travel Insurance For Vietnam" [ref=e1195] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/vietnam/
+          - text: ","
+        - listitem [ref=e1196]:
+          - link "Travel Insurance For Europe" [ref=e1197] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/europe/
+          - text: ","
+        - listitem [ref=e1198]:
+          - link "Travel Insurance For USA" [ref=e1199] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/usa/
+          - text: ","
+        - listitem [ref=e1200]:
+          - link "Travel Insurance for Singapore" [ref=e1201] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/singapore/
+          - text: ","
+        - listitem [ref=e1202]:
+          - link "Travel Insurance for Malaysia" [ref=e1203] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/malaysia/
+          - text: ","
+        - listitem [ref=e1204]:
+          - link "Travel Insurance for Sri Lanka" [ref=e1205] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/sri-lanka/
+          - text: ","
+        - listitem [ref=e1206]:
+          - link "Travel Insurance for United Kingdom" [ref=e1207] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/uk/
+          - text: ","
+        - listitem [ref=e1208]:
+          - link "Travel Insurance for Canada" [ref=e1209] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/canada/
+          - text: ","
+        - listitem [ref=e1210]:
+          - link "Gift Cards" [ref=e1211] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/
+          - text: ","
+        - listitem [ref=e1212]:
+          - link "Gift" [ref=e1213] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/gift/
+          - text: ","
+        - listitem [ref=e1214]:
+          - link "Wedding Gift" [ref=e1215] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/wedding-gift/
+          - text: ","
+        - listitem [ref=e1216]:
+          - link "Anniversary Gift" [ref=e1217] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/anniversary-gift/
+          - text: ","
+        - listitem [ref=e1218]:
+          - link "Birthday Gift" [ref=e1219] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/birthday-gift/
+          - text: ","
+        - listitem [ref=e1220]:
+          - link "Diwali Gift" [ref=e1221] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/diwali-gift/
+          - text: ","
+        - listitem [ref=e1222]:
+          - link "Valentines Gift" [ref=e1223] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/valentines-gift/
+          - text: ","
+        - listitem [ref=e1224]:
+          - link "Farewell Gift" [ref=e1225] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/farewell-gift/
+          - text: ","
+        - listitem [ref=e1226]:
+          - link "Christmas Gift" [ref=e1227] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/christmas-gift/
+          - text: ","
+        - listitem [ref=e1228]:
+          - link "New Year Gift" [ref=e1229] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/newyear-gift/
+          - text: ","
+        - listitem [ref=e1230]:
+          - link "Trip Money" [ref=e1231] [cursor=pointer]:
+            - /url: https://www.tripmoney.com/
+          - text: ","
+        - listitem [ref=e1232]:
+          - link "Trip Ideas" [ref=e1233] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/
+          - text: ","
+        - listitem [ref=e1234]:
+          - link "Travel Blog" [ref=e1235] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/blog/?intid=mmtblog_footer
+          - text: ","
+        - listitem [ref=e1236]:
+          - link "PNR Status" [ref=e1237] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/PNR/
+          - text: ","
+        - listitem [ref=e1238]:
+          - link "MakeMyTrip Advertising Solutions" [ref=e1239] [cursor=pointer]:
+            - /url: https://advertising.makemytrip.com/ad/solutions/
+          - text: ","
+        - listitem [ref=e1240]:
+          - link "One Way Cab" [ref=e1241] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/car-rental/one-way-cab.html
+          - text: ","
+        - listitem [ref=e1242]:
+          - link "Travel Credit Card" [ref=e1243] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/cards/makemytrip-icici-bank-credit-card
+      - paragraph [ref=e1244]: Currency Converter
+      - list [ref=e1245]:
+        - listitem [ref=e1246]:
+          - link "USD to INR" [ref=e1247] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/usd-to-inr
+          - text: ","
+        - listitem [ref=e1248]:
+          - link "EUR to INR" [ref=e1249] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/eur-to-inr
+          - text: ","
+        - listitem [ref=e1250]:
+          - link "CAD to INR" [ref=e1251] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/cad-to-inr
+          - text: ","
+        - listitem [ref=e1252]:
+          - link "AED to INR" [ref=e1253] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/aed-to-inr
+          - text: ","
+        - listitem [ref=e1254]:
+          - link "GBP to INR" [ref=e1255] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/gbp-to-inr
+          - text: ","
+        - listitem [ref=e1256]:
+          - link "AUD to INR" [ref=e1257] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/aud-to-inr
+          - text: ","
+        - listitem [ref=e1258]:
+          - link "SGD to INR" [ref=e1259] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/sgd-to-inr
+          - text: ","
+        - listitem [ref=e1260]:
+          - link "THB to INR" [ref=e1261] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/thb-to-inr
+          - text: ","
+        - listitem [ref=e1262]:
+          - link "JPY to INR" [ref=e1263] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/jpy-to-inr
+          - text: ","
+        - listitem [ref=e1264]:
+          - link "CHF to INR" [ref=e1265] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/chf-to-inr
+          - text: ","
+        - listitem [ref=e1266]:
+          - link "NZD to INR" [ref=e1267] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/nzd-to-inr
+          - text: ","
+        - listitem [ref=e1268]:
+          - link "SAR to INR" [ref=e1269] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/sar-to-inr
+          - text: ","
+        - listitem [ref=e1270]:
+          - link "ZAR to INR" [ref=e1271] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/zar-to-inr
+          - text: ","
+        - listitem [ref=e1272]:
+          - link "HKD to INR" [ref=e1273] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-converter/hkd-to-inr
+      - paragraph [ref=e1274]: Top Hotels in India
+      - list [ref=e1275]:
+        - listitem [ref=e1276]:
+          - link "Fairmont Jaipur" [ref=e1277] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/fairmont_jaipur-details-jaipur.html
+          - text: ","
+        - listitem [ref=e1278]:
+          - link "St Regis Goa" [ref=e1279] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_st_regis_goa_resort-details-goa.html
+          - text: ","
+        - listitem [ref=e1280]:
+          - link "Six Senses Fort Barwara" [ref=e1281] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_st_regis_goa_resort-details-goa.html
+          - text: ","
+        - listitem [ref=e1282]:
+          - link "W Goa" [ref=e1283] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/w_goa-details-goa.html
+          - text: ","
+        - listitem [ref=e1284]:
+          - link "Grand Hyatt Goa" [ref=e1285] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/grand_hyatt_goa-details-goa.html
+          - text: ","
+        - listitem [ref=e1286]:
+          - link "Shangri-La Bangalore" [ref=e1287] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/shangri_la_bengaluru-details-bangalore.html
+          - text: ","
+        - listitem [ref=e1288]:
+          - link "The St Regis Mumbai" [ref=e1289] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_st_regis_mumbai-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1290]:
+          - link "Taj Rishikesh" [ref=e1291] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_rishikesh_resort_spa_uttarakhand-details-rishikesh.html
+          - text: ","
+        - listitem [ref=e1292]:
+          - link "Grand Hyatt Mumbai" [ref=e1293] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/grand_hyatt_mumbai-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1294]:
+          - link "Le Meridien Delhi" [ref=e1295] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/le_meridien_delhi-details-delhi.html
+          - text: ","
+        - listitem [ref=e1296]:
+          - link "Rambagh Palace Jaipur" [ref=e1297] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/rambagh_palace_jaipur-details-jaipur.html
+          - text: ","
+        - listitem [ref=e1298]:
+          - link "Leela Palace Chennai" [ref=e1299] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_leela_palace_chennai-details-chennai.html
+          - text: ","
+        - listitem [ref=e1300]:
+          - link "The Leela Palace Udaipur" [ref=e1301] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_leela_palace_udaipur-details-udaipur.html
+          - text: ","
+        - listitem [ref=e1302]:
+          - link "Taj Lake Palace Udaipur" [ref=e1303] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_lake_palace_udaipur-details-udaipur.html
+          - text: ","
+        - listitem [ref=e1304]:
+          - link "Jw Marriott Chandigarh" [ref=e1305] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_lake_palace_udaipur-details-udaipur.html
+          - text: ","
+        - listitem [ref=e1306]:
+          - link "Alila Diwa Goa" [ref=e1307] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/alila_diwa_goa_a_hyatt_brand-details-goa.html
+          - text: ","
+        - listitem [ref=e1308]:
+          - link "Le Meridien Goa" [ref=e1309] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/le_meridien_goa_calangute-details-goa.html
+          - text: ","
+        - listitem [ref=e1310]:
+          - link "Taj Lands End Mumbai" [ref=e1311] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_lands_end_mumbai-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1312]:
+          - link "Itc Grand Chola Chennai" [ref=e1313] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/itc_grand_chola_a_luxury_collection_hotel-details-chennai.html
+          - text: ","
+        - listitem [ref=e1314]:
+          - link "Itc Maratha Mumbai" [ref=e1315] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/itc_maratha_a_luxury_collection_hotel-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1316]:
+          - link "Oberoi Udaivilas" [ref=e1317] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_oberoi_udaivilas-details-udaipur.html
+          - text: ","
+        - listitem [ref=e1318]:
+          - link "Jai Mahal Palace Jaipur" [ref=e1319] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/jai_mahal_palace-details-jaipur.html
+          - text: ","
+        - listitem [ref=e1320]:
+          - link "Taj Mahal Tower Mumbai" [ref=e1321] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_mahal_tower_mumbai-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1322]:
+          - link "Marriott Suites Pune" [ref=e1323] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/marriott_suites_pune-details-pune.html
+          - text: ","
+        - listitem [ref=e1324]:
+          - link "Park Hyatt Chennai" [ref=e1325] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/park_hyatt_chennai-details-chennai.html
+          - text: ","
+        - listitem [ref=e1326]:
+          - link "The Leela Palace Jaipur" [ref=e1327] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_leela_palace_jaipur-details-jaipur.html
+          - text: ","
+        - listitem [ref=e1328]:
+          - link "Jw Marriott Mumbai Sahar" [ref=e1329] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/jw_marriott_mumbai_sahar-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1330]:
+          - link "Jw Marriott Mumbai Juhu" [ref=e1331] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/jw_marriott_mumbai_juhu-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1332]:
+          - link "The Ritz Carlton Bengaluru" [ref=e1333] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_ritz_carlton-details-bangalore.html
+          - text: ","
+        - listitem [ref=e1334]:
+          - link "The Oberoi New Delhi" [ref=e1335] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_oberoi_new_delhi-details-delhi.html
+          - text: ","
+        - listitem [ref=e1336]:
+          - link "Taj Resort & Convention Centre Goa" [ref=e1337] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_resort_and_convention_center_goa-details-goa.html
+          - text: ","
+        - listitem [ref=e1338]:
+          - link "Taj Bengal Kolkata" [ref=e1339] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_bengal_kolkata-details-kolkata.html
+          - text: ","
+        - listitem [ref=e1340]:
+          - link "Taj Coromandel Chennai" [ref=e1341] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_coromandel_chennai-details-chennai.html
+          - text: ","
+        - listitem [ref=e1342]:
+          - link "The Oberoi Gurgaon" [ref=e1343] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_oberoi_gurgaon-details-gurgaon.html
+          - text: ","
+        - listitem [ref=e1344]:
+          - link "The Westin Goa" [ref=e1345] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_westin_goa-details-goa.html
+          - text: ","
+        - listitem [ref=e1346]:
+          - link "Jw Marriott Hotel Pune" [ref=e1347] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/jw_marriott_hotel_pune-details-pune.html
+          - text: ","
+        - listitem [ref=e1348]:
+          - link "The Leela Palace New Delhi" [ref=e1349] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_leela_palace_new_delhi-details-delhi.html
+          - text: ","
+        - listitem [ref=e1350]:
+          - link "Taj West End Bengaluru" [ref=e1351] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/taj_west_end_bengaluru-details-bangalore.html
+          - text: ","
+        - listitem [ref=e1352]:
+          - link "The Taj Mahal Palace Mumbai" [ref=e1353] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/the_taj_mahal_palace_mumbai-details-mumbai.html
+          - text: ","
+        - listitem [ref=e1354]:
+          - link "Best Hotels in India" [ref=e1355] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/best-hotels-india.htm
+      - paragraph [ref=e1356]: Top International hotels
+      - list [ref=e1357]:
+        - listitem [ref=e1358]:
+          - link "Adaaran Club Rannalhi" [ref=e1359] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/maldives/maldives-hotels/adaaran_club_rannalhi-details.html
+          - text: ","
+        - listitem [ref=e1360]:
+          - link "Marina Bay Sands Singapore" [ref=e1361] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/en-sg/singapore/singapore-hotels/marina_bay_sands_201804021311192994-details.html
+          - text: ","
+        - listitem [ref=e1362]:
+          - link "Coco Bodu Hithi" [ref=e1363] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/maldives/maldives-hotels/coco_bodu_hithi-details.html
+          - text: ","
+        - listitem [ref=e1364]:
+          - link "Taj Dubai" [ref=e1365] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/taj_dubai-details.html
+          - text: ","
+        - listitem [ref=e1366]:
+          - link "Atlantis Hotel Dubai" [ref=e1367] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/atlantis_the_palm-details.html
+          - text: ","
+        - listitem [ref=e1368]:
+          - link "Amari Phuket" [ref=e1369] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/phuket-hotels/amari_phuket-details.html
+          - text: ","
+        - listitem [ref=e1370]:
+          - link "Jw Marriott Dubai" [ref=e1371] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/jw_marriott_marquis_hotel_dubai-details.html
+          - text: ","
+        - listitem [ref=e1372]:
+          - link "Armani Hotel Dubai" [ref=e1373] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/armani_hotel_dubai_in_burj_khalifa_201705301151145388-details.html
+          - text: ","
+        - listitem [ref=e1374]:
+          - link "Grand Hyatt Dubai" [ref=e1375] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/grand_hyatt_dubai_hotel-details.html
+          - text: ","
+        - listitem [ref=e1376]:
+          - link "Saii Lagoon Maldives" [ref=e1377] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/maldives/maldives-hotels/saii_lagoon_maldives_curio_collection_by_hilton-details.html
+          - text: ","
+        - listitem [ref=e1378]:
+          - link "Gevora Hotel Dubai" [ref=e1379] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/gevora_hotel_201807291406286306-details.html
+          - text: ","
+        - listitem [ref=e1380]:
+          - link "Hyatt Regency Dubai" [ref=e1381] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/hyatt_regency_dubai-details.html
+          - text: ","
+        - listitem [ref=e1382]:
+          - link "Pan Pacific Singapore" [ref=e1383] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/singapore/singapore-hotels/pan_pacific_singapore-details.html
+          - text: ","
+        - listitem [ref=e1384]:
+          - link "The Palm Dubai" [ref=e1385] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_arab_emirates/dubai-hotels/atlantis_the_palm-details.html
+          - text: ","
+        - listitem [ref=e1386]:
+          - link "Caesars Palace" [ref=e1387] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_states/las_vegas-hotels/caesars_palace-details.html
+          - text: ","
+        - listitem [ref=e1388]:
+          - link "Baiyoke Sky Hotel" [ref=e1389] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/bangkok-hotels/baiyoke_sky_hotel-details.html
+          - text: ","
+        - listitem [ref=e1390]:
+          - link "Centara Pattaya Hotel" [ref=e1391] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/pattaya-hotels/centara_pattaya_hotel-details.html
+          - text: ","
+        - listitem [ref=e1392]:
+          - link "Embudu Village" [ref=e1393] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/maldives/maldives-hotels/embudu_village-details.html
+          - text: ","
+        - listitem [ref=e1394]:
+          - link "Orchard Hotel Singapore" [ref=e1395] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/singapore/singapore-hotels/orchard_hotel_singapore-details.html
+          - text: ","
+        - listitem [ref=e1396]:
+          - link "Reethi Beach Resort" [ref=e1397] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/maldives/maldives-hotels/reethi_beach_resort-details.html
+          - text: ","
+        - listitem [ref=e1398]:
+          - link "Ambassador Hotel Bangkok" [ref=e1399] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/bangkok-hotels/ambassador_hotel_bangkok-details.html
+          - text: ","
+        - listitem [ref=e1400]:
+          - link "Dusit Thani Pattaya" [ref=e1401] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/pattaya-hotels/dusit_thani_pattaya-details.html
+          - text: ","
+        - listitem [ref=e1402]:
+          - link "Shangri La Singapore" [ref=e1403] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/singapore/singapore-hotels/shangri_la_hotel_singapore-details.html
+          - text: ","
+        - listitem [ref=e1404]:
+          - link "Sunbeam Hotel Pattaya" [ref=e1405] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/pattaya-hotels/sunbeam_hotel_pattaya-details.html
+          - text: ","
+        - listitem [ref=e1406]:
+          - link "Taj Samudra Colombo" [ref=e1407] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/sri_lanka/colombo-hotels/taj_samudra_colombo-details.html
+          - text: ","
+        - listitem [ref=e1408]:
+          - link "Bangkok Palace Hotel" [ref=e1409] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/bangkok-hotels/bangkok_palace_hotel-details.html
+          - text: ","
+        - listitem [ref=e1410]:
+          - link "Hilton Pattaya" [ref=e1411] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/pattaya-hotels/hilton_pattaya-details.html
+          - text: ","
+        - listitem [ref=e1412]:
+          - link "Novotel Phuket Resort" [ref=e1413] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/phuket-hotels/novotel_phuket_resort_4190725563794486-details.html
+          - text: ","
+        - listitem [ref=e1414]:
+          - link "Taj Exotica Resort Maldives" [ref=e1415] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/maldives/maldives-hotels/taj_exotica_resort_and_spa_maldives_free_airport_transfers-details.html
+          - text: ","
+        - listitem [ref=e1416]:
+          - link "Village Hotel Bugis" [ref=e1417] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/singapore/singapore-hotels/village_hotel_bugis_by_far_east_hospitality_201901241343198130-details.html
+          - text: ","
+        - listitem [ref=e1418]:
+          - link "Avani Atrium Bangkok" [ref=e1419] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/bangkok-hotels/grand_mercure_bangkok_atrium_4190725563790494-details.html
+          - text: ","
+        - listitem [ref=e1420]:
+          - link "The Plaza New York" [ref=e1421] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/united_states/new_york-hotels/the_plaza_hotel-details.html
+          - text: ","
+        - listitem [ref=e1422]:
+          - link "Village Hotel Albert Court" [ref=e1423] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/singapore/singapore-hotels/village_hotel_albert_court_by_far_east_hospitality_201901241343458174-details.html
+          - text: ","
+        - listitem [ref=e1424]:
+          - link "Amari Pattaya" [ref=e1425] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/thailand/pattaya-hotels/amari_pattaya_by_amari_group-details.html
+      - paragraph [ref=e1426]: Currency Exchange in Cities
+      - list [ref=e1427]:
+        - listitem [ref=e1428]:
+          - link "Currency Exchange in Delhi" [ref=e1429] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-delhi
+          - text: ","
+        - listitem [ref=e1430]:
+          - link "Currency Exchange in Bangalore" [ref=e1431] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-bangalore
+          - text: ","
+        - listitem [ref=e1432]:
+          - link "Currency Exchange in Gurgaon" [ref=e1433] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-gurgaon
+          - text: ","
+        - listitem [ref=e1434]:
+          - link "Currency Exchange in Mumbai" [ref=e1435] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-mumbai
+          - text: ","
+        - listitem [ref=e1436]:
+          - link "Currency Exchange in Pune" [ref=e1437] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-pune
+          - text: ","
+        - listitem [ref=e1438]:
+          - link "Currency Exchange in Hyderabad" [ref=e1439] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-hyderabad
+          - text: ","
+        - listitem [ref=e1440]:
+          - link "Currency Exchange in Kolkata" [ref=e1441] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-kolkata
+          - text: ","
+        - listitem [ref=e1442]:
+          - link "Currency Exchange in Noida" [ref=e1443] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-noida
+          - text: ","
+        - listitem [ref=e1444]:
+          - link "Currency Exchange in Ahmedabad" [ref=e1445] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-ahmedabad
+          - text: ","
+        - listitem [ref=e1446]:
+          - link "Currency Exchange in Jaipur" [ref=e1447] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-jaipur
+          - text: ","
+        - listitem [ref=e1448]:
+          - link "Currency Exchange in Chennai" [ref=e1449] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-chennai
+          - text: ","
+        - listitem [ref=e1450]:
+          - link "Currency Exchange in Lucknow" [ref=e1451] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-lucknow
+          - text: ","
+        - listitem [ref=e1452]:
+          - link "Currency Exchange in Chandigarh" [ref=e1453] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-chandigarh
+          - text: ","
+        - listitem [ref=e1454]:
+          - link "Currency Exchange in Surat" [ref=e1455] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-surat
+          - text: ","
+        - listitem [ref=e1456]:
+          - link "Currency Exchange in Vijayawada" [ref=e1457] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-vijayawada
+          - text: ","
+        - listitem [ref=e1458]:
+          - link "Currency Exchange in Coimbatore" [ref=e1459] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-coimbatore
+          - text: ","
+        - listitem [ref=e1460]:
+          - link "Currency Exchange in Patna" [ref=e1461] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-patna
+          - text: ","
+        - listitem [ref=e1462]:
+          - link "Currency Exchange in Guwahati" [ref=e1463] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-guwahati
+          - text: ","
+        - listitem [ref=e1464]:
+          - link "Currency Exchange in Faridabad" [ref=e1465] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-faridabad
+          - text: ","
+        - listitem [ref=e1466]:
+          - link "Currency Exchange in Bhopal" [ref=e1467] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-bhopal
+          - text: ","
+        - listitem [ref=e1468]:
+          - link "Currency Exchange in Thane" [ref=e1469] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-thane
+          - text: ","
+        - listitem [ref=e1470]:
+          - link "Currency Exchange in Vadodara" [ref=e1471] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-vadodara
+          - text: ","
+        - listitem [ref=e1472]:
+          - link "Currency Exchange in Ghaziabad" [ref=e1473] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-ghaziabad
+          - text: ","
+        - listitem [ref=e1474]:
+          - link "Currency Exchange in Kanpur" [ref=e1475] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-kanpur
+          - text: ","
+        - listitem [ref=e1476]:
+          - link "Currency Exchange in Kochi" [ref=e1477] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-kochi
+          - text: ","
+        - listitem [ref=e1478]:
+          - link "Currency Exchange in Ludhiana" [ref=e1479] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-ludhiana
+          - text: ","
+        - listitem [ref=e1480]:
+          - link "Currency Exchange in Mangalore" [ref=e1481] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-mangalore
+          - text: ","
+        - listitem [ref=e1482]:
+          - link "Currency Exchange in Amritsar" [ref=e1483] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-amritsar
+          - text: ","
+        - listitem [ref=e1484]:
+          - link "Currency Exchange in Jalandhar" [ref=e1485] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency-exchange-in-jalandhar
+      - paragraph [ref=e1486]: Book Hotels in India from Top Destinations
+      - list [ref=e1487]:
+        - listitem [ref=e1488]:
+          - link "Hotels in Jaipur" [ref=e1489] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/jaipur-hotels.html
+          - text: ","
+        - listitem [ref=e1490]:
+          - link "Hotels in Goa" [ref=e1491] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/goa-hotels.html
+          - text: ","
+        - listitem [ref=e1492]:
+          - link "Hotels in Delhi" [ref=e1493] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/delhi-hotels.html
+          - text: ","
+        - listitem [ref=e1494]:
+          - link "Hotels in Udaipur" [ref=e1495] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/udaipur-hotels.html
+          - text: ","
+        - listitem [ref=e1496]:
+          - link "Hotels in Gurgaon" [ref=e1497] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/gurgaon-hotels.html
+          - text: ","
+        - listitem [ref=e1498]:
+          - link "Hotels in Mumbai" [ref=e1499] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/mumbai-hotels.html
+          - text: ","
+        - listitem [ref=e1500]:
+          - link "Hotels in Bangalore" [ref=e1501] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/bangalore-hotels.html
+          - text: ","
+        - listitem [ref=e1502]:
+          - link "Hotels in Rishikesh" [ref=e1503] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/rishikesh-hotels.html
+          - text: ","
+        - listitem [ref=e1504]:
+          - link "Hotels in Agra" [ref=e1505] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/agra-hotels.html
+          - text: ","
+        - listitem [ref=e1506]:
+          - link "Hotels in Chennai" [ref=e1507] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/chennai-hotels.html
+          - text: ","
+        - listitem [ref=e1508]:
+          - link "Hotels in Kasauli" [ref=e1509] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/kasauli-hotels.html
+          - text: ","
+        - listitem [ref=e1510]:
+          - link "Hotels in Kolkata" [ref=e1511] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/kolkata-hotels.html
+          - text: ","
+        - listitem [ref=e1512]:
+          - link "Hotels in Pune" [ref=e1513] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/pune-hotels.html
+          - text: ","
+        - listitem [ref=e1514]:
+          - link "Hotels in Manali" [ref=e1515] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/manali-hotels.html
+          - text: ","
+        - listitem [ref=e1516]:
+          - link "Hotels in Lonavala" [ref=e1517] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/lonavala-hotels.html
+          - text: ","
+        - listitem [ref=e1518]:
+          - link "Hotels in Shimla" [ref=e1519] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/shimla-hotels.html
+          - text: ","
+        - listitem [ref=e1520]:
+          - link "Hotels in Munnar" [ref=e1521] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/munnar-hotels.html
+          - text: ","
+        - listitem [ref=e1522]:
+          - link "Hotels in Ayodhya" [ref=e1523] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/ayodhya-hotels.html
+          - text: ","
+        - listitem [ref=e1524]:
+          - link "Hotels in Gulmarg" [ref=e1525] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/gulmarg-hotels.html
+          - text: ","
+        - listitem [ref=e1526]:
+          - link "Hotels in Leh" [ref=e1527] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/leh-hotels.html
+          - text: ","
+        - listitem [ref=e1528]:
+          - link "Hotels in Hyderabad" [ref=e1529] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/hyderabad-hotels.html
+    - article [ref=e1533]:
+      - generic [ref=e1534]:
+        - heading "Buy Foreign Currency" [level=2] [ref=e1535]
+        - paragraph [ref=e1539]: These dayas, purchasing foreign currency with INR before international trip is quick, secure, and cost-effective with forex products powered by BookMyForex. With the best rates, live rate info, safe carry and usage options, and other benefits, our cobranded prepaid forex card powered by Bookmyforex & Yesbank, is feature-packed and utility-rich, combining the best of convenience and accessibility.
+      - generic [ref=e1540]:
+        - heading "Purpose of Buying Forex Card" [level=2] [ref=e1541]
+        - generic [ref=e1544]:
+          - paragraph [ref=e1545]: You can buy a Forex card for either of the following traveling purposes -
+          - list [ref=e1546]:
+            - listitem [ref=e1547]:
+              - strong [ref=e1548]: "Education:"
+              - text: Students can use a Forex card to pay for their day-to-day expenses in a foreign land.
+            - listitem [ref=e1549]:
+              - strong [ref=e1550]: "Leisure:"
+              - text: Simply swipe your Forex card to meet various expenses on a leisurely international trip with friends or family.
+            - listitem [ref=e1551]:
+              - strong [ref=e1552]: "Business:"
+              - text: Pay for your expenses abroad with easy Forex card swipes on a business trip.
+      - generic [ref=e1553]:
+        - heading "Advantages of Forex Card" [level=2] [ref=e1554]
+        - generic [ref=e1557]:
+          - paragraph [ref=e1558]: "The top advantages of Forex cards from MakeMyTrip, powered by BookMyForex, include the following:"
+          - list [ref=e1559]:
+            - listitem [ref=e1560]:
+              - strong [ref=e1561]: "Free of any charges:"
+              - text: The Forex card does not attract any issuance, reloading, or unloading charges commonly associated with international travel cards.
+            - listitem [ref=e1562]:
+              - strong [ref=e1563]: Covered against fraud, assault and theft
+              - text: The card comes with free insurance cover against theft, fraud, and assault, and keeps your money protected.
+            - listitem [ref=e1564]:
+              - strong [ref=e1565]: "Emergency cash support:"
+              - text: In case the card is lost or stolen, emergency cash support is available in all major international cities
+            - listitem [ref=e1566]:
+              - strong [ref=e1567]: "Enhanced savings:"
+              - text: The Forex card provides savings of 6.5% to 7% on ATM withdrawals.
+            - listitem [ref=e1568]:
+              - strong [ref=e1569]: "Chip and pin secured:"
+              - text: With enhanced chip and pin security, the card remains protected against theft and counterfeits.
+            - listitem [ref=e1570]:
+              - strong [ref=e1571]: "Easy application process:"
+              - text: It takes a simplified and quick online process to apply for the Forex card.
+      - generic [ref=e1572]:
+        - heading "Features of Forex Card" [level=2] [ref=e1573]
+        - paragraph [ref=e1577]: Keep your overseas trips hassle free and memorable with a range of features of our cobranded prepaid forex cards powered by BookMyForex and Yes Bank.
+      - generic [ref=e1578]:
+        - heading "Documents Required to Apply for a Forex Card" [level=2] [ref=e1579]
+        - generic [ref=e1582]:
+          - paragraph [ref=e1583]: In India, you need to submit a few documents in order to apply for a Forex Card. While these may depend on the destination, trip duration, etc., in most cases, only the below documents are required -
+          - list [ref=e1584]:
+            - listitem [ref=e1585]: Copy of valid Passport
+            - listitem [ref=e1586]: Copy of valid Visa
+            - listitem [ref=e1587]: Copy of PAN Card
+            - listitem [ref=e1588]: Flight tickets for travel within 60 days from the date of applying.
+      - generic [ref=e1589]:
+        - heading "How to Buy Forex Card Online on MakeMyTrip" [level=2] [ref=e1590]
+        - generic [ref=e1593]:
+          - paragraph [ref=e1594]: "You can buy a Forex card online on MakeMyTrip in the following steps:"
+          - list [ref=e1595]:
+            - listitem [ref=e1596]:
+              - strong [ref=e1597]: "Step 1:"
+              - text: Go to Forex Card & Currency and select your city of delivery
+            - listitem [ref=e1598]:
+              - strong [ref=e1599]: "Step 2:"
+              - text: Provide traveller and trip details
+            - listitem [ref=e1600]:
+              - strong [ref=e1601]: "Step 3:"
+              - text: Choose your preferred currency to load
+            - listitem [ref=e1602]:
+              - strong [ref=e1603]: "Step 4:"
+              - text: Enter the currency amount you need converted and buy Forex
+            - listitem [ref=e1604]:
+              - strong [ref=e1605]: "Step 5:"
+              - text: Enter the delivery address and submit
+          - paragraph [ref=e1606]: Post completion of the application process, the card will reach you the same or the next day.
+    - generic [ref=e1608]:
+      - generic [ref=e1609]:
+        - link [ref=e1610] [cursor=pointer]:
+          - /url: https://www.instagram.com/makemytrip/
+        - link [ref=e1612] [cursor=pointer]:
+          - /url: https://x.com/makemytrip
+        - link [ref=e1614] [cursor=pointer]:
+          - /url: https://in.linkedin.com/company/makemytrip.com?open=outside
+        - link [ref=e1616] [cursor=pointer]:
+          - /url: https://www.facebook.com/makemytrip/
+      - paragraph [ref=e1619]: © 2026 MakeMyTrip (India) Limited
+```

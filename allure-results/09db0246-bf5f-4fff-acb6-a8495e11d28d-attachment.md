@@ -1,0 +1,1427 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: boring.spec.js >> Make My Trip
+- Location: tests\boring.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 6000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - img "Make My Trip" [ref=e8] [cursor=pointer]
+      - list [ref=e9]:
+        - listitem [ref=e10] [cursor=pointer]:
+          - generic [ref=e13]:
+            - paragraph [ref=e14]: List Your Property
+            - paragraph [ref=e15]: Grow your business!
+        - listitem [ref=e16] [cursor=pointer]:
+          - img "myBizLogo" [ref=e18]
+          - generic [ref=e19]:
+            - paragraph [ref=e20]: Introducing myBiz
+            - paragraph [ref=e21]: Business Travel Solution
+        - listitem [ref=e22] [cursor=pointer]:
+          - generic [ref=e25]:
+            - paragraph [ref=e26]: My Trips
+            - paragraph [ref=e27]: Manage your bookings
+        - listitem [ref=e28] [cursor=pointer]:
+          - generic "Wishlist" [ref=e30]
+          - generic [ref=e31]:
+            - paragraph [ref=e32]: Wishlist
+            - paragraph [ref=e33]: Save favourites
+        - listitem [ref=e34] [cursor=pointer]:
+          - paragraph [ref=e39]: Login or Create Account
+        - listitem [ref=e40] [cursor=pointer]:
+          - generic [ref=e41]:
+            - generic [ref=e43]: INR
+            - text: "|"
+            - generic [ref=e44]: English
+    - navigation [ref=e48]:
+      - list [ref=e49]:
+        - listitem [ref=e50]:
+          - link "Flights" [ref=e52] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/
+        - listitem [ref=e56]:
+          - link "Hotels" [ref=e58] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/
+        - listitem [ref=e62]:
+          - link "Villas & Homestays" [ref=e64] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/homestays/
+        - listitem [ref=e68]:
+          - link "Holiday Packages" [ref=e70] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/
+        - listitem [ref=e74]:
+          - link "Trains" [ref=e76] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/
+        - listitem [ref=e80]:
+          - link "Buses" [ref=e82] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/bus-tickets/
+        - listitem [ref=e86]:
+          - link "Cabs" [ref=e88] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/cabs/
+        - listitem [ref=e92]:
+          - link "Tours & Attractions" [ref=e94] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/activities/
+        - listitem [ref=e98]:
+          - link "Visa" [ref=e100] [cursor=pointer]:
+            - /url: https://visa.makemytrip.com/
+        - listitem [ref=e104]:
+          - link "Forex Card & Currency" [ref=e106] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/forex/
+        - listitem [ref=e110]:
+          - link "Travel Insurance" [ref=e112] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/
+  - generic [ref=e118]:
+    - generic [ref=e120]:
+      - list [ref=e121]:
+        - listitem [ref=e122] [cursor=pointer]:
+          - generic [ref=e124]: Search
+        - listitem [ref=e125] [cursor=pointer]:
+          - generic [ref=e127]: Last Minute Deals
+        - listitem [ref=e128] [cursor=pointer]:
+          - generic [ref=e130]: Honeymoon
+        - listitem [ref=e131] [cursor=pointer]:
+          - generic [ref=e133]: Offer Zone
+        - listitem [ref=e134] [cursor=pointer]:
+          - generic [ref=e136]: Group Tour Packages
+        - listitem [ref=e137] [cursor=pointer]:
+          - generic [ref=e139]: Pilgrimage
+      - generic [ref=e140]:
+        - generic [ref=e141]:
+          - generic [ref=e143] [cursor=pointer]:
+            - generic [ref=e144]: From City
+            - textbox "From City India" [ref=e145]: Chennai
+            - paragraph [ref=e146]: India
+          - generic [ref=e148] [cursor=pointer]:
+            - generic [ref=e149]: To City/State/Country
+            - textbox "To City/State/Country" [ref=e150]: Goa
+            - paragraph
+          - generic [ref=e152] [cursor=pointer]:
+            - generic [ref=e153]: Departure Date
+            - paragraph [ref=e155]: Select Date
+          - generic [ref=e157] [cursor=pointer]:
+            - generic [ref=e158]: Rooms & Guests
+            - paragraph [ref=e159]: Select Rooms
+          - generic [ref=e160]:
+            - generic "Please select destination":
+              - generic: Filters
+              - generic: Select Filters (Optional)
+        - heading "Holiday Packages" [level=1] [ref=e162]
+        - paragraph [ref=e163]:
+          - button "Search" [ref=e164] [cursor=pointer]
+    - paragraph [ref=e171] [cursor=pointer]:
+      - generic [ref=e172]:
+        - text: Hey,
+        - generic [ref=e173]: I am Myra
+    - main [ref=e174]:
+      - main [ref=e175]:
+        - generic [ref=e178]:
+          - generic [ref=e180]:
+            - generic [ref=e183] [cursor=pointer]
+            - generic [ref=e186] [cursor=pointer]
+            - generic [ref=e189] [cursor=pointer]
+            - img "Sponsored" [ref=e198]
+            - img "Sponsored" [ref=e208]
+            - generic [ref=e212] [cursor=pointer]
+            - generic [ref=e215] [cursor=pointer]
+          - list [ref=e216]:
+            - listitem [ref=e217]:
+              - button "Go to slide 1" [ref=e218] [cursor=pointer]
+            - listitem [ref=e219]:
+              - button "Go to slide 2" [ref=e220] [cursor=pointer]
+            - listitem [ref=e221]:
+              - button "Go to slide 3" [ref=e222] [cursor=pointer]
+            - listitem [ref=e223]:
+              - button "Go to slide 4" [ref=e224] [cursor=pointer]
+            - listitem [ref=e225]:
+              - button "Go to slide 5" [ref=e226] [cursor=pointer]
+            - listitem [ref=e227]:
+              - button "Go to slide 6" [ref=e228] [cursor=pointer]
+            - listitem [ref=e229]:
+              - button "Go to slide 7" [ref=e230] [cursor=pointer]
+        - img "Ads by MMT" [ref=e239]
+        - generic [ref=e241]:
+          - generic [ref=e243]:
+            - heading "SALE LIVE! Get Up to Rs 10,000 off NOW" [level=2] [ref=e244]
+            - paragraph [ref=e245]: "USE COUPON: YEARENDSALE"
+          - generic [ref=e248]:
+            - button "Previous" [ref=e249] [cursor=pointer]
+            - generic [ref=e251]:
+              - paragraph [ref=e259] [cursor=pointer]: Goa
+              - paragraph [ref=e267] [cursor=pointer]: Thailand
+              - paragraph [ref=e275] [cursor=pointer]: Andaman
+              - paragraph [ref=e283] [cursor=pointer]: Kerala
+              - paragraph [ref=e291] [cursor=pointer]: Maldives
+              - paragraph [ref=e299] [cursor=pointer]: Coorg & Ooty
+              - paragraph [ref=e307] [cursor=pointer]: Rajasthan
+              - paragraph [ref=e315] [cursor=pointer]: Himachal
+              - paragraph [ref=e323] [cursor=pointer]: Kashmir
+              - paragraph [ref=e331] [cursor=pointer]: Bali
+              - paragraph [ref=e339] [cursor=pointer]: Uttar Pradesh
+              - paragraph [ref=e347] [cursor=pointer]: Ladakh
+            - button "Next" [ref=e348] [cursor=pointer]
+        - generic [ref=e350]:
+          - generic [ref=e352]:
+            - heading "Last-Minute Escape Sale!" [level=2] [ref=e353]
+            - paragraph [ref=e354]: "Book your spontaneous getaway. Use code: LASTMINUTE"
+          - generic [ref=e357]:
+            - button "Previous" [ref=e358] [cursor=pointer]
+            - generic [ref=e360]:
+              - paragraph [ref=e368] [cursor=pointer]: South India
+              - paragraph [ref=e376] [cursor=pointer]: Kerala
+              - paragraph [ref=e384] [cursor=pointer]: Kashmir
+              - paragraph [ref=e392] [cursor=pointer]: Shimla & Manali
+              - paragraph [ref=e400] [cursor=pointer]: Goa
+              - paragraph [ref=e408] [cursor=pointer]: Sikkim & Darjeeling
+              - paragraph [ref=e416] [cursor=pointer]: Thailand
+              - paragraph [ref=e424] [cursor=pointer]: Andaman
+              - paragraph [ref=e432] [cursor=pointer]: Maldives
+              - paragraph [ref=e440] [cursor=pointer]: Uttarakhand
+              - paragraph [ref=e448] [cursor=pointer]: Uttar Pradesh
+              - paragraph [ref=e456] [cursor=pointer]: Rajasthan
+              - paragraph [ref=e464] [cursor=pointer]: Maharashtra
+              - paragraph [ref=e472] [cursor=pointer]: Gujarat
+              - paragraph [ref=e480] [cursor=pointer]: Madhya Pradesh
+              - paragraph [ref=e488] [cursor=pointer]: Bali
+            - button "Next" [ref=e489] [cursor=pointer]
+        - generic [ref=e491]:
+          - generic [ref=e493]:
+            - heading "Spiritual Escapes at Lowest prices!" [level=2] [ref=e494]
+            - paragraph [ref=e495]: Explore Pilgrimage packages
+          - generic [ref=e498]:
+            - button "Previous" [ref=e499] [cursor=pointer]
+            - generic [ref=e501]:
+              - paragraph [ref=e509] [cursor=pointer]: Char Dham
+              - paragraph [ref=e517] [cursor=pointer]: Varanasi & Ayodhya
+              - paragraph [ref=e525] [cursor=pointer]: Puri
+              - paragraph [ref=e533] [cursor=pointer]: Madurai & Rameshwaram
+              - paragraph [ref=e541] [cursor=pointer]: Dwarka & Somnath
+              - paragraph [ref=e549] [cursor=pointer]: Ujjain
+              - paragraph [ref=e557] [cursor=pointer]: Tirupati
+              - paragraph [ref=e565] [cursor=pointer]: Shirdi
+              - paragraph [ref=e573] [cursor=pointer]: Amritsar
+              - paragraph [ref=e581] [cursor=pointer]: Haridwar & Rishikesh
+            - button "Next" [ref=e582] [cursor=pointer]
+        - generic [ref=e585]:
+          - generic [ref=e590]:
+            - paragraph [ref=e591]: Explore
+            - generic [ref=e592]:
+              - paragraph [ref=e593]: Holidays
+              - paragraph [ref=e594]: by Theme
+              - paragraph [ref=e595]: Pick from our specially curated packages
+          - generic [ref=e597]:
+            - button "Previous" [ref=e598] [cursor=pointer]
+            - generic [ref=e600]:
+              - generic [ref=e604] [cursor=pointer]:
+                - paragraph [ref=e607]
+                - generic [ref=e608]:
+                  - paragraph [ref=e609]: Pilgrimage Carnival
+                  - list [ref=e610]:
+                    - listitem [ref=e611]: Uttar Pradesh
+                    - listitem [ref=e612]: South India
+                    - listitem [ref=e613]: Gujarat
+                    - listitem [ref=e614]: Puri
+                  - paragraph [ref=e615]: VIEW MORE
+              - generic [ref=e619] [cursor=pointer]:
+                - paragraph [ref=e622]
+                - generic [ref=e623]:
+                  - paragraph [ref=e624]: Group Tour Offer
+                  - list [ref=e625]:
+                    - listitem [ref=e626]: Europe
+                    - listitem [ref=e627]: Japan
+                    - listitem [ref=e628]: Vietnam
+                    - listitem [ref=e629]: Kerala
+                  - paragraph [ref=e630]: VIEW MORE
+              - generic [ref=e634] [cursor=pointer]:
+                - paragraph [ref=e637]
+                - generic [ref=e638]:
+                  - paragraph [ref=e639]: Honeymoon
+                  - list [ref=e640]:
+                    - listitem [ref=e641]: Maldives
+                    - listitem [ref=e642]: Bali
+                    - listitem [ref=e643]: Andaman
+                    - listitem [ref=e644]: Goa
+                  - paragraph [ref=e645]: VIEW MORE
+              - generic [ref=e649] [cursor=pointer]:
+                - paragraph [ref=e652]
+                - generic [ref=e653]:
+                  - paragraph [ref=e654]: Free Experiences
+                  - list [ref=e655]:
+                    - listitem [ref=e656]: Thailand
+                    - listitem [ref=e657]: Bali
+                    - listitem [ref=e658]: Malaysia
+                    - listitem [ref=e659]: Singapore
+                  - paragraph [ref=e660]: VIEW MORE
+              - generic [ref=e664] [cursor=pointer]:
+                - paragraph [ref=e667]
+                - generic [ref=e668]:
+                  - paragraph [ref=e669]: Luxe Holidays
+                  - list [ref=e670]:
+                    - listitem [ref=e671]: Beach
+                    - listitem [ref=e672]: Cultural
+                    - listitem [ref=e673]: Island
+                    - listitem [ref=e674]: Hill
+                  - paragraph [ref=e675]: VIEW MORE
+              - generic [ref=e679] [cursor=pointer]:
+                - paragraph [ref=e682]
+                - generic [ref=e683]:
+                  - paragraph [ref=e684]: Family & Kids Special
+                  - list [ref=e685]:
+                    - listitem [ref=e686]: Domestic
+                    - listitem [ref=e687]: International
+                  - paragraph [ref=e688]: VIEW MORE
+            - button "Next" [ref=e689] [cursor=pointer]
+        - generic [ref=e691]:
+          - generic [ref=e693]:
+            - heading "International Destinations" [level=2] [ref=e694]
+            - paragraph [ref=e695]: From Bucket List to Boarding Pass!
+          - generic [ref=e698]:
+            - button "Previous" [ref=e699] [cursor=pointer]
+            - generic [ref=e701]:
+              - generic [ref=e709] [cursor=pointer]:
+                - paragraph [ref=e710]: Thailand
+                - paragraph [ref=e711]: Starting at ₹19,300 Per person
+              - generic [ref=e719] [cursor=pointer]:
+                - paragraph [ref=e720]: Maldives
+                - paragraph [ref=e721]: Starting at ₹11,000 Per person
+              - generic [ref=e729] [cursor=pointer]:
+                - paragraph [ref=e730]: Bali
+                - paragraph [ref=e731]: Starting at ₹22,800 Per person
+              - generic [ref=e739] [cursor=pointer]:
+                - paragraph [ref=e740]: Sri Lanka
+                - paragraph [ref=e741]: Starting at ₹12,100 Per person
+              - generic [ref=e749] [cursor=pointer]:
+                - paragraph [ref=e750]: Vietnam
+                - paragraph [ref=e751]: Starting at ₹12,700 Per person
+              - generic [ref=e759] [cursor=pointer]:
+                - paragraph [ref=e760]: Europe
+                - paragraph [ref=e761]: Starting at ₹1,55,400 Per person
+              - generic [ref=e769] [cursor=pointer]:
+                - paragraph [ref=e770]: Australia
+                - paragraph [ref=e771]: Starting at ₹34,500 Per person
+              - generic [ref=e779] [cursor=pointer]:
+                - paragraph [ref=e780]: Singapore
+                - paragraph [ref=e781]: Starting at ₹28,600 Per person
+              - generic [ref=e789] [cursor=pointer]:
+                - paragraph [ref=e790]: Bhutan
+                - paragraph [ref=e791]: Starting at ₹20,200 Per person
+              - generic [ref=e799] [cursor=pointer]:
+                - paragraph [ref=e800]: New Zealand
+                - paragraph [ref=e801]: Starting at ₹2,71,700 Per person
+              - generic [ref=e809] [cursor=pointer]:
+                - paragraph [ref=e810]: Japan
+                - paragraph [ref=e811]: Starting at ₹1,36,700 Per person
+              - generic [ref=e819] [cursor=pointer]:
+                - paragraph [ref=e820]: Malaysia
+                - paragraph [ref=e821]: Starting at ₹12,600 Per person
+              - generic [ref=e829] [cursor=pointer]:
+                - paragraph [ref=e830]: Mauritius
+                - paragraph [ref=e831]: Starting at ₹46,600 Per person
+            - button "Next" [ref=e832] [cursor=pointer]
+        - generic [ref=e833]:
+          - generic [ref=e834]:
+            - heading "Offers" [level=2] [ref=e835]
+            - list [ref=e837]:
+              - listitem [ref=e838]:
+                - generic [ref=e839] [cursor=pointer]: Holidays
+              - listitem [ref=e841]:
+                - generic [ref=e842] [cursor=pointer]: All Offers
+              - listitem [ref=e844]:
+                - generic [ref=e845] [cursor=pointer]: Hotels
+              - listitem [ref=e847]:
+                - generic [ref=e848] [cursor=pointer]: Flights
+              - listitem [ref=e850]:
+                - generic [ref=e851] [cursor=pointer]: Bus
+              - listitem [ref=e853]:
+                - generic [ref=e854] [cursor=pointer]: Bank Offers
+              - listitem [ref=e856]:
+                - generic [ref=e857] [cursor=pointer]: Activities
+            - generic [ref=e859] [cursor=pointer]: View All
+          - generic [ref=e862]:
+            - button "Previous" [ref=e863] [cursor=pointer]
+            - generic [ref=e865]:
+              - generic [ref=e866]:
+                - generic [ref=e869] [cursor=pointer]:
+                  - generic [ref=e874]:
+                    - paragraph [ref=e876]:
+                      - generic [ref=e877]: T&C's Apply
+                    - paragraph [ref=e878]: Get Up to ₹10,000 OFF* on Holiday Packages
+                    - paragraph [ref=e880]: for Your Year-End Travel Plans!
+                  - generic [ref=e881]: Book Now
+                - generic [ref=e886] [cursor=pointer]:
+                  - generic [ref=e891]:
+                    - paragraph [ref=e893]:
+                      - generic [ref=e894]: T&C's Apply
+                    - paragraph [ref=e895]: Apply for MakeMyTrip ICICI Bank Credit Card Now.
+                    - paragraph [ref=e897]: Enjoy 6%* extra savings, every time you travel.
+                  - generic [ref=e898]: Book Now
+              - generic [ref=e901]:
+                - generic [ref=e904] [cursor=pointer]:
+                  - generic [ref=e909]:
+                    - paragraph [ref=e911]:
+                      - generic [ref=e912]: T&C's Apply
+                    - paragraph [ref=e913]: Save Big on Festive Getaways
+                    - paragraph [ref=e915]: with Up to 20% OFF* on Flights, Hotels, Buses & Cabs.
+                  - generic [ref=e916]: View Details
+                - generic [ref=e921] [cursor=pointer]:
+                  - generic [ref=e926]:
+                    - paragraph [ref=e928]:
+                      - generic [ref=e929]: T&C's Apply
+                    - paragraph [ref=e930]: "Newly Launched: Group Tour Packages"
+                    - paragraph [ref=e932]: We’ll Do the Planning. You Take the Trip.
+                  - generic [ref=e933]: Book Now
+              - generic [ref=e936]:
+                - generic [ref=e939] [cursor=pointer]:
+                  - generic [ref=e944]:
+                    - paragraph [ref=e946]:
+                      - generic [ref=e947]: T&C's Apply
+                    - paragraph [ref=e948]: Travel All Around the World with Up to 35% OFF*
+                    - paragraph [ref=e950]: on Flights and Hotels.
+                  - generic [ref=e951]: Book Now
+                - generic [ref=e956] [cursor=pointer]:
+                  - generic [ref=e961]:
+                    - paragraph [ref=e963]:
+                      - generic [ref=e964]: T&C's Apply
+                    - paragraph [ref=e965]: "Save Big and Travel Smart: Grab Up to 35% OFF*"
+                    - paragraph [ref=e967]: on Flights, Hotels, Packages, Buses & More.
+                  - generic [ref=e968]: View Details
+              - generic [aria-hidden] [ref=e971]:
+                - generic [ref=e974] [cursor=pointer]:
+                  - generic [ref=e978]:
+                    - paragraph [ref=e980]:
+                      - generic [ref=e981]: T&C's Apply
+                    - paragraph [ref=e982]: "Here Now: Lakshadweep Packages with Direct Flights"
+                    - paragraph [ref=e984]: Book now starting at ₹84,999*.
+                  - generic [ref=e985]: Book Now
+                - generic [ref=e990] [cursor=pointer]:
+                  - generic [ref=e994]:
+                    - paragraph [ref=e996]:
+                      - generic [ref=e997]: T&C's Apply
+                    - paragraph [ref=e998]: Up to 35% OFF* + INTEREST-FREE* EMI
+                    - paragraph [ref=e1000]: on flights, hotels & holiday packages.
+                  - generic [ref=e1001]: View Details
+              - generic [aria-hidden] [ref=e1004]:
+                - generic [ref=e1007] [cursor=pointer]:
+                  - generic [ref=e1011]:
+                    - paragraph [ref=e1013]:
+                      - generic [ref=e1014]: T&C's Apply
+                    - paragraph [ref=e1015]: 4N/5D Phu Quoc Group Package with Direct Flights.
+                    - paragraph [ref=e1017]: Book starting at ₹99,999*.
+                  - generic [ref=e1018]: Book Now
+                - generic [ref=e1023] [cursor=pointer]:
+                  - generic [ref=e1027]:
+                    - paragraph [ref=e1029]:
+                      - generic [ref=e1030]: T&C's Apply
+                    - paragraph [ref=e1031]: "Epic Savings for You:"
+                    - paragraph [ref=e1033]: Grab FLAT 10% OFF* on Business Class Flight Fares.
+                  - generic [ref=e1034]: Book Now
+              - generic [aria-hidden] [ref=e1037]:
+                - generic [ref=e1040] [cursor=pointer]:
+                  - generic [ref=e1044]:
+                    - paragraph [ref=e1046]:
+                      - generic [ref=e1047]: T&C's Apply
+                    - paragraph [ref=e1048]: Avail Interest-free EMI* + Up to 35% OFF*
+                    - paragraph [ref=e1050]: on flights, hotels & holiday packages in India & abroad.
+                  - generic [ref=e1051]: Book Now
+                - generic [ref=e1056] [cursor=pointer]:
+                  - generic [ref=e1060]:
+                    - paragraph [ref=e1062]:
+                      - generic [ref=e1063]: T&C's Apply
+                    - paragraph [ref=e1064]: Connect with Your Spiritual Roots.
+                    - paragraph [ref=e1066]: Explore MyPilgrimage Packages & embark on India’s sacred journeys.
+                  - generic [ref=e1067]: Book Now
+              - generic [aria-hidden] [ref=e1070]:
+                - generic [ref=e1073] [cursor=pointer]:
+                  - generic [ref=e1077]:
+                    - paragraph [ref=e1079]:
+                      - generic [ref=e1080]: T&C's Apply
+                    - paragraph [ref=e1081]: Up to 25% OFF* + Additional Savings on EMI
+                    - paragraph [ref=e1083]: for flights, hotels, holidays, buses & T&A Bookings
+                  - generic [ref=e1084]: View Details
+                - generic [ref=e1089] [cursor=pointer]:
+                  - generic [ref=e1093]:
+                    - paragraph [ref=e1095]:
+                      - generic [ref=e1096]: T&C's Apply
+                    - paragraph [ref=e1097]: Grab Up to 30% OFF* + Interest-FREE* EMI
+                    - paragraph [ref=e1099]: on domestic & international flight, stays and holiday packages!
+                  - generic [ref=e1100]: Book Now
+              - generic [aria-hidden] [ref=e1103]:
+                - generic [ref=e1106] [cursor=pointer]:
+                  - generic [ref=e1110]:
+                    - paragraph [ref=e1112]:
+                      - generic [ref=e1113]: T&C's Apply
+                    - paragraph [ref=e1114]: Up to 25% OFF*
+                    - paragraph [ref=e1116]: on Hotels, Holidays and Tours & Attractions.
+                  - generic [ref=e1117]: Book Now
+                - generic [ref=e1122] [cursor=pointer]:
+                  - generic [ref=e1126]:
+                    - paragraph [ref=e1128]:
+                      - generic [ref=e1129]: T&C's Apply
+                    - paragraph [ref=e1130]: Grab Up to 35% OFF* on
+                    - paragraph [ref=e1132]: domestic + international flights, hotels & holiday packages for a memorable trip!
+                  - generic [ref=e1133]: View Details
+              - generic [ref=e1139] [cursor=pointer]:
+                - generic [ref=e1143]:
+                  - paragraph [ref=e1145]:
+                    - generic [ref=e1146]: T&C's Apply
+                  - paragraph [ref=e1147]: Get Up to 35% OFF* + Interest-free EMI
+                  - paragraph [ref=e1149]: on flights, stays & holiday packages for your next refreshing break.
+                - generic [ref=e1150]: Book Now
+            - button "Next" [ref=e1153] [cursor=pointer]
+        - generic [ref=e1155]:
+          - generic [ref=e1158]:
+            - paragraph [ref=e1159]:
+              - paragraph [ref=e1160]: Kashmir
+            - paragraph [ref=e1161]:
+              - paragraph [ref=e1162]:
+                - link "Kashmir Tour Packages" [ref=e1163] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/kashmir-travel-packages.html
+                - text: ","
+                - link "Kashmir Tourism" [ref=e1164] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/kashmir-tourism.html
+                - text: ","
+                - link "Kashmir Honeymoon Packages" [ref=e1165] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/kashmir-honeymoon-packages.html
+          - generic [ref=e1168]:
+            - paragraph [ref=e1169]:
+              - paragraph [ref=e1170]: Andaman
+            - paragraph [ref=e1171]:
+              - paragraph [ref=e1172]:
+                - link "Andaman Tour Packages" [ref=e1173] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/andaman-travel-packages.html
+                - text: ","
+                - link "Andaman Tourism" [ref=e1174] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/andaman-tourism.html
+                - text: ","
+                - link "Andaman Honeymoon Packages" [ref=e1175] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/andaman-honeymoon-packages.html
+          - generic [ref=e1178]:
+            - paragraph [ref=e1179]:
+              - paragraph [ref=e1180]: Ladakh
+            - paragraph [ref=e1181]:
+              - paragraph [ref=e1182]:
+                - link "Ladakh Tour Packages" [ref=e1183] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html
+                - text: ","
+                - link "Ladakh Tourism" [ref=e1184] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/ladakh-tourism.html
+                - text: ","
+                - link "Ladakh Honeymoon Packages" [ref=e1185] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/ladakh-honeymoon-packages.html
+          - generic [ref=e1188]:
+            - paragraph [ref=e1189]:
+              - paragraph [ref=e1190]: North East
+            - paragraph [ref=e1191]:
+              - paragraph [ref=e1192]:
+                - link "North East Tour Packages" [ref=e1193] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/north_east-travel-packages.html
+                - text: ","
+                - link "North East India Tourism" [ref=e1194] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/north_east_india-tourism.html
+                - text: ","
+                - link "North East India Honeymoon Packages" [ref=e1195] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/north_east_india-honeymoon-packages.html
+          - generic [ref=e1198]:
+            - paragraph [ref=e1199]:
+              - paragraph [ref=e1200]: Goa
+            - paragraph [ref=e1201]:
+              - paragraph [ref=e1202]:
+                - link "Goa Tour Packages" [ref=e1203] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/goa-travel-packages.html
+                - text: ","
+                - link "Goa Tourism" [ref=e1204] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/goa-tourism.html
+                - text: ","
+                - link "Goa Honeymoon Packages" [ref=e1205] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/goa-honeymoon-packages.html
+          - generic [ref=e1208]:
+            - paragraph [ref=e1209]:
+              - paragraph [ref=e1210]: Kerala
+            - paragraph [ref=e1211]:
+              - paragraph [ref=e1212]:
+                - link "Kerala Tour Packages" [ref=e1213] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/Kerala-travel-packages.html
+                - text: ","
+                - link "Kerala Tourism" [ref=e1214] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/Kerala-tourism.html
+                - text: ","
+                - link "Kerala Honeymoon Packages" [ref=e1215] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-india/kerala-honeymoon-packages.html
+          - generic [ref=e1218]:
+            - paragraph [ref=e1219]:
+              - paragraph [ref=e1220]: Maldives
+            - paragraph [ref=e1221]:
+              - paragraph [ref=e1222]:
+                - link "Maldives Tour Packages" [ref=e1223] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/maldives-vacation-tour-packages.html
+                - text: ","
+                - link "Maldives Tourism" [ref=e1224] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/maldives-tourism.html
+                - text: ","
+                - link "Maldives Honeymoon Packages" [ref=e1225] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/maldives-honeymoon-packages.html
+          - generic [ref=e1228]:
+            - paragraph [ref=e1229]:
+              - paragraph [ref=e1230]: Sri Lanka
+            - paragraph [ref=e1231]:
+              - paragraph [ref=e1232]:
+                - link "Sri Lanka Tour Packages" [ref=e1233] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/sri_lanka-vacation-tour-packages.html
+                - text: ","
+                - link "Sri lanka Tourism" [ref=e1234] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/sri_lanka-tourism.html
+                - text: ","
+                - link "Sri Lanka Honeymoon Packages" [ref=e1235] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/sri_lanka-honeymoon-packages.html
+          - generic [ref=e1238]:
+            - paragraph [ref=e1239]:
+              - paragraph [ref=e1240]: Dubai
+            - paragraph [ref=e1241]:
+              - paragraph [ref=e1242]:
+                - link "Dubai Tour Packages" [ref=e1243] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/dubai-vacation-tour-packages.html
+                - text: ","
+                - link "Dubai Tourism" [ref=e1244] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/dubai-tourism.html
+                - text: ","
+                - link "Dubai Honeymoon Packages" [ref=e1245] [cursor=pointer]:
+                  - /url: https://www.makemytrip.com/holidays-international/dubai-honeymoon-packages.html
+  - contentinfo [ref=e1246]:
+    - generic [ref=e1248]:
+      - paragraph [ref=e1249]: MakeMyTrip
+      - list [ref=e1250]:
+        - listitem [ref=e1251]:
+          - link "About Us" [ref=e1252] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/about-us/company_profile.php
+          - text: ","
+        - listitem [ref=e1253]:
+          - link "Investor Relations" [ref=e1254] [cursor=pointer]:
+            - /url: https://investors.makemytrip.com
+          - text: ","
+        - listitem [ref=e1255]:
+          - link "Careers" [ref=e1256] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/about-us/jobs.php
+          - text: ","
+        - listitem [ref=e1257]:
+          - link "Sustainability" [ref=e1258] [cursor=pointer]:
+            - /url: https://sustainability.makemytrip.com
+          - text: ","
+        - listitem [ref=e1259]:
+          - link "MMT Foundation" [ref=e1260] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/csr/mmt_foundation.html
+          - text: ","
+        - listitem [ref=e1261]:
+          - link "Legal Notices" [ref=e1262] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/notice_privacy_policy.html
+          - text: ","
+        - listitem [ref=e1263]:
+          - link "CSR Policy & Committee" [ref=e1264] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/csr/csr_policy.html
+          - text: ","
+        - listitem [ref=e1265]:
+          - link "myPartner - Travel Agent Portal" [ref=e1266] [cursor=pointer]:
+            - /url: https://mypartner.makemytrip.com
+          - text: ","
+        - listitem [ref=e1267]:
+          - link "List your hotel" [ref=e1268] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/hotelier-register.htm
+          - text: ","
+        - listitem [ref=e1269]:
+          - link "Partners- Redbus" [ref=e1270] [cursor=pointer]:
+            - /url: https://www.redbus.in/
+          - text: ","
+        - listitem [ref=e1271]:
+          - link "Partners- Goibibo" [ref=e1272] [cursor=pointer]:
+            - /url: https://www.goibibo.com/
+          - text: ","
+        - listitem [ref=e1273]:
+          - link "Advertise with Us" [ref=e1274] [cursor=pointer]:
+            - /url: https://advertising.makemytrip.com/ad/solutions/
+          - text: ","
+        - listitem [ref=e1275]:
+          - link "Holiday-Franchise" [ref=e1276] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/franchise
+      - paragraph [ref=e1277]: About the Site
+      - list [ref=e1278]:
+        - listitem [ref=e1279]:
+          - link "Customer Support" [ref=e1280] [cursor=pointer]:
+            - /url: https://supportz.makemytrip.com/Mima/CustomerHelpAndSupport/
+          - text: ","
+        - listitem [ref=e1281]:
+          - link "MMT Black Loyalty Program" [ref=e1282] [cursor=pointer]:
+            - /url: https://promos.makemytrip.com/mmtblack-program-details.html
+          - text: ","
+        - listitem [ref=e1283]:
+          - link "Payment Security" [ref=e1284] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/payment_security.html
+          - text: ","
+        - listitem [ref=e1285]:
+          - link "Privacy Policy" [ref=e1286] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/privacy_policy.html
+          - text: ","
+        - listitem [ref=e1287]:
+          - link "Cookie Policy" [ref=e1288] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/cookie_disclosure_policy.html
+          - text: ","
+        - listitem [ref=e1289]:
+          - link "User Agreement" [ref=e1290] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/user_agreement.html
+          - text: ","
+        - listitem [ref=e1291]:
+          - link "Terms of Service" [ref=e1292] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/legal/in/eng/user_agreement.html#tos
+          - text: ","
+        - listitem [ref=e1293]:
+          - link "Franchise Offices" [ref=e1294] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/franchise/branchoffices
+          - text: ","
+        - listitem [ref=e1295]:
+          - link "Make A Payment" [ref=e1296] [cursor=pointer]:
+            - /url: https://payments.makemytrip.com/easypay/
+          - text: ","
+        - listitem [ref=e1297]:
+          - link "Work From Home" [ref=e1298] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/about-us/work-from-home.php
+          - text: ","
+        - listitem [ref=e1299]:
+          - link "Escalation Channel" [ref=e1300] [cursor=pointer]:
+            - /url: https://supportz.makemytrip.com/Mima/Escalate/
+      - paragraph [ref=e1301]: Product Offering
+      - list [ref=e1302]:
+        - listitem [ref=e1303]:
+          - link "Flights" [ref=e1304] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/
+          - text: ","
+        - listitem [ref=e1305]:
+          - link "International Flights" [ref=e1306] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/international-flights/
+          - text: ","
+        - listitem [ref=e1307]:
+          - link "Charter Flights" [ref=e1308] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/charter-flights/
+          - text: ","
+        - listitem [ref=e1309]:
+          - link "Hotels" [ref=e1310] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/
+          - text: ","
+        - listitem [ref=e1311]:
+          - link "International Hotels" [ref=e1312] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels-international/
+          - text: ","
+        - listitem [ref=e1313]:
+          - link "Homestays and Villas" [ref=e1314] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/homestays/
+          - text: ","
+        - listitem [ref=e1315]:
+          - link "Activities" [ref=e1316] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/activities/
+          - text: ","
+        - listitem [ref=e1317]:
+          - link "Holidays In India" [ref=e1318] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india
+          - text: ","
+        - listitem [ref=e1319]:
+          - link "International Holidays" [ref=e1320] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international
+          - text: ","
+        - listitem [ref=e1321]:
+          - link "Book Hotels From UAE" [ref=e1322] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/hotels/?ccde=ae
+          - text: ","
+        - listitem [ref=e1323]:
+          - link "myBiz for Corporate Travel" [ref=e1324] [cursor=pointer]:
+            - /url: https://mybiz.makemytrip.com/?intid=mmtfooter_productoffering
+          - text: ","
+        - listitem [ref=e1325]:
+          - link "Book Online Cabs" [ref=e1326] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/cabs
+          - text: ","
+        - listitem [ref=e1327]:
+          - link "Book Bus Tickets" [ref=e1328] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/bus-tickets/
+          - text: ","
+        - listitem [ref=e1329]:
+          - link "Book Train Tickets" [ref=e1330] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/
+          - text: ","
+        - listitem [ref=e1331]:
+          - link "Cheap Tickets to India" [ref=e1332] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/?ccde=us
+          - text: ","
+        - listitem [ref=e1333]:
+          - link "Book Flights From US" [ref=e1334] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/?ccde=us
+          - text: ","
+        - listitem [ref=e1335]:
+          - link "Book Flights From UAE" [ref=e1336] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/flights/?ccde=us
+          - text: ","
+        - listitem [ref=e1337]:
+          - link "Trip Planner" [ref=e1338] [cursor=pointer]:
+            - /url: https://planner.makemytrip.com/?&intid=Homepage_Tab_Inspirock
+          - text: ","
+        - listitem [ref=e1339]:
+          - link "Forex Card" [ref=e1340] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/forex/
+          - text: ","
+        - listitem [ref=e1341]:
+          - link "Buy Foreign Currency" [ref=e1342] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripmoney/currency
+          - text: ","
+        - listitem [ref=e1343]:
+          - link "Travel Insurance" [ref=e1344] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/
+          - text: ","
+        - listitem [ref=e1345]:
+          - link "Travel Insurance for Schengen Visa" [ref=e1346] [cursor=pointer]:
+            - /url: " https://www.makemytrip.com/travel-insurance/schengen/"
+          - text: ","
+        - listitem [ref=e1347]:
+          - link "Travel Insurance for Asia" [ref=e1348] [cursor=pointer]:
+            - /url: " https://www.makemytrip.com/travel-insurance/asia/"
+          - text: ","
+        - listitem [ref=e1349]:
+          - link "Travel Insurance Thailand" [ref=e1350] [cursor=pointer]:
+            - /url: " https://www.makemytrip.com/travel-insurance/thailand/"
+          - text: ","
+        - listitem [ref=e1351]:
+          - link "Travel Insurance For UAE" [ref=e1352] [cursor=pointer]:
+            - /url: " https://www.makemytrip.com/travel-insurance/dubai/"
+          - text: ","
+        - listitem [ref=e1353]:
+          - link "Travel Insurance For Indonesia" [ref=e1354] [cursor=pointer]:
+            - /url: " https://www.makemytrip.com/travel-insurance/indonesia/"
+          - text: ","
+        - listitem [ref=e1355]:
+          - link "Travel Insurance For Vietnam" [ref=e1356] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/vietnam/
+          - text: ","
+        - listitem [ref=e1357]:
+          - link "Travel Insurance For Europe" [ref=e1358] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/europe/
+          - text: ","
+        - listitem [ref=e1359]:
+          - link "Travel Insurance For USA" [ref=e1360] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/usa/
+          - text: ","
+        - listitem [ref=e1361]:
+          - link "Travel Insurance for Singapore" [ref=e1362] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/singapore/
+          - text: ","
+        - listitem [ref=e1363]:
+          - link "Travel Insurance for Malaysia" [ref=e1364] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/malaysia/
+          - text: ","
+        - listitem [ref=e1365]:
+          - link "Travel Insurance for Sri Lanka" [ref=e1366] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/sri-lanka/
+          - text: ","
+        - listitem [ref=e1367]:
+          - link "Travel Insurance for United Kingdom" [ref=e1368] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/uk/
+          - text: ","
+        - listitem [ref=e1369]:
+          - link "Travel Insurance for Canada" [ref=e1370] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/travel-insurance/canada/
+          - text: ","
+        - listitem [ref=e1371]:
+          - link "Gift Cards" [ref=e1372] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/
+          - text: ","
+        - listitem [ref=e1373]:
+          - link "Gift" [ref=e1374] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/gift/
+          - text: ","
+        - listitem [ref=e1375]:
+          - link "Wedding Gift" [ref=e1376] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/wedding-gift/
+          - text: ","
+        - listitem [ref=e1377]:
+          - link "Anniversary Gift" [ref=e1378] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/anniversary-gift/
+          - text: ","
+        - listitem [ref=e1379]:
+          - link "Birthday Gift" [ref=e1380] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/birthday-gift/
+          - text: ","
+        - listitem [ref=e1381]:
+          - link "Diwali Gift" [ref=e1382] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/diwali-gift/
+          - text: ","
+        - listitem [ref=e1383]:
+          - link "Valentines Gift" [ref=e1384] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/valentines-gift/
+          - text: ","
+        - listitem [ref=e1385]:
+          - link "Farewell Gift" [ref=e1386] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/farewell-gift/
+          - text: ","
+        - listitem [ref=e1387]:
+          - link "Christmas Gift" [ref=e1388] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/christmas-gift/
+          - text: ","
+        - listitem [ref=e1389]:
+          - link "New Year Gift" [ref=e1390] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/gift-cards/newyear-gift/
+          - text: ","
+        - listitem [ref=e1391]:
+          - link "Trip Ideas" [ref=e1392] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/tripideas/
+          - text: ","
+        - listitem [ref=e1393]:
+          - link "Travel Blog" [ref=e1394] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/blog/?intid=mmtblog_footer
+          - text: ","
+        - listitem [ref=e1395]:
+          - link "PNR Status" [ref=e1396] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/railways/PNR/
+          - text: ","
+        - listitem [ref=e1397]:
+          - link "MakeMyTrip Advertising Solutions" [ref=e1398] [cursor=pointer]:
+            - /url: https://advertising.makemytrip.com/ad/solutions/
+          - text: ","
+        - listitem [ref=e1399]:
+          - link "One Way Cab" [ref=e1400] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/car-rental/one-way-cab.html
+          - text: ","
+        - listitem [ref=e1401]:
+          - link "Travel Credit Card" [ref=e1402] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/cards/makemytrip-icici-bank-credit-card
+      - paragraph [ref=e1403]: Quick Links
+      - list [ref=e1404]:
+        - listitem [ref=e1405]:
+          - link "Honeymoon Packages" [ref=e1406] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1407]:
+          - link "Family Packages" [ref=e1408] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/family-packages.html
+          - text: ","
+        - listitem [ref=e1409]:
+          - link "Beach Packages" [ref=e1410] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/beach-packages.html
+          - text: ","
+        - listitem [ref=e1411]:
+          - link "Lakshadweep Tour Packages" [ref=e1412] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/lakshadweep-travel-packages.html
+          - text: ","
+        - listitem [ref=e1413]:
+          - link "Maldives Tour Packages" [ref=e1414] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/maldives-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1415]:
+          - link "Singapore Tour Packages" [ref=e1416] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/singapore-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1417]:
+          - link "Thailand Tour Packages" [ref=e1418] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/thailand-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1419]:
+          - link "Mauritius Tour Packages" [ref=e1420] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/mauritius-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1421]:
+          - link "Bali Tour Packages" [ref=e1422] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/bali-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1423]:
+          - link "Switzerland Tour Packages" [ref=e1424] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/switzerland-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1425]:
+          - link "Dubai Tour Packages" [ref=e1426] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/dubai-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1427]:
+          - link "Srilanka Tour Packages" [ref=e1428] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/sri_lanka-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1429]:
+          - link "Europe Tour Packages" [ref=e1430] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/europe-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1431]:
+          - link "Russia Tour Packages" [ref=e1432] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/russia-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1433]:
+          - link "Bangkok Tour Packages" [ref=e1434] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/bangkok-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1435]:
+          - link "Bhutan Tour Packages" [ref=e1436] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/bhutan-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1437]:
+          - link "Nepal Tour Packages" [ref=e1438] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/nepal-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1439]:
+          - link "Greece Tour Packages" [ref=e1440] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/greece-vacation-tour-packages.html
+          - text: ","
+        - listitem [ref=e1441]:
+          - link "Shimla Tour Packages" [ref=e1442] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/shimla-travel-packages.html
+          - text: ","
+        - listitem [ref=e1443]:
+          - link "Coorg Tour Packages" [ref=e1444] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/coorg-travel-packages.html
+          - text: ","
+        - listitem [ref=e1445]:
+          - link "Kerala Tour Packages" [ref=e1446] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/kerala-travel-packages.html
+          - text: ","
+        - listitem [ref=e1447]:
+          - link "Goa Tour Packages" [ref=e1448] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/goa-travel-packages.html
+          - text: ","
+        - listitem [ref=e1449]:
+          - link "Manali Tour Packages" [ref=e1450] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/manali-travel-packages.html
+          - text: ","
+        - listitem [ref=e1451]:
+          - link "Ooty Tour Packages" [ref=e1452] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/ooty-travel-packages.html
+          - text: ","
+        - listitem [ref=e1453]:
+          - link "Uttarakhand Tour Packages" [ref=e1454] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/uttarakhand-travel-packages.html
+          - text: ","
+        - listitem [ref=e1455]:
+          - link "Nainital Tour Packages" [ref=e1456] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/nainital-travel-packages.html
+          - text: ","
+        - listitem [ref=e1457]:
+          - link "Sikkim Tour Packages" [ref=e1458] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/sikkim-travel-packages.html
+          - text: ","
+        - listitem [ref=e1459]:
+          - link "Rajasthan Tour Packages" [ref=e1460] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/rajasthan-travel-packages.html
+          - text: ","
+        - listitem [ref=e1461]:
+          - link "Himachal Tour Packages" [ref=e1462] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/himachal-travel-packages.html
+      - paragraph [ref=e1463]: Important Links
+      - list [ref=e1464]:
+        - listitem [ref=e1465]:
+          - link "Ladakh Tour Packages" [ref=e1466] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/ladakh-travel-packages.html
+          - text: ","
+        - listitem [ref=e1467]:
+          - link "Andaman Tour Packages" [ref=e1468] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/andaman-travel-packages.html
+          - text: ","
+        - listitem [ref=e1469]:
+          - link "Kashmir Tour Packages" [ref=e1470] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/kashmir-travel-packages.html
+          - text: ","
+        - listitem [ref=e1471]:
+          - link "Gujarat Tourism" [ref=e1472] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/gujarat-tourism.html
+          - text: ","
+        - listitem [ref=e1473]:
+          - link "North East Tour Package" [ref=e1474] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/north_east_india-travel-packages.html
+          - text: ","
+        - listitem [ref=e1475]:
+          - link "Golden Triangle Tour Packages" [ref=e1476] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/golden_triangle-travel-packages.html
+          - text: ","
+        - listitem [ref=e1477]:
+          - link "Luxury Tour packages" [ref=e1478] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/luxury-packages.html
+          - text: ","
+        - listitem [ref=e1479]:
+          - link "South India Tour Packages" [ref=e1480] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/south_india-travel-packages.html
+          - text: ","
+        - listitem [ref=e1481]:
+          - link "International Honeymoon Packages" [ref=e1482] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1483]:
+          - link "Andaman Honeymoon Packages" [ref=e1484] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/andaman-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1485]:
+          - link "Kerala Honeymoon Packages" [ref=e1486] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/kerala-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1487]:
+          - link "Mauritius Honeymoon Packages" [ref=e1488] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/mauritius-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1489]:
+          - link "Maldives Honeymoon Packages" [ref=e1490] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/maldives-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1491]:
+          - link "Bali Honeymoon Packages" [ref=e1492] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/bali-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1493]:
+          - link "Europe Honeymoon Packages" [ref=e1494] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/europe-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1495]:
+          - link "Dubai Honeymoon Packages" [ref=e1496] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/dubai-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1497]:
+          - link "Singapore Honeymoon Packages" [ref=e1498] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/singapore-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1499]:
+          - link "Thailand Honeymoon Packages" [ref=e1500] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-international/thailand-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1501]:
+          - link "Manali Honeymoon Packages" [ref=e1502] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/manali-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1503]:
+          - link "Goa Honeymoon Packages" [ref=e1504] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/goa-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1505]:
+          - link "Ooty Honeymoon Packages" [ref=e1506] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/ooty-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1507]:
+          - link "Shimla Honeymoon Packages" [ref=e1508] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/shimla-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1509]:
+          - link "Munnar Honeymoon Packages" [ref=e1510] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/munnar-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1511]:
+          - link "Kashmir Honeymoon Packages" [ref=e1512] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/kashmir-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1513]:
+          - link "Coorg Honeymoon Packages" [ref=e1514] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/coorg-honeymoon-packages.html
+          - text: ","
+        - listitem [ref=e1515]:
+          - link "Switzerland Honeymoon Packages" [ref=e1516] [cursor=pointer]:
+            - /url: https://www.makemytrip.com/holidays-india/switzerland-honeymoon-packages.html
+    - article [ref=e1520]:
+      - generic [ref=e1521]:
+        - heading "Why Book Holidays with MakeMyTrip?" [level=2] [ref=e1522]
+        - generic [ref=e1523]: MakeMyTrip.com, India's leading online travel company, has a profound understanding of Indian consumers travel needs and preferences. It offers a wide range of holiday packages in India and across the world, catering to various segments of travellers. While the dynamic or customized tour and travel packages give consumers an option to create and design their own holiday, the fixed departure holiday packages have a pre-designed itinerary; thus ensuring there is something to meet the holiday needs of every kind of traveller.
+      - generic [ref=e1526]:
+        - heading "What does MakeMyTrip Holidays offer?" [level=2] [ref=e1527]
+        - generic [ref=e1528]: MakeMyTrip offers a hassle-free holiday wherein all your travel needs are taken care of. Be it your accommodation in comfortable hotels, convenient transfers, varied sightseeing options and an array of activities to choose from, delectable meals and niche experiences - the holiday packages are designed such to offer you an unparalleled experience. Be it popular destinations such as Andaman, Kerala, Rajasthan and Kashmir, or more offbeat ones like North East, Ladakh and Uttarakhand, there are tailor-made packages for destinations from all over India. From distinctive honeymoon packages to exclusive tour packages for women, from itineraries designed for solo travellers, families with kids and for those who are young at heart - MakeMyTrip has an answer to all our holiday needs.
+      - generic [ref=e1531]:
+        - heading "How to book Holidays with MakeMyTrip?" [level=2] [ref=e1532]
+        - generic [ref=e1533]: The user-friendly MakeMyTrip App and website make it easy for enthusiastic travellers to plan and book a holiday simply at the click of a button. Just use the filters and select the city you want to visit along with your travel dates, travel duration, specific preferences, if any, on hotels, kind of holiday, etc. and MakeMyTrip offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs. Else, you could also choose hotels of your choice, add sightseeing and activities to your list and have a package ready that best suits your requirement. You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. With MakeMyTrip, planning and buying your ideal holiday has never been easier.
+      - generic [ref=e1536]:
+        - heading "The Ultimate Guide to Holidaying in India" [level=2] [ref=e1537]
+        - generic [ref=e1540]:
+          - paragraph [ref=e1541]:
+            - text: India is a land of history and diversity. As a country that enjoys nature's bounty in the form of gorgeous beaches, majestic mountains, colourful deserts and lush forests, it has attracted tourists for centuries now. It's no wonder that India
+            - strong [ref=e1542]: holiday packages
+            - text: are so popular among travellers today. So, if you are planning to spend your holidays in India, we have done the homework for you. To make your holidays unforgettable, read on to know more about this fascinating country! Plan your
+            - strong [ref=e1543]: India tours
+            - text: to various exciting destinations in the country with ease.
+          - paragraph [ref=e1544]:
+            - text: For a country as old as India, there is a place or a city for everyone. And almost all
+            - strong [ref=e1545]: India holiday packages
+            - text: will give you a glimpse of this. For the spiritual traveller, there is Varanasi; for the offbeat adventurer, there is Ladakh, Arunachal Pradesh & more; if you are looking for some beach vibes, there are Goa and Lakshadweep. You can choose what you want from the vast list of
+            - strong [ref=e1546]: India tour packages
+            - text: . So plan your holidays in India by booking incredible
+            - strong [ref=e1547]: all India tour packages
+            - text: online. You can make the most out of your
+            - strong [ref=e1548]: India tours
+            - text: by choosing
+            - strong [ref=e1549]: holiday packages
+            - text: that are perfect for you.
+      - heading "Best Destinations to Visit in India" [level=2] [ref=e1551]
+      - generic [ref=e1552]:
+        - heading [level=2]
+      - generic [ref=e1553]:
+        - heading "Goa" [level=2] [ref=e1554]
+        - generic [ref=e1557]:
+          - paragraph [ref=e1558]:
+            - text: The unofficial party place of India, Goa is more than that. It has a great legacy, history and culture that are yet to be explored. But if beaches are what you are looking for, then the state has that too. And that's why,
+            - strong [ref=e1559]: India tours
+            - text: to Goa are a great option to explore the place, according to your interests. Goa
+            - strong [ref=e1560]: holiday packages
+            - text: are also popular because Goa is one of the top places in the world when it comes to nightlife. Find several exciting
+            - strong [ref=e1561]: tour packages
+            - text: and other
+            - strong [ref=e1562]: India holiday packages
+            - text: that let you try Goa's melange of watersports and other fun activities.
+          - paragraph [ref=e1563]:
+            - strong [ref=e1564]: "Best time to visit:"
+            - text: November to February
+          - paragraph [ref=e1565]:
+            - strong [ref=e1566]: "Best places to visit:"
+          - list [ref=e1567]:
+            - listitem [ref=e1568]: Calangute
+            - listitem [ref=e1569]: Baga
+            - listitem [ref=e1570]: Anjuna
+            - listitem [ref=e1571]: Miramar
+            - listitem [ref=e1572]: Palolem
+            - listitem [ref=e1573]: Panjim
+          - paragraph [ref=e1574]: You can also include the offbeat Patnem Beach in your holiday tour packages, since it was listed amongst one of Asia's top 20 beaches.
+      - generic [ref=e1575]:
+        - heading "Kerala" [level=2] [ref=e1576]
+        - generic [ref=e1579]:
+          - paragraph [ref=e1580]:
+            - text: God's own country, Kerala has been a popular tourist destination in India. You can explore it all with
+            - strong [ref=e1581]: India tours
+            - text: to this marvellous destination. With suitable
+            - strong [ref=e1582]: tour packages
+            - text: ", you can discover scenic seaside destinations and hill stations in Kerala."
+          - paragraph [ref=e1583]:
+            - strong [ref=e1584]: "Best time to visit:"
+            - text: September to March
+          - paragraph [ref=e1585]:
+            - strong [ref=e1586]: "Best places to visit:"
+          - list [ref=e1587]:
+            - listitem [ref=e1588]: Sree Padmanabhaswamy Temple
+            - listitem [ref=e1589]: Francis CSI Church
+            - listitem [ref=e1590]: Paradesi Synagogue
+            - listitem [ref=e1591]: Eravikulam National Park
+            - listitem [ref=e1592]: Varkala Beach
+            - listitem [ref=e1593]: Athirappilly Waterfalls
+          - paragraph [ref=e1594]:
+            - text: If you are planning
+            - strong [ref=e1595]: India holiday packages
+            - text: in the state, then you must not miss out on its lip-smacking cuisine as well. Check your
+            - strong [ref=e1596]: holiday tour packages
+            - text: and book accordingly.
+      - generic [ref=e1597]:
+        - heading "Kashmir" [level=2] [ref=e1598]
+        - generic [ref=e1601]:
+          - paragraph [ref=e1602]:
+            - text: For decades, the Kashmir valley has attracted tourists from all over the world. If you can't plan a vacation on your own, you should check out
+            - strong [ref=e1603]: India tours
+            - text: for Kashmir to help you with an unforgettable holiday. With the right
+            - strong [ref=e1604]: all India tour packages
+            - text: ", you can discover lush green valleys, snow-covered peaks and gorgeous wildlife. Your"
+            - strong [ref=e1605]: trip packages
+            - text: must include the Chenab, Sindh and Lidder valleys. Don't forget to buy a world-famous Kashmiri shawl and one-of-a-kind handicrafts for your loved ones.
+          - paragraph [ref=e1606]:
+            - strong [ref=e1607]: "Best Time to Visit:"
+            - text: March to August
+          - paragraph [ref=e1608]:
+            - strong [ref=e1609]: "Best Places to Visit:"
+          - list [ref=e1610]:
+            - listitem [ref=e1611]: Gulmarg
+            - listitem [ref=e1612]: Srinagar
+            - listitem [ref=e1613]: Dal Lake
+            - listitem [ref=e1614]: Sonamarg
+            - listitem [ref=e1615]: Indira Gandhi Tulip Garden
+          - paragraph [ref=e1616]:
+            - text: These places should be included in the
+            - strong [ref=e1617]: best tour packages
+            - text: for Kashmir. Find
+            - strong [ref=e1618]: travel packages
+            - text: to suit all needs and you can also find exquisite
+            - strong [ref=e1619]:
+              - link "honeymoon packages" [ref=e1620] [cursor=pointer]:
+                - /url: https://www.makemytrip.com/holidays-india/honeymoon-packages.html
+            - text: ", since Kashmir is an ethereal destination for a picture-perfect"
+            - strong [ref=e1621]: Indian honeymoon
+            - text: .
+      - generic [ref=e1622]:
+        - heading "Rajasthan" [level=2] [ref=e1623]
+        - generic [ref=e1626]:
+          - paragraph [ref=e1627]:
+            - text: If you are looking for mesmerising
+            - strong [ref=e1628]: India tours
+            - text: ", then Rajasthan is undoubtedly your destination of choice. From its sprawling forts and historical landmarks to its signature architecture, beautiful lakes and rich culinary traditions, the state is a must-try for the"
+            - strong [ref=e1629]: best tour packages
+            - text: in the country. Your
+            - strong [ref=e1630]: trip packages
+            - text: should include visits to several historical monuments.
+          - paragraph [ref=e1631]:
+            - strong [ref=e1632]: "Best Time to Visit:"
+            - text: November to February
+          - paragraph [ref=e1633]:
+            - strong [ref=e1634]: "Best Places to Visit:"
+          - list [ref=e1635]:
+            - listitem [ref=e1636]: Jaipur
+            - listitem [ref=e1637]: Udaipur
+            - listitem [ref=e1638]: Chittor
+            - listitem [ref=e1639]: Jodhpur
+            - listitem [ref=e1640]: Jaisalmer
+            - listitem [ref=e1641]: Mount Abu
+          - paragraph [ref=e1642]:
+            - text: When in Rajasthan, make sure that your
+            - strong [ref=e1643]: travel packages
+            - text: give you ample time for some local shopping and dining. Feast on delicacies like Dal Baati Churma and Laal Maas during your
+            - strong [ref=e1644]:
+              - link "Rajasthan tours" [ref=e1645] [cursor=pointer]:
+                - /url: https://www.makemytrip.com/holidays-india/rajasthan-travel-packages.html
+            - text: .
+      - generic [ref=e1646]:
+        - heading "Sikkim" [level=2] [ref=e1647]
+        - generic [ref=e1650]:
+          - text: If you are looking for an Indian destination that is fit for a
+          - strong [ref=e1651]:
+            - link "world tour package" [ref=e1652] [cursor=pointer]:
+              - /url: https://www.makemytrip.com/holidays-international/
+          - text: ", then look no further than Sikkim. You can plan amazing"
+          - strong [ref=e1653]: India tours
+          - text: to this mountain marvel, which is home to the country's highest peak, Kanchenjunga. It is certainly a great destination for quality
+          - strong [ref=e1654]: international tour packages
+          - text: . Check out
+          - strong [ref=e1655]:
+            - link "Sikkim tour packages" [ref=e1656] [cursor=pointer]:
+              - /url: https://www.makemytrip.com/holidays-india/sikkim-travel-packages.html
+          - text: for a trip to this charming Indian state.
+          - paragraph
+          - paragraph [ref=e1657]:
+            - strong [ref=e1658]: "Best Time to Visit:"
+            - text: March to May
+          - paragraph [ref=e1659]:
+            - strong [ref=e1660]: "Best Places to Visit:"
+          - list [ref=e1661]:
+            - listitem [ref=e1662]: Gangtok
+            - listitem [ref=e1663]: Nathu La Pass
+            - listitem [ref=e1664]: Tsomgo Lake
+            - listitem [ref=e1665]: Rumtek Monastery
+      - generic [ref=e1666]:
+        - heading "Shimla" [level=2] [ref=e1667]
+        - generic [ref=e1670]:
+          - text: Shimla, the Queen of the Hills, is the stuff that dreamy
+          - strong [ref=e1671]: India tours
+          - text: are made of! Shimla is a great destination for
+          - strong [ref=e1672]:
+            - link "international honeymoon packages" [ref=e1673] [cursor=pointer]:
+              - /url: https://www.makemytrip.com/holidays-international/honeymoon-packages.html
+          - text: ", with its pristine landscape, mountains, greenery and romantic weather. A"
+          - strong [ref=e1674]:
+            - link "Shimla tour" [ref=e1675] [cursor=pointer]:
+              - /url: https://www.makemytrip.com/holidays-india/shimla-travel-packages.html
+          - text: also means checking out the delightful cafes and eateries here.
+          - paragraph
+          - paragraph [ref=e1676]:
+            - strong [ref=e1677]: "Best Time to Visit:"
+            - text: May to June/December to January
+          - paragraph [ref=e1678]:
+            - strong [ref=e1679]: "Best Places to Visit:"
+          - list [ref=e1680]:
+            - listitem [ref=e1681]: The Ridge
+            - listitem [ref=e1682]: Green Valley
+            - listitem [ref=e1683]: Mall Road
+            - listitem [ref=e1684]: Jakhoo Hill
+      - generic [ref=e1685]:
+        - heading "Uttarakhand" [level=2] [ref=e1686]
+        - generic [ref=e1689]:
+          - paragraph [ref=e1690]:
+            - text: There are many
+            - strong [ref=e1691]: India tours
+            - text: which keep Uttarakhand at the forefront and why not? The state is blessed with unmatched natural beauty. Find
+            - strong [ref=e1692]:
+              - link "Uttarakhand tour packages" [ref=e1693] [cursor=pointer]:
+                - /url: https://www.makemytrip.com/holidays-india/uttarakhand-travel-packages.html
+            - text: covering several popular destinations. The state offers the right mix of spirituality, trekking, adventure, beautiful mountain landscapes and welcoming locals.
+          - paragraph [ref=e1694]:
+            - strong [ref=e1695]: "Best time to visit:"
+            - text: March to April/September to October
+          - paragraph [ref=e1696]:
+            - strong [ref=e1697]: "Best places to visit:"
+          - list [ref=e1698]:
+            - listitem [ref=e1699]: Dehradun
+            - listitem [ref=e1700]: Mussoorie
+            - listitem [ref=e1701]: Nainital
+            - listitem [ref=e1702]: Auli
+            - listitem [ref=e1703]: Rishikesh
+      - generic [ref=e1704]:
+        - heading "Ooty" [level=2] [ref=e1705]
+        - generic [ref=e1708]:
+          - text: Those looking for soothing
+          - strong [ref=e1709]: India tours
+          - text: may also consider Ooty. Your
+          - strong [ref=e1710]:
+            - link "Ooty tour" [ref=e1711] [cursor=pointer]:
+              - /url: https://www.makemytrip.com/holidays-india/ooty-travel-packages.html
+          - text: should include some of the region’s signature attractions. Ooty is also famous for its tea and coffee plantations. It is also one of the top choices for
+          - strong [ref=e1712]: international honeymoon packages
+          - text: .
+          - paragraph
+          - paragraph [ref=e1713]:
+            - strong [ref=e1714]: "Best time to visit:"
+            - text: October to June
+          - paragraph [ref=e1715]:
+            - strong [ref=e1716]: "Best places to visit:"
+          - list [ref=e1717]:
+            - listitem [ref=e1718]: Ooty Botanical Garden
+            - listitem [ref=e1719]: Emerald Lake
+            - listitem [ref=e1720]: Ooty Lake
+            - listitem [ref=e1721]: Doddabetta Peak
+            - listitem [ref=e1722]: Kalhatty Waterfalls
+            - listitem [ref=e1723]: Deer Park
+      - generic [ref=e1724]:
+        - heading "Nainital" [level=2] [ref=e1725]
+        - generic [ref=e1728]:
+          - paragraph [ref=e1729]:
+            - strong [ref=e1730]: India tours
+            - text: are also incomplete without a trip to beautiful Nainital. This resort town in Uttarakhand lies at 2,000 meters above sea level. Enjoy the cable car rides as part of your
+            - strong [ref=e1731]:
+              - link "Nainital tour package" [ref=e1732] [cursor=pointer]:
+                - /url: https://www.makemytrip.com/holidays-india/nainital-travel-packages.html
+            - text: along with the stunning views of Nanda Devi (the highest mountain peak in Uttarakhand) in Nainital.
+          - paragraph [ref=e1733]:
+            - strong [ref=e1734]: "Best time to visit:"
+            - text: March to June
+          - paragraph [ref=e1735]:
+            - strong [ref=e1736]: "Best places to visit:"
+          - list [ref=e1737]:
+            - listitem [ref=e1738]: Nainital Lake
+            - listitem [ref=e1739]: Naina Devi Hindu Temple
+            - listitem [ref=e1740]: Snow View Observation Point
+      - generic [ref=e1741]:
+        - heading "Manali" [level=2] [ref=e1742]
+        - generic [ref=e1745]:
+          - paragraph [ref=e1746]:
+            - text: Manali is synonymous with scintillating
+            - strong [ref=e1747]: India tours
+            - text: ", encompassing romantic honeymoons, camping, hiking, skiing at the Solang Valley and trekking at the Parvati Valley. It is also famous for rafting, paragliding and other adventure activities. The snow-capped mountains, a raft of popular eateries and cafes and of course, its uniquely vibrant nightlife make a"
+            - strong [ref=e1748]:
+              - link "Manali trip" [ref=e1749] [cursor=pointer]:
+                - /url: https://www.makemytrip.com/holidays-india/manali-travel-packages.html
+            - text: worthwhile.
+          - paragraph [ref=e1750]:
+            - strong [ref=e1751]: "Best time to visit:"
+            - text: March to June
+          - paragraph [ref=e1752]:
+            - strong [ref=e1753]: "Best places to visit:"
+          - list [ref=e1754]:
+            - listitem [ref=e1755]: Hadimba Temple
+            - listitem [ref=e1756]: Museum of Himachal Culture & Folk Art
+            - listitem [ref=e1757]: Van Vihar National Park
+            - listitem [ref=e1758]: Jogini Waterfall
+            - listitem [ref=e1759]: Solang Valley
+    - generic [ref=e1761]:
+      - generic [ref=e1762]:
+        - link [ref=e1763] [cursor=pointer]:
+          - /url: https://www.instagram.com/makemytrip/
+        - link [ref=e1765] [cursor=pointer]:
+          - /url: https://x.com/makemytrip
+        - link [ref=e1767] [cursor=pointer]:
+          - /url: https://in.linkedin.com/company/makemytrip.com?open=outside
+        - link [ref=e1769] [cursor=pointer]:
+          - /url: https://www.facebook.com/makemytrip/
+      - paragraph [ref=e1772]: © 2026 MakeMyTrip (India) Limited
+```
