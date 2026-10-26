@@ -39,5 +39,4 @@ test.only('flipkart', async({page}) => {
   await page.getByPlaceholder("Search for Products, Brands and More").first().fill("iphone 17");
   await page.getByRole('button', {name: 'Search for Products, Brands and More'}).click();
   await page.locator('//div[@data-id="MOBHQV9YAZYYWY8A"]').click();
-  // await page.getByTestId("MOBHQV9YAZYYWY8A").click();
 })
