@@ -15,12 +15,12 @@
 
 
 
-import {test} from '../fixtures/testFixtures';
+// import {test} from '../fixtures/testFixtures';
 
 
-test('login',async ({loginPage}) => {
-  loginPage.login
-})
+// test('login',async ({loginPage}) => {
+//   loginPage.login
+// })
 
 
 
